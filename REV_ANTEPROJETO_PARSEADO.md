@@ -328,55 +328,69 @@ A operacionalização da pesquisa dar-se-á pela coleta de dados oriundos de mú
 
 ADIL, Mohd; SINGH, Yogita; ANSARI, Mohd. Shamim. How financial literacy moderate the association between behaviour biases and investment decision?. Asian Journal of Accounting Research, v. 7, n. 1, p. 17-30, 2022.
 
-AHMED, Walid M. A. Is there a risk-return trade-off in cryptocurrency markets? The case of Bitcoin. Journal of Economics and Business, [S. l.], v. 108, p. 105886, 2020.
+AHMED, Walid M. A. Is there a risk-return trade-off in cryptocurrency markets? The case of Bitcoin. Journal of Economics and Business, v. 108, art. 105886, 2020.
 
-AL-MANSOUR, Bashar Yaser; ELKRGHLI, Sabri; ALMANSOUR, Ammar Yaser. Behavioral finance factors and investment decisions: A mediating role of risk perception. Cogent Economics & Finance, [S. l.], v. 11, n. 2, p. 1-20, 2023.
+AL-MANSOUR, Bashar Yaser; ELKRGHLI, Sabri; ALMANSOUR, Ammar Yaser. Behavioral finance factors and investment decisions: A mediating role of risk perception. Cogent Economics & Finance, v. 11, n. 2, p. 1-20, 2023.
 
-ALZUBAIDI, Laith et al. Review of deep learning: concepts, CNN architectures, challenges, applications, future directions. Journal of Big Data, v. 8, art. 53, mar. 2021. DOI: https://doi.org/10.1186/s40537-021-00444-8.
+ALZUBAIDI, Laith et al. Review of deep learning: concepts, CNN architectures, challenges, applications, future directions. Journal of Big Data, v. 8, art. 53, 2021. DOI: 10.1186/s40537-021-00444-8.
 
-AQUART, Patrick; KÖPKE, Sven; WEINHARDT, Christof. Machine learning for cryptocurrency market prediction and trading. The Journal of Finance and Data Science, v. 8, p. 331–352, 2022.
+AQUART, Patrick; KÖPKE, Sven; WEINHARDT, Christof. Machine learning for cryptocurrency market prediction and trading. The Journal of Finance and Data Science, v. 8, p. 331-352, 2022.
 
-BABAEI, G.; GIUDICI, P.; RAFFINETTI, E. Explainable artificial intelligence for crypto asset allocation. Finance Research Letters, v. 47, 102941, 2022.
-
-BALLIS, A.; DRAKOS, K. Testing for herding in the cryptocurrency market. Finance Research Letters, v. 33, 101210, 2020.
-
-BAUR, D. G.; HOANG, L. T. A crypto safe haven against Bitcoin. Finance Research Letters, v. 38, 101431, 2021.
+BABAEI, G.; GIUDICI, P.; RAFFINETTI, E. Explainable artificial intelligence for crypto asset allocation. Finance Research Letters, v. 47, art. 102941, 2022.
 
 BAKRY, Walid et al. Bitcoin and Portfolio Diversification: A Portfolio Optimization Approach. Journal of Risk and Financial Management, v. 14, art. 282, 2021.
 
-BRAUNEIS, A.; MESTEL, R. Cryptocurrency-portfolios in a mean-variance framework. Finance Research Letters, v. 28, p. 259-264, 2019.
+BALLIS, A.; DRAKOS, K. Testing for herding in the cryptocurrency market. Finance Research Letters, v. 33, art. 101210, 2020.
+
+BAUR, D. G.; HOANG, L. T. A crypto safe haven against Bitcoin. Finance Research Letters, v. 38, art. 101431, 2021.
 
 BELCASTRO, Loris et al. Enhancing Cryptocurrency Price Forecasting by Integrating Machine Learning with Social Media and Market Data. Algorithms, v. 16, n. 12, art. 542, 2023.
 
+BRAUNEIS, A.; MESTEL, R. Cryptocurrency-portfolios in a mean-variance framework. Finance Research Letters, v. 28, p. 259-264, 2019. DOI: 10.1016/j.frl.2018.05.008.
+
 CHARFEDDINE, Lanouar; BENLAGHA, Noureddine; MAOUCHI, Youcef. Investigating the dynamic relationship between cryptocurrencies and conventional assets: Implications for financial investors. Economic Modelling, v. 85, p. 198-217, 2020.
 
-CHAWEEWANCHON, Apichat; CHAYSIRI, Rujira. Markowitz Mean-Variance Portfolio Optimization with Predictive Stock Selection Using Machine Learning. International Journal of Financial Studies, v. 10, art. 64, 2022.
+CHAWEEWANCHON, Apichat; CHAYSIRI, Rujira. Markowitz Mean-Variance Portfolio Optimization with Predictive Stock Selection Using Machine Learning. International Journal of Financial Studies, v. 10, n. 3, art. 64, 2022. DOI: 10.3390/ijfs10030064.
+
+CHEN, Wei et al. Mean-variance portfolio optimization using machine learning-based stock price prediction. Applied Soft Computing, v. 100, art. 106943, 2021. DOI: 10.1016/j.asoc.2020.106943.
 
 CHEVALLIER, J.; GUÉGAN, D.; GOUTTE, S. Is It Possible to Forecast the Price of Bitcoin? Forecasting, v. 3, n. 2, p. 377-420, 2021.
 
 CLARA, Alexandra. A Survey of Applications, Challenges, and Future Directions in Machine Learning. ResearchGate, ago. 2024. Disponível em: https://www.researchgate.net. Acesso em: 13 out. 2025.
 
-CORBET, S.; LARKIN, C.; LUCEY, B. The contagion effects of the COVID-19 pandemic: Evidence from gold and cryptocurrencies. Finance Research Letters, v. 35, 101554, 2020.
+CORBET, S.; LARKIN, C.; LUCEY, B. The contagion effects of the COVID-19 pandemic: Evidence from gold and cryptocurrencies. Finance Research Letters, v. 35, art. 101554, 2020.
 
 DORAN, M. D. A forensic look at bitcoin cryptocurrency. 2014. Tese (Doutorado) – Utica College, Nova Iorque, 2014.
 
-FAKHFEKH, M.; JERIBI, A. Volatility dynamics of crypto-currencies’ returns: Evidence from asymmetric and long memory GARCH models. Research in International Business and Finance, v. 51, 101075, 2020.
+DU, Juan. Mean-variance portfolio optimization with deep learning based-forecasts for cointegrated stocks. Expert Systems with Applications, v. 201, art. 117005, 2022. DOI: 10.1016/j.eswa.2022.117005.
+
+FAKHFEKH, M.; JERIBI, A. Volatility dynamics of crypto-currencies’ returns: Evidence from asymmetric and long memory GARCH models. Research in International Business and Finance, v. 51, art. 101075, 2020.
 
 FAMA, E. F. Efficient Capital Markets: A Review of Theory and Empirical Work. The Journal of Finance, 1970.
 
 FANG, F. et al. Cryptocurrency trading: a comprehensive survey. Financial Innovation, v. 8, n. 13, 2022.
 
+GIANTSIDI, Sofia; TARANTOLA, Claudia. Deep learning for financial forecasting: A review of recent trends. International Review of Economics & Finance, v. 104, art. 104719, 2025. DOI: 10.1016/j.iref.2025.104719.
+
 GIL, Antonio Carlos. Como elaborar projetos de pesquisa. 5. ed. São Paulo: Atlas, 2010.
 
 GITMAN, L. J. Principles of managerial finance. 10. ed. Boston: Addison-Wesley, 2004.
 
-GOODELL, John W.; GOUTTE, Stephane. Diversifying equity with cryptocurrencies during COVID-19. International Review of Financial Analysis, v. 76, p. 101781, 2021.
+GOODELL, John W.; GOUTTE, Stephane. Diversifying equity with cryptocurrencies during COVID-19. International Review of Financial Analysis, v. 76, art. 101781, 2021.
 
 HARWICK, C. Cryptocurrency and the problem of intermediation. The Independent Review, v. 20, n. 4, p. 569-588, 2016.
 
-JELESKOVIC, Vahidin et al. Cryptocurrency portfolio optimization: Utilizing a GARCH-copula model within the Markowitz framework. Corporate Accounting & Finance, 2024. DOI: https://doi.org/10.1002/jcaf.22721.
+JANG, J.; SEONG, N. Y. Deep reinforcement learning for stock portfolio optimization by connecting with modern portfolio theory. Expert Systems with Applications, v. 218, art. 119556, 2023. DOI: 10.1016/j.eswa.2023.119556.
+
+JELESKOVIC, Vahidin et al. Cryptocurrency portfolio optimization: Utilizing a GARCH-copula model within the Markowitz framework. Journal of Corporate Accounting & Finance, v. 35, n. 4, p. 139-155, 2024. DOI: 10.1002/jcaf.22721.
+
+JIANG, Yifu; OLMO, José; ATWI, Majed. Deep reinforcement learning for portfolio selection. Global Finance Journal, v. 62, art. 101016, 2024. DOI: 10.1016/j.gfj.2024.101016.
 
 KELLY, Bryan T.; XIU, Dacheng. Financial Machine Learning. Working Paper No. 2023-100. Chicago: Becker Friedman Institute, University of Chicago, jul. 2023. Disponível em: https://bfi.uchicago.edu/wp-content/uploads/2023/07/BFI_WP_2023-100.pdf. Acesso em: 13 out. 2025.
+
+LÓPEZ DE PRADO, Marcos et al. Enhancing Markowitz’s portfolio selection paradigm with machine learning. Annals of Operations Research, v. 346, n. 1, p. 319-340, 2025. DOI: 10.1007/s10479-024-06257-1.
+
+MA, Y.; HAN, R.; WANG, W. Portfolio optimization with return prediction using deep learning and machine learning. Expert Systems with Applications, v. 165, art. 113973, 2021. DOI: 10.1016/j.eswa.2020.113973.
 
 MITCHELL, T. M. Machine Learning. New York: McGraw-Hill, 1997. 432 p. ISBN 0-07-042807-7.
 
@@ -384,24 +398,34 @@ MOLNAR, Christoph. Interpretable Machine Learning: A Guide for Making Black Box 
 
 NARAYANAN, A. et al. Bitcoin and cryptocurrency technologies: a comprehensive introduction. Princeton: Princeton University Press, 2016.
 
-NEUGEBAUER, Jakub. Portfolio optimization with robust stochastic dominance testing: A genetic algorithm approach. European Journal of Operational Research, [S. l.], v. 333, p. 519-533, 2026.
+NEUGEBAUER, Jakub. Portfolio optimization with robust stochastic dominance testing: A genetic algorithm approach. European Journal of Operational Research, v. 333, p. 519-533, 2026.
 
-PAIVA, Felipe Dias et al. Decision-making for financial trading: A fusion approach of machine learning and portfolio selection. Expert Systems With Applications, [S. l.], v. 115, p. 635-655, 2019.
+PADHI, Dushmanta Kumar et al. An Intelligent Fusion Model with Portfolio Selection and Machine Learning for Stock Market Prediction. Computational Intelligence and Neuroscience, v. 2022, art. 7588303, 2022. DOI: 10.1155/2022/7588303.
 
 PAIVA, Felipe Dias. Redes neurais para decisões no mercado de ações brasileiro. 2014. 118 f. Tese (Doutorado em Administração) – Universidade Federal de Lavras, Lavras, 2014.
 
-PARK, S.; YANG, J.-S. Intelligent cryptocurrency trading system using integrated AdaBoost-LSTM with market turbulence knowledge. Applied Soft Computing, v. 145, 110568, 2023.
+PAIVA, Felipe Dias et al. Decision-making for financial trading: A fusion approach of machine learning and portfolio selection. Expert Systems with Applications, v. 115, p. 635-655, 2019. DOI: 10.1016/j.eswa.2018.08.003.
+
+PARK, S.; YANG, J.-S. Intelligent cryptocurrency trading system using integrated AdaBoost-LSTM with market turbulence knowledge. Applied Soft Computing, v. 145, art. 110568, 2023.
 
 RICHARDSON, Roberto Jarry. Pesquisa social: métodos e técnicas. 3. ed. São Paulo: Atlas, 1999.
 
-SARKER, I. H. Machine Learning: Algorithms, Real-World Applications and Research Directions. SN Computer Science, v. 2, art. 160, 2021. DOI: https://doi.org/10.1007/s42979-021-00592-x.
+SARKER, I. H. Machine Learning: Algorithms, Real-World Applications and Research Directions. SN Computer Science, v. 2, art. 160, 2021. DOI: 10.1007/s42979-021-00592-x.
 
 SCHERBINA, A. Asset Price Bubbles: A Selective Survey. IMF Working Paper WP/13/45, fev. 2013.
 
 SEBASTIÃO, H.; GODINHO, P. Forecasting and trading cryptocurrencies with machine learning under changing market conditions. Financial Innovation, v. 7, n. 3, 2021.
 
-WANG, G.-J.; MA, X.-Y.; WU, H.-Y. Are stablecoins truly diversifiers, hedges, or safe havens against traditional cryptocurrencies as their name suggests? Research in International Business and Finance, v. 54, 101225, 2020.
+ŚLUSARCZYK, Damian; ŚLEPACZUK, Robert. Optimal Markowitz portfolio using returns forecasted with time series and machine learning models. Journal of Big Data, v. 12, art. 127, 2025. DOI: 10.1186/s40537-025-01164-z.
 
-WEI, Mingzhe; SERMPINIS, Georgios; STASINAKIS, Charalampos. Forecasting and trading Bitcoin with machine learning techniques and a hybrid volatility/sentiment leverage. Journal of Forecasting, v. 42, n. 4, p. 852–871, 2023.
+SUTIENE, Kristina et al. Enhancing portfolio management using artificial intelligence: literature review. Frontiers in Artificial Intelligence, v. 7, art. 1371502, 2024. DOI: 10.3389/frai.2024.1371502.
 
-UMAR, Muhammad; SU, Chi-Wei; RIZVI, Syed Kumail Abbas; SHAO, Xue-Feng. Bitcoin: A safe haven asset and a winner amid political and economic uncertainties in the US?. Technological Forecasting and Social Change, v. 167, p. 120680, 2021.
+UMAR, Muhammad; SU, Chi-Wei; RIZVI, Syed Kumail Abbas; SHAO, Xue-Feng. Bitcoin: A safe haven asset and a winner amid political and economic uncertainties in the US?. Technological Forecasting and Social Change, v. 167, art. 120680, 2021.
+
+WANG, G.-J.; MA, X.-Y.; WU, H.-Y. Are stablecoins truly diversifiers, hedges, or safe havens against traditional cryptocurrencies as their name suggests? Research in International Business and Finance, v. 54, art. 101225, 2020.
+
+WANG, Wuyu et al. Portfolio formation with preselection using deep learning from long-term financial data. Expert Systems with Applications, v. 143, art. 113042, 2020. DOI: 10.1016/j.eswa.2019.113042.
+
+WEI, Mingzhe; SERMPINIS, Georgios; STASINAKIS, Charalampos. Forecasting and trading Bitcoin with machine learning techniques and a hybrid volatility/sentiment leverage. Journal of Forecasting, v. 42, n. 4, p. 852-871, 2023.
+
+ZOUAOUI, Habib; NAAS, Meryem-Nadjat. Portfolio Optimization Based on MPT-LSTM Neural Networks: A case study of Cryptocurrency Markets. Finance, Accounting and Business Analysis, v. 7, n. 1, p. 82-98, 2025. DOI: 10.37075/FABA.2025.1.07.

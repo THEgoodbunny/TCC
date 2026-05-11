@@ -1,0 +1,215 @@
+Aqui está o **pacote final completo** para você levar ao ChatGPT. Conforme solicitado, aloquei **absolutamente todas** as citações diretas que extraímos nas rodadas anteriores e organizei as informações estritamente dentro da estrutura de 8 tópicos para cada uma das quatro subseções.
+
+2.5.1 Estudos sobre machine learning aplicado à otimização de portfólios:
+
+	**1. Lista dos artigos usados**
+	* Chen et al. (2021)
+	* Ma, Han e Wang (2021)
+	* Wang et al. (2020)
+	* Padhi et al. (2022)
+	* Paiva et al. (2019)
+
+	**2. Objetivo da subseção**
+	Mostrar que a literatura tem usado *machine learning* para prever retornos/preços, selecionar ativos promissores e melhorar a construção de portfólios.
+
+	**3. Principais ideias que precisam aparecer no texto**
+	* A construção do portfólio está sendo dividida na literatura em duas fases: previsão preditiva (IA) e otimização/alocação matemática (MV).
+	* A etapa de pré-seleção de ativos usando algoritmos filtra o ruído do mercado e garante a entrada de ativos de alta qualidade.
+	* Modelos de *machine learning* e *deep learning* possuem superioridade preditiva em relação aos modelos de séries temporais tradicionais, justificando sua integração.
+
+	**4. Principais resultados dos estudos**
+	* A abordagem que une a seleção prévia por *machine learning* e alocação por Média-Variância (MV) supera consistentemente os métodos tradicionais sem previsão e portfólios de peso igual (1/N).
+	* Estratégias preditivas (como LSTM, Random Forest e XGBoost) aprimoraram as métricas de retorno cumulativo, retorno ajustado ao risco e Índice de Sharpe.
+
+	**5. Limitações ou ressalvas importantes**
+	* Altas taxas de *turnover* (rotatividade das carteiras) geram custos de transação que erodem parte significativa dos lucros.
+	* A maioria dos modelos foca em apenas um mercado específico (ex: apenas mercado chinês) e usa apenas a variância para gerenciar o risco, ignorando métricas como VaR e CVaR.
+
+	**6. Relação com meu anteprojeto**
+	Fornece a validação empírica e a estrutura metodológica base do anteprojeto: comprova que a técnica de separar a modelagem em "previsão por *Machine Learning*" e "alocação por Média-Variância" funciona na prática e já é uma frente sólida.
+
+	**7. Citações diretas selecionadas com página**
+	* "In this paper, a novel portfolio construction approach is developed using a hybrid model based on machine learning for stock prediction and mean–variance (MV) model for portfolio selection." (CHEN et al., 2021, p. não identificado na fonte).
+	* "In the second phase, stocks with higher potential returns are selected according to each stock’s predicted prices, and the MV model is employed for allocating the investment proportion of the portfolio." (CHEN et al., 2021, p. não identificado na fonte).
+	* "Using the Shanghai Stock Exchange as the study sample, the obtained results demonstrate that the proposed method is superior to traditional ways (without stock prediction) and benchmarks in terms of returns and risks." (CHEN et al., 2021, p. não identificado na fonte).
+	* "Integrating return prediction of traditional time series models in portfolio formation can improve the performance of original portfolio optimization model. Since machine learning and deep learning models have shown overwhelming superiority than time series models, this paper combines return prediction in portfolio formation with two machine learning models [...] and three deep learning models [...]" (MA; HAN; WANG, 2021, p. não identificado na fonte).
+	* "To be specific, this paper first applies these prediction models for stock preselection before portfolio formation. Then, this paper incorporates their predictive results in advancing mean–variance (MV) and omega portfolio optimization models." (MA; HAN; WANG, 2021, p. não identificado na fonte).
+	* "Experimental results show that MV and omega models with RF return prediction, i.e., RF+MVF and RF+OF, outperform the other models." (MA; HAN; WANG, 2021, p. não identificado na fonte).
+	* "The primary purpose of this paper is to construct an investment decision-making model for individual investors that combines the deep learning LSTM method which concentrates on capturing the long-term dependencies of the returns on assets and the Markowitz’s MV method to form optimal portfolios." (WANG et al., 2020, p. 2).
+	* "Unlike the majority of the methods which aim to improve the existing portfolio management models, this paper focuses on the preliminary phase of portfolio construction, i.e. the preselection of assets." (WANG et al., 2020, p. 2).
+	* "Specifically, our study demonstrates that the proposed model LSTM + MV is able to help individual investors obtain remarkable outcomes for the cumulative returns as well as risk-adjusted return for the majority of periods." (WANG et al., 2020, p. 16).
+	* "+e purpose of this study was to develop an online learning framework based on machine learning that can reduce investment risk (by constructing an optimal port-folio) and make a predictive judgement regarding the di-rection of the selected indices." (PADHI et al., 2022, p. 2).
+	* "First, the mean-variance approach is utilized to select probable stocks (portfolio construction), thereby minimizing investment risk. Second, we present an online machine learning technique, a combination of “perceptron” and “passive-aggressive algorithm,” to predict future stock pricemovements for the upcoming period." (PADHI et al., 2022, p. 1).
+	* "Our aftermath reveals that learning-based ensemble strategies with portfolio selection are eective in comparison." (PADHI et al., 2022, p. 1).
+
+	**8. Dados bibliográficos básicos dos artigos**
+	* CHEN, W. et al. Mean–variance portfolio optimization using machine learning-based stock price prediction. *Applied Soft Computing*, v. 100, p. 106943, 2021.
+	* MA, Y.; HAN, R.; WANG, W. Portfolio optimization with return prediction using deep learning and machine learning. *Expert Systems with Applications*, v. 165, p. 113973, 2021.
+	* WANG, W. et al. Portfolio formation with preselection using deep learning from long-term financial data. *Expert Systems with Applications*, v. 143, p. 113042, 2020.
+	* PADHI, D. K. et al. An Intelligent Fusion Model with Portfolio Selection and Machine Learning for Stock Market Prediction. *Computational Intelligence and Neuroscience*, 2022.
+	* PAIVA, F. D. et al. Decision-making for financial trading: a fusion approach of machine learning and portfolio selection. *Expert Systems with Applications*, v. 115, 2019.
+    
+2.5.2 Estudos sobre média-variância e Markowitz em criptoativos:
+
+    **1. Lista dos artigos usados**
+    * Brauneis e Mestel (2019)
+    * Jeleskovic et al. (2024)
+    * Zouaoui e Naas (2025)
+
+    **2. Objetivo da subseção**
+    Conectar diretamente a teoria de Markowitz ao mercado de criptoativos, destacando volatilidade, diversificação, risco-retorno, Índice de Sharpe e limitações práticas das carteiras de criptomoedas.
+
+    **3. Principais ideias que precisam aparecer no texto**
+    * Criptomoedas oferecem potencial de redução de riscos quando misturadas entre si ou com ativos tradicionais.
+    * O modelo puro de Markowitz falha severamente no mercado cripto, pois suas premissas de retornos normais e correlações constantes não resistem à extrema volatilidade do setor.
+    * A diversificação ingênua com pesos iguais (1/N) frequentemente supera carteiras de criptomoedas otimizadas matematicamente via Média-Variância clássica.
+
+    **4. Principais resultados dos estudos**
+    * A combinação de criptomoedas com ativos tradicionais entrega maior Índice de Sharpe e estabilidade.
+    * Modelos puramente MV em criptoativos alocam peso em poucas moedas, geram Índices de Sharpe baixos e elevam o risco da carteira a até 39%.
+    * Redes neurais (ex: LSTM) revertem essas fraquezas e geram Índices de Sharpe muito superiores quando aplicadas à Teoria Moderna de Portfólio no mercado cripto.
+
+    **5. Limitações ou ressalvas importantes**
+    * Imaturidade estrutural do mercado e correlações dinâmicas causam *under-fitting* em modelos de risco.
+    * Os retornos das criptomoedas não são normais, quebrando o pressuposto básico de Markowitz.
+    * Extrema sensibilidade a fatores globais e macroeconômicos.
+
+    **6. Relação com meu anteprojeto**
+    Estrutura o "problema" da sua pesquisa: mostra que aplicar a Teoria Moderna do Portfólio de forma crua não funciona em criptomoedas, o que justifica e torna obrigatória a inclusão do *Machine Learning* para lidar com a volatilidade.
+
+    **7. Citações diretas selecionadas com página**
+    * "We apply the Markowitz mean-variance framework in order to assess risk-return benefits of cryptocurrency-portfolios." (BRAUNEIS; MESTEL, 2019, p. 259).
+    * "While previous studies exclusively focus on the diversification effect of adding one single CC (typically Bitcoin) to a portfolio containing traditional asset classes, we find substantial potential for risk reduction when several CC are mixed." (BRAUNEIS; MESTEL, 2019, p. 264).
+    * "In terms of the Sharpe ratio and certainty equivalent returns, the 1/N-portfolio outperforms single cryptocurrencies and more than 75% of mean-variance optimal portfolios." (BRAUNEIS; MESTEL, 2019, p. 259).
+    * "We are aware, though, of a considerable body of literature proposing alternatives to mean-variance optimization when returns are not normal." (BRAUNEIS; MESTEL, 2019, p. 260).
+    * "The optimal asset weights within the optimized portfolios are determined through the Markowitz optimization problem." (JELESKOVIC et al., 2024, p. 1).
+    * "Our analysis predominantly reveals that the portfolio comprising both cryptocurrency and traditional assets exhibits a higher Sharpe ratio from a retrospective viewpoint and demonstrates more stable performances from a prospective perspective." (JELESKOVIC et al., 2024, p. 1).
+    * "In this context, we wish to emphasize our deliberate choice of the Markowitz approach over methods based on Conditional Value at Risk - CVaR and its counterpart Expected Shortfall – ES" (JELESKOVIC et al., 2024, p. 3).
+    * "The results in these tables thus highlight in identifying the correlation structure of cryptocurrencies, with the consequence of under- fitting of the models used, due to a market which is not structurally mature and hard to predict." (JELESKOVIC et al., 2024, p. não identificado na fonte).
+    * "Modern Portfolio Theory (MPT) provides a rigorous, quantitative framework for portfolio construction that emphasizes diversification and the tradeoff between risk and return. While it has become a cornerstone of modern investment theory, its assumptions of normal returns and constant correlations can limit its practical application in volatile or non-normal market conditions." (ZOUAOUI; NAAS, 2025, p. 85).
+    * "As for the Markowitz portfolio weights, investment in most cryptocurrencies was not employed and only seven (7) were used [...] due to the limited operation of the model-based on the correlation coefficient and generating a limited number of possible portfolios, which achieved an average Sharpe index that is not motivating for investment according to the selected portfolio, estimated at 0.7978%." (ZOUAOUI; NAAS, 2025, p. 95).
+    * "[...] while the Markowitz return-risk model portfolio came with a return rate estimated at 31.15% and a risk of 39.05%." (ZOUAOUI; NAAS, 2025, p. 83).
+    * "The high risk of cryptocurrency price fluctuations can also be explained by the global conditions that the world has gone through..." (ZOUAOUI; NAAS, 2025, p. 95).
+
+    **8. Dados bibliográficos básicos dos artigos**
+    * BRAUNEIS, A.; MESTEL, R. Cryptocurrency-portfolios in a mean-variance framework. *Finance Research Letters*, v. 28, p. 259-264, 2019.
+    * JELESKOVIC, V. et al. Optimization of portfolios with cryptocurrencies: Markowitz and GARCH-Copula model approach. 2024.
+    * ZOUAOUI, H.; NAAS, M. N. Portfolio Optimization Based on MPT-LSTM Neural Networks: A case study of Cryptocurrency Markets. *Finance, Accounting and Business Analysis*, v. 7, 2025.
+
+2.5.3 Estudos híbridos entre Markowitz, machine learning, deep learning e reinforcement learning:
+
+    **1. Lista dos artigos usados**
+    * Chaweewanchon e Chaysiri (2022)
+    * Du (2022)
+    * Ślusarczyk e Ślepaczuk (2025)
+    * López de Prado et al. (2025)
+    * Jiang, Olmo e Atwi (2024)
+    * Jang e Seong (2023)
+
+    **2. Objetivo da subseção**
+    Mostrar como abordagens dinâmicas (*Machine Learning*, *Deep Learning* e *Reinforcement Learning*) têm sido conectadas à teoria de Markowitz para avançar a gestão matemática e a alocação de carteiras.
+
+    **3. Principais ideias que precisam aparecer no texto**
+    * O modelo de Markowitz sofre com alta sensibilidade a pequenos erros nas estimativas de retorno; a inteligência artificial corrige isso ajustando dinamicamente os *inputs*.
+    * Inovações recentes convertem o modelo de Média-Variância na "função de recompensa" (*reward function*) de agentes de *Reinforcement Learning* que reagem ao mercado.
+    * A literatura consolida os modelos híbridos como a evolução necessária (e não descarte) das abordagens econométricas tradicionais.
+
+    **4. Principais resultados dos estudos**
+    * Portfólios de *Deep Reinforcement Learning* (TD3, DDPG) embasados na matemática de Markowitz atingiram desempenho amplamente superior a estratégias Max-Sharpe convencionais.
+    * Previsões baseadas em redes A-LSTM e XGBoost diminuíram os *drawdowns* máximos e estabilizaram carteiras contra a volatilidade.
+    * O ML provou ser capaz de recalibrar contínua e dinamicamente os pesos de uma carteira de acordo com tendências.
+
+    **5. Limitações ou ressalvas importantes**
+    * Altíssimo custo computacional e exigência complexa de ajuste fino (*tuning*) de hiperparâmetros.
+    * Modelos sofrem riscos de focar apenas em mercados de treinamento e perder eficácia quando testados com dados futuros totalmente novos.
+
+    **6. Relação com meu anteprojeto**
+    Sustenta e chancela teoricamente o método híbrido que você está propondo, mostrando que mesclar a econometria clássica (MV) com redes avançadas (ML) é a prática validada na fronteira literária atual.
+
+    **7. Citações diretas selecionadas com página**
+    * "In this paper, we propose a novel approach to portfolio formation strategy based on a hybrid machine learning model that combines convolutional neural network (CNN) and bidirectional long short-term memory (BiLSTM) with robust input features obtained from Huber’s location for stock prediction and the Markowitz mean-variance (MV) model for optimal portfolio construction." (CHAWEEWANCHON; CHAYSIRI, 2022, p. 1).
+    * "Specifically, this study first applies a prediction method for stock preselection to ensure high-quality stock inputs for portfolio formation. Then, the predicted results are integrated into the MV model." (CHAWEEWANCHON; CHAYSIRI, 2022, p. 1).
+    * "The experiment shows that integrating preselection of stocks can improve MV performance, and the results of the proposed method show that they outperform comparison models in terms of Sharpe ratio, mean return, and risk." (CHAWEEWANCHON; CHAYSIRI, 2022, p. 1).
+    * "Because theoretical studies have commonly revealed that MV allocations are very sensitive to small forecast errors in the means and covariances [...], a growing body of literature has focused on extending Markowitz’s MV model by enhancing the estimate accuracy of the expected returns using machine learning models." (DU, 2022, p. não identificado na fonte).
+    * "Thus, the purpose of this study is to establish an MV portfolio optimization model using stationary pairs trading portfolios that can be predicted by A-LSTM networks." (DU, 2022, p. não identificado na fonte).
+    * "The empirical results show that the portfolio constructed based on the stationary portfolios in both the Chinese and the US stock markets delivers significant profits." (DU, 2022, p. não identificado na fonte).
+    * "We aim to answer whether using forecasted stock returns based on machine learning and time series models in a mean-variance portfolio framework yields better results than relying on historical returns." (ŚLUSARCZYK; ŚLEPACZUK, 2025, p. 1).
+    * "Stock returns portfolios were created using ‘raw’ historical returns and forecasted returns based on ARIMA-GARCH and the XGBoost models. Two optimization problems were concerned: global maximum information ratio and global minimum variance." (ŚLUSARCZYK; ŚLEPACZUK, 2025, p. 1).
+    * "The results showed that by using forecasted returns, we can enhance our portfolio selection based on the Markowitz framework, but it is not a universal solution, and we have to control all the parameters and hyperparameters of selected models." (ŚLUSARCZYK; ŚLEPACZUK, 2025, p. 1).
+    * "In this paper we describe the integration of machine learning (ML) techniques into the framework of Markowitz’s portfolio selection and show how they can help advance the robust mathematical strategies necessary for modern financial markets." (LÓPEZ DE PRADO et al., 2025, p. 319).
+    * "By combining traditional econometrics with cutting-edge MLmethodologies, we show how to enhance portfolio management processes including alpha generation, risk management, and optimization of risk metrics like conditional value at risk." (LÓPEZ DE PRADO et al., 2025, p. 319).
+    * "ML offers a promising solution for addressing this limitation. It does so by facilitating a dynamic, multi-period approach to portfolio optimization. ML algorithms can continuously update the inputs for the portfolio optimization process—such as expected returns, variances, and covariances—based on recent market data and trends." (LÓPEZ DE PRADO et al., 2025, p. 333).
+    * "This study proposes an advanced model-free deep reinforcement learning (DRL) framework to construct optimal portfolio strategies in dynamic, complex, and large-dimensional financial markets." (JIANG; OLMO; ATWI, 2024, p. 1).
+    * "Our proposal combines DL and RL methods into a new DRL model that optimizes portfolio allocation. Investor risk aversion and transaction cost constraints are embedded using an extended Markowitz’s mean-variance reward function, implemented using a TD3 algorithm." (JIANG; OLMO; ATWI, 2024, p. 13).
+    * "The learning agent (i.e., investor) collects the market states to train the learning model, where the risk awareness behavior of the investor and transaction cost are input to the model through the reward function and included in the training step." (JIANG; OLMO; ATWI, 2024, p. não identificado na fonte).
+    * "As expected, the three portfolio methods based on DRL (i.e., TD3, PPO, and DDPG) achieve better performance than the traditional Max-Sharpe and MV strategies. This is because the proposed learning methods are capable of effectively searching for the optimal portfolio decision strategy in complex, uncertain, dynamic, and large-scale financial trading markets." (JIANG; OLMO; ATWI, 2024, p. não identificado na fonte).
+    * "To bridge this gap in the literature, we propose a novel deep reinforcement learning approach that combines the modern portfolio theory and a deep learning approach." (JANG; SEONG, 2023, p. 1).
+    * "To connect reinforcement learning with modern portfolio theory, we used the tensor decomposition approach, a method of processing multimodal data, to combine the inputs of two different dimensions." (JANG; SEONG, 2023, p. 2).
+    * "In addition, the proposed method dynamically changes the weight according to the market trend, unlike other state-of-the-art algorithms." (JANG; SEONG, 2023, p. 1).
+    * "The results show that the proposed method consistently demonstrates better performance and stability than the other baseline strategies. In addition, the proposed method balances state-of-the-art algorithms and dynamically allocates portfolio assets according to market trends." (JANG; SEONG, 2023, p. não identificado na fonte).
+
+    **8. Dados bibliográficos básicos dos artigos**
+    * CHAWEEWANCHON, A.; CHAYSIRI, R. Markowitz Mean-Variance Portfolio Optimization with Predictive Stock Selection Using Machine Learning. *Int. Journal of Financial Studies*, v. 10, 2022.
+    * DU, J. Mean–variance portfolio optimization with deep learning based-forecasts for cointegrated stocks. *Expert Systems with Applications*, v. 201, 2022.
+    * ŚLUSARCZYK, D.; ŚLEPACZUK, R. Optimal Markowitz portfolio using returns forecasted with time series and machine learning models. *Journal of Big Data*, v. 12, 2025.
+    * JIANG, Y.; OLMO, J.; ATWI, M. Deep reinforcement learning for portfolio selection. *Global Finance Journal*, v. 62, 2024.
+    * JANG, J.; SEONG, N. Y. Deep reinforcement learning for stock portfolio optimization by connecting with modern portfolio theory. *Expert Systems with Applications*, v. 218, 2023.
+    * LÓPEZ DE PRADO, M. et al. Enhancing Markowitz’s portfolio selection paradigm with machine learning. *Annals of Operations Research*, v. 346, 2025.
+
+2.5.4 Síntese crítica dos estudos relacionados:
+
+    **1. Lista dos artigos usados**
+    * Sutiene et al. (2024)
+    * Giantsidi e Tarantola (2025)
+    * López de Prado et al. (2025)
+
+    **2. Objetivo da subseção**
+    Comparar os estudos apresentados, sustentando uma síntese crítica sobre tendências, limitações metodológicas (como o desafio da explicabilidade) e lacunas não preenchidas.
+
+    **3. Principais ideias que precisam aparecer no texto**
+    * Modelos econométricos falham diante de dados de alta complexidade e não lineares, criando a necessidade de adoção de *Big Data* e IA.
+    * A aplicação sem ressalvas do *Machine Learning* causou o problema da "caixa-preta", e o futuro da literatura exige abordagens interpretáveis.
+    * Modelos estáticos quebram em cenários extremos ou crises, validando que ineficiências dinâmicas não podem ser ignoradas.
+
+    **4. Principais resultados dos estudos**
+    * A Inteligência Artificial processa o fluxo maciço de informações financeiras de forma infinitamente mais veloz e assertiva que modelos unicamente humanos/convencionais.
+    * *Ensembles* e métodos híbridos que usam ML antes de aplicar o modelo de Média-Variância não apenas detectam anomalias, mas reduzem drasticamente as perdas.
+
+    **5. Limitações ou ressalvas importantes**
+    * *Overfitting* (superajuste) continua sendo o maior vilão: os modelos decoram o passado mas falham na generalização de mercado fora da amostra (*out-of-sample*).
+    * Falta padronização nos testes da literatura.
+    * A alta rotatividade recomendada pelos algoritmos gera altos custos computacionais e de taxas que o investidor precisa suportar.
+
+    **6. Relação com meu anteprojeto**
+    Consolida o porquê de o seu anteprojeto ser relevante: ele se posiciona nas lacunas exatas de tentar fundir a IA para resolver a incapacidade de generalização do Markowitz, mas sem criar um *Deep Learning* "livre" irresponsável, mantendo a disciplina matemática do portfólio.
+
+    **7. Citações diretas selecionadas com página**
+    * "In recent years, artificial intelligence (AI) has disrupted most industries, including the financial sector. AI techniques can contribute to portfolio management in many ways, improving the shortcomings of classical portfolio construction techniques and extending the opportunities to generate additional alpha." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "Time series forecasting is important in any portfolio management task. AI algorithms have performed significantly better than traditional methods, especially in recent years with the introduction of deep learning methods." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "Indeed, determining evolving market conditions is mainly linked to capturing market inefficiencies to identify future performance. This is where the usefulness of the application of AI arises." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "[...] the debate that has only just begun is how most ML approaches suffer from black-box problem, which is part of the agenda in increasing finance group discussions arising XAI as a key tool for Customers, Regulators, Practitioners and Risk Managers." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "So, it seems that much work still has to be done to retain control and safety, maintain trust and ethics, and comply with accountability and regulation." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "The magic of AI is its ability to process big data at speed and accuracy that is not achievable by humans or conventional methods, to learn from the data and its mistakes, and to evolve and cope with high-complexity tasks." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "The belief that accuracy must be sacrificed for interpretability is inaccurate, and it explains the problems that have resulted from the use of black box models for high-stakes decisions throughout society, mainly in the finance domain." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "AI, particularly in High-Frequency Trading (HFT), generally introduces greater complexity to conventional algorithmic trading, notably in highly automated markets such as equities and FX." (SUTIENE et al., 2024, p. não identificado na fonte).
+    * "Financial markets generate massive streams of complex, non-stationary data, creating both challenges and opportunities for predictive modeling. [...] Traditional econometric and statistical models often struggle to capture the nonlinear relationships, high volatility, and intricate temporal patterns inherent in financial data." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "A persistent challenge in financial DL research is the lack of standardized evaluation protocols [...] Differences in dataset quality, preprocessing, and validation strategies, such as using clean versus noisy data or applying random splits that inadvertently introduce look-ahead bias, undermine the comparability of results and increase the risk of overfitting." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "Computational considerations: While complex hybrid models can enhance forecasting accuracy, they also introduce significant computational costs. This can limit real-time applicability and deployment on resource-constrained platforms, highlighting the importance of balancing model complexity with efficiency." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "Superficial explainability without domain validation: While XAI methods such as SHapley Additive exPlanations (SHAP) [...] and Local Interpretable Model-agnostic Explanations (LIME) [...] are gaining traction, they are seldom coupled with domain-specific validation practices." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "Lack of robustness evaluation: Few models are tested under adverse market conditions or subjected to stress scenarios, raising questions about model resilience in real-world conditions where regime shifts, and extreme events are common." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "This improved performance, however, often comes at the expense of increased computational requirements and model complexity, necessitating careful model design, tuning, and evaluation." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "The COVID-19 pandemic revealed the limitations of existing models, especially those that relied on historical data and stable market conditions, highlighting the need for more adaptive and resilient approaches..." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "In short, the future of DL in finance lies not in ever-deeper architectures, but in designing context-aware, interpretable, and adaptive systems that align with the practical constraints and uncertainties of real-world markets." (GIANTSIDI; TARANTOLA, 2025, p. não identificado na fonte).
+    * "The complexity of today’s markets, with a seemingly infinite amount of data being generated at rapid speeds, has required investors to look for new mathematical arrows to deploy in their methodological quivers. Indeed, investors have recognized for some time that the methods of data science and machine learning (ML) can be a valuable addition to their investment process." (LÓPEZ DE PRADO et al., 2025, p. 320).
+    * "By combining traditional econometrics with cutting-edge ML methodologies, we show how to enhance portfolio management processes including alpha generation, risk management, and optimization of risk metrics like conditional value at risk." (LÓPEZ DE PRADO et al., 2025, p. 319).
+    * "Overfitting remains a significant challenge in developing reliable and effective ML-based portfolio strategies that are designed to perform well across diverse market conditions and over time." (LÓPEZ DE PRADO et al., 2025, p. não identificado na fonte).
+    * "Traditional mean–variance models used in portfolio optimization encounter a similar problem. These models can perform well with historical return data but struggle to generalize effectively to new data." (LÓPEZ DE PRADO et al., 2025, p. não identificado na fonte).
+    * "By continuously monitoring and processing news feeds and other text sources, these models can alert portfolio managers about events that require immediate action or consideration, thus potentially enhancing portfolio performance." (LÓPEZ DE PRADO et al., 2025, p. 336).
+    * "ML’s capacity to handle vast and complex datasets allows for more dynamic and informed decision-making in portfolio construction." (LÓPEZ DE PRADO et al., 2025, p. 319).
+    * "When this occurs, it makes ML tools less effective for constructing portfolios expected to perform robustly in real-world market conditions. Despite the availability of techniques like data splitting, regularization, and cross-validation to mitigate overfitting, tackling the overfitting issue effectively remains a formidable challenge." (LÓPEZ DE PRADO et al., 2025, p. 336).
+    * "Essentially, a portfolio optimized using the mean–variance approach might show excellent performance based on past data but can underperform when faced with future market conditions." (LÓPEZ DE PRADO et al., 2025, p. 336).
+
+    8. Dados bibliográficos básicos dos artigos**
+        * SUTIENE, K. et al. Enhancing portfolio management using artificial intelligence: literature review. *Frontiers in Artificial Intelligence*, v. 7, p. 1371502, 2024.
+        * GIANTSIDI, S.; TARANTOLA, C. Deep learning for financial forecasting: A review of recent trends. *International Review of Economics and Finance*, v. 104, p. 104719, 2025.
+        * LÓPEZ DE PRADO, M. et al. Enhancing Markowitz’s portfolio selection paradigm with machine learning. *Annals of Operations Research*, v. 346, p. 319-340, 2025.

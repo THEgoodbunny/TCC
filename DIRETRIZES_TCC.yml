@@ -1,0 +1,329 @@
+ APIS:
+     Elsevier API key: 2d122c5e31b99f7521242859d8982a37
+     OpenAlex API: https://api.openalex.org/works
+     Zotero API: KivE496iOEpO2pAJ0D2hHhdq
+     
+BUSCA METÓDICA DE REFERENCIAS:
+    1º: Advanced Academic Literature Search
+    2º: Consensus
+    3º: Buscas Pontuais
+
+SEÇÕES REFERENCIAL TEÓRICO:
+    Introdução:
+    
+        -> Decisões de investimentos / tomada de decisão: * ("decision making" OR "investment decisions") AND ("surplus units" OR "surplus agents" OR "savers") AND "financial market" #OK
+            -> 2 lados da moeda: poupadores e tomadores de recurso
+            -> Pessoas tem que buscar investimento (justificativa do porquê buscar investimento em cripto): 1 ½ pag
+        Conceitos a serem abordados: 
+            [
+            - Por que pessoas investem
+            - Como pessoas investem
+            - Um pouco sobre criptomoedas
+            - Por que quando e como investir em criptomoedas
+            ] #OK
+        
+    Referenciais: 
+    # Min 8 autores
+    # Sem mínimo de pags, mas vamos falar ao menos umas 3 por tópico
+        -> Cripto ativos: * cryptoassets OR cryptocurrencies OR "digital assets" 
+         Conceitos a serem abordados:
+        [
+         - Conceito, origem e funcionamento dos criptoativos
+         - Criptomoedas como ativos financeiros
+         - Características do mercado de criptoativos
+         - Criptoativos, diversificação e correlação com mercados tradicionais
+         - Previsibilidade e eficiência no mercado de criptomoedas
+         - Limitações e desafios do investimento em criptoativos
+        ]
+        
+        -> Machine learning (Machine learning + crypto|ações): * crypto AND ("machine learning" OR "deep learning" OR "Adaboost") #OK
+            -> Deixar amplo
+            -> ADABOOST
+            Conceitos a serem abordados:
+            [
+             - Uma breve exposição sobre o machine learning e seu contexto atual
+             - o modelo ADABOOST, seu funcionamento e características
+             - O machine learning nas finanças e criptomoedas
+            ]
+
+        -> Teoria de portfólio (portfolio + cripto|ações): 
+        * crypto AND ("Markowitz portfolio" OR "mean-variance optimization" OR "modern portfolio theory")
+
+            [
+            2.X Teoria de portfólio e modelo média-variância
+
+            2.X.1 Teoria moderna de portfólio e relação risco-retorno
+            2.X.2 Modelo média-variância, diversificação e fronteira eficiente
+            2.X.3 Otimização de carteiras e limitações do modelo
+            2.X.4 Aplicações do modelo média-variância em criptoativos
+            ]
+            
+        #MÍNIMO 15 REFERENCIAS
+        -> Estudos relacionados (só artigos) (Cripto|ações + modern portifolio theory(Markowitz) + machine learning): * crypto AND "machine learning" AND ("portfolio optimization" OR "hybrid approach")
+            --- QUERY 2 ---
+
+            ("cryptocurrency" OR "cryptocurrencies" OR "cryptoasset" OR "cryptoassets" OR "digital asset" OR "digital assets" OR "Bitcoin" OR "Ethereum")
+            AND
+            ("Markowitz" OR "mean-variance" OR "mean variance" OR "modern portfolio theory" OR "efficient frontier" OR "minimum variance portfolio")
+            AND
+            ("machine learning" OR "deep learning" OR "AdaBoost" OR "boosting" OR "ensemble learning" OR "predictive model" OR "forecasting model")
+
+
+            --- QUERY 6 ---
+
+            ("Markowitz" OR "mean-variance" OR "mean variance" OR "modern portfolio theory" OR "efficient frontier")
+            AND
+            ("machine learning" OR "deep learning" OR "artificial intelligence" OR "AdaBoost" OR "boosting" OR "ensemble learning" OR "forecasting model" OR "predictive model")
+            AND
+            ("portfolio optimization" OR "portfolio selection" OR "asset allocation")
+
+
+            --- QUERY 9 ---
+
+            ("ensemble learning" OR "boosting" OR "AdaBoost" OR "gradient boosting" OR "XGBoost" OR "random forest")
+            AND
+            ("financial forecasting" OR "return prediction" OR "price prediction" OR "stock prediction" OR "volatility forecasting")
+            AND
+            ("portfolio optimization" OR "portfolio selection" OR "asset allocation" OR "investment decision")
+     
+PROMPT GERAÇÃO:
+    vamos la , esse é o meu anteprojeto, eu preciso de criar as seções dele (2.1,2.2...) estamos agora na 2.4, foque somente nela
+
+    Aprenda os padrões de formatação para referencias e citações
+
+    eu quero dividir a parte 2.4 em:
+        | Subseção                                                | Tema                                                                                             | Função no referencial                                                                      |
+        | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+        | **2.X.1 Fundamentos da teoria moderna de portfólio**    | Origem da teoria, racionalidade do investidor, relação risco-retorno                             | Apresentar Markowitz e explicar por que portfólio não é só escolher ativos individualmente |
+        | **2.X.2 Modelo média-variância de Markowitz**           | Retorno esperado, variância, covariância e risco da carteira                                     | Explicar o núcleo matemático/conceitual do modelo                                          |
+        | **2.X.3 Diversificação e fronteira eficiente**          | Combinação de ativos, redução do risco não sistemático, carteiras eficientes                     | Mostrar como a diversificação melhora a relação risco-retorno                              |
+        | **2.X.4 Otimização de carteiras e restrições práticas** | Pesos dos ativos, minimização da variância, maximização do retorno, restrições de alocação       | Aproximar a teoria do uso empírico/computacional                                           |
+        | **2.X.5 Limitações do modelo média-variância**          | Sensibilidade a estimativas, normalidade dos retornos, instabilidade, risco medido por variância | Criar espaço crítico para justificar modelos alternativos ou complementares                |
+        | **2.X.6 Aplicação da média-variância em criptoativos**  | Alta volatilidade, correlação com ativos tradicionais, diversificação com cripto                 | Conectar Markowitz diretamente ao seu tema                                                 |
+
+
+    o que eu quero agora é:
+
+    1 - crie citações DIRETAS com base nos artigos enviados para cada subseção, o máximo que voce conseguir
+    É SO PRA CRIAR CITAÇAO DIRETA, FRASE TRANSCRITA COM "" E NOME DOS AUTORES E ANO DE PUBLICAÇÃO E PAGINA, SÓ ISSO
+    
+    2 - Vamos la, agora ta na hora de escrever, começando na primeira subseção, faça o texto dessa subseção utilizando as citações, tudo tem que estar vinculado a uma citação, eu não tenho autonomia para inventar nada, mas transforme as citações todas em citações indiretas, traduza para o portugues
+    MODELO CITAÇÃO INDIRETA:
+        6.2 Citação indireta
+        Nas citações indiretas, as informações e ideias são apenas baseadas no texto
+        consultado, mas não são transcritas com as mesmas palavras do(s) autor(es). Nesse
+        caso, a menção da(s) página(s) é opcional. Exemplos:
+        (1)
+        Freire (2008) ressalta a importância de se conhecer o contexto, o espaço do
+        outro, para ter condições de se comunicar com ele.
+        (2)
+        A ironia seria assim uma forma implícita de heterogeneidade mostrada, conforme
+        a classificação proposta por Authier-Reiriz (1982).
+        (3)
+        Diversos autores salientam a importância do “acontecimento desencadeador”
+        no início de um processo de aprendizagem (CROSS, 1984; KNOX, 1986; MEZIROW,
+        1991).
+        
+    3 - crie referencias dos artigos utilizados
+    
+PROMPT GERAÇÃO — SEÇÃO 2.5 ESTUDOS RELACIONADOS:
+
+    Vamos lá, esse é o meu anteprojeto em docx. Eu preciso criar as seções do referencial teórico. Estamos agora na seção 2.5 — Estudos Relacionados. Foque somente nela.
+
+    Tema do anteprojeto:
+
+    DIVERSIFICAÇÃO DE PORTFÓLIO EM CRIPTOATIVOS: UMA ABORDAGEM HÍBRIDA DE OTIMIZAÇÃO MÉDIA-VARIÂNCIA E MACHINE LEARNING.
+
+    Aprenda os padrões de formatação do meu anteprojeto, especialmente:
+    - estilo dos títulos e subtítulos;
+    - forma das citações diretas e indiretas;
+    - padrão das referências;
+    - linguagem acadêmica já utilizada;
+    - normas aparentes de ABNT.
+
+    Use somente os artigos enviados. Não invente informações. Não use artigos externos.
+
+    A seção 2.5 será dividida assim:
+
+    2.5 Estudos Relacionados
+
+    2.5.1 Estudos sobre machine learning aplicado à otimização de portfólios
+    2.5.2 Estudos sobre média-variância e Markowitz em criptoativos
+    2.5.3 Estudos híbridos entre Markowitz, machine learning, deep learning e reinforcement learning
+    2.5.4 Síntese crítica dos estudos relacionados
+
+
+    DIVISÃO DOS ARTIGOS POR SUBSEÇÃO:
+
+    2.5.1 Estudos sobre machine learning aplicado à otimização de portfólios
+    
+
+    Nesta subseção, usar os artigos que tratam de previsão, pré-seleção de ativos, machine learning e formação/otimização de portfólios, mesmo quando não são especificamente sobre criptoativos.
+
+    Artigos principais:
+
+    - Chen et al. (2021) — Mean–variance portfolio optimization using machine learning-based stock price prediction.
+    - Ma, Han e Wang (2021) — Portfolio optimization with return prediction using deep learning and machine learning.
+    - Wang et al. (2020) — Portfolio formation with preselection using deep learning from long-term financial data.
+    - Padhi et al. (2022) — An Intelligent Fusion Model with Portfolio Selection and Machine Learning for Stock Market Prediction.
+    - Paiva et al. (2019) — Decision-making for financial trading: a fusion approach of machine learning and portfolio selection.
+
+    Função da subseção:
+    Mostrar que a literatura tem usado machine learning para prever retornos/preços, selecionar ativos promissores e melhorar a construção de portfólios em comparação com abordagens tradicionais.
+
+
+    2.5.2 Estudos sobre média-variância e Markowitz em criptoativos
+
+    Nesta subseção, usar os artigos que aplicam diretamente o modelo média-variância, a teoria de Markowitz ou a diversificação de portfólios em criptomoedas/criptoativos.
+
+    Artigos principais:
+
+    - Brauneis e Mestel — Cryptocurrency-portfolios in a mean-variance framework.
+    - Jeleskovic et al. — Optimization of portfolios with cryptocurrencies: Markowitz and GARCH-Copula model approach.
+    - Zouaoui e Naas (2025) — Portfolio Optimization Based on MPT-LSTM Neural Networks: A case study of Cryptocurrency Markets.
+
+    Função da subseção:
+    Conectar diretamente a teoria de Markowitz ao mercado de criptoativos, destacando volatilidade, diversificação, risco-retorno, índice de Sharpe e limitações práticas das carteiras de criptomoedas.
+
+
+    2.5.3 Estudos híbridos entre Markowitz, machine learning, deep learning e reinforcement learning
+
+    Nesta subseção, usar os artigos que combinam explicitamente Markowitz, média-variância, machine learning, deep learning, previsão de retornos ou reinforcement learning.
+
+    Artigos principais:
+
+    - Chaweewanchon e Chaysiri (2022) — Markowitz Mean-Variance Portfolio Optimization with Predictive Stock Selection Using Machine Learning.
+    - Du (2022) — Mean–variance portfolio optimization with deep learning based-forecasts for cointegrated stocks.
+    - Ślusarczyk e Ślepaczuk (2025) — Optimal Markowitz portfolio using returns forecasted with time series and machine learning models.
+    - Jiang, Olmo e Atwi (2024) — Deep reinforcement learning for portfolio selection.
+    - Jang e Seong (2023) — Deep reinforcement learning for stock portfolio optimization by connecting with modern portfolio theory.
+    - López de Prado et al. (2025) — Enhancing Markowitz’s portfolio selection paradigm with machine learning.
+
+    Função da subseção:
+    Mostrar que a abordagem híbrida entre teoria moderna de portfólio e inteligência artificial já aparece na literatura, mas com diferentes técnicas, bases de dados, mercados e níveis de complexidade. Essa subseção deve aproximar diretamente os estudos relacionados da proposta do anteprojeto.
+
+
+    2.5.4 Síntese crítica dos estudos relacionados
+
+    Nesta subseção, usar os estudos anteriores de forma comparativa e também os artigos de revisão para consolidar a discussão.
+
+    Artigos de apoio:
+
+    - Sutiene et al. (2024) — Enhancing portfolio management using artificial intelligence: literature review.
+    - Giantsidi e Tarantola (2025) — Deep learning for financial forecasting: A review of recent trends.
+    - López de Prado et al. (2025) — Enhancing Markowitz’s portfolio selection paradigm with machine learning.
+
+    Função da subseção:
+    Comparar os estudos apresentados, destacando convergências, divergências, limitações e lacunas. A síntese deve mostrar que:
+    - há uma tendência de integrar previsão por machine learning à otimização de portfólios;
+    - os resultados frequentemente indicam melhora em retorno, risco ou índice de Sharpe;
+    - os ganhos não são universais;
+    - existem limitações relacionadas a custos de transação, rotatividade da carteira, sensibilidade a hiperparâmetros, instabilidade dos mercados, overfitting e interpretabilidade;
+    - ainda há espaço para investigar modelos híbridos aplicados especificamente a criptoativos.
+
+
+    TAREFAS:
+
+    1 — Primeiro, confirme a classificação dos artigos dentro das subseções acima.
+
+    Para cada artigo, apresente em formato de quadro:
+
+    - Autor(es) e ano;
+    - Objetivo do estudo;
+    - Método/modelo utilizado;
+    - Base de dados ou mercado analisado;
+    - Principais resultados;
+    - Relação com meu anteprojeto;
+    - Subseção em que o artigo deve entrar.
+
+    Não invente informações. Use somente o que estiver nos artigos enviados.
+
+    2 — Depois, crie citações DIRETAS com base nos artigos enviados para cada subseção.
+
+    A citação direta deve seguir este formato:
+
+    "trecho literal do artigo" (AUTOR; AUTOR, ano, p. X).
+
+    Regras:
+    - usar apenas frases realmente presentes nos artigos;
+    - manter a frase original entre aspas;
+    - informar autor(es), ano e página;
+    - selecionar citações úteis para sustentar o texto da seção;
+    - não criar citação direta artificial;
+    - não traduzir a citação direta nessa etapa;
+    - separar as citações por subseção;
+    - priorizar citações que falem sobre objetivo, método, resultado, limitação ou justificativa do estudo.
+
+    3 — Em seguida, escreva somente a subseção 2.5.1 usando citações indiretas.
+
+    Transforme as citações diretas em citações indiretas em português, sem copiar literalmente o texto original.
+
+    MODELO DE CITAÇÃO INDIRETA:
+
+    Chen et al. (2021) propõem uma abordagem de construção de portfólio em duas etapas, combinando previsão de preços por machine learning e seleção de carteiras pelo modelo média-variância.
+
+    ou
+
+    A literatura recente tem explorado a integração entre previsão de retornos e otimização de carteiras como forma de melhorar o desempenho dos portfólios em relação a abordagens tradicionais baseadas apenas em dados históricos (CHEN et al., 2021; MA; HAN; WANG, 2021).
+
+    Regras para escrita:
+    - tudo deve estar vinculado a citações;
+    - não inserir afirmações sem fonte;
+    - escrever em linguagem acadêmica;
+    - manter coesão entre os parágrafos;
+    - evitar fichamento artigo por artigo;
+    - comparar os estudos quando possível;
+    - não exagerar em termos como “comprova”, “garante” ou “é superior”;
+    - usar expressões como “os resultados indicam”, “os autores observam”, “o estudo sugere”, “os achados apontam”;
+    - conectar os estudos ao tema do meu anteprojeto;
+    - não escrever a seção inteira de uma vez: comece somente pela 2.5.1.
+
+    4 — Ao final, crie as referências dos artigos utilizados na subseção 2.5.1.
+
+    As referências devem seguir o padrão do meu anteprojeto, aproximando-se da ABNT.
+
+    Importante:
+    - não invente DOI, revista, volume, páginas ou editora;
+    - se algum dado bibliográfico não estiver claro no artigo, sinalize;
+    - não use artigos externos;
+    - use somente os arquivos enviados.
+    
+    
+    
+    
+    
+    
+    
+REFS 2.5:
+
+    BRAUNEIS, A.; MESTEL, R. Cryptocurrency-portfolios in a mean-variance framework. Finance Research Letters, v. 28, n. [dado não identificado], p. 259-264, 2019. DOI: [dado não identificado].
+
+    CHAWEEWANCHON, A.; CHAYSIRI, R. Markowitz Mean-Variance Portfolio Optimization with Predictive Stock Selection Using Machine Learning. Int. Journal of Financial Studies, v. 10, n. [dado não identificado], p. [dado não identificado], 2022. DOI: [dado não identificado].
+
+    CHEN, W. et al. Mean–variance portfolio optimization using machine learning-based stock price prediction. Applied Soft Computing, v. 100, n. [dado não identificado], p. 106943, 2021. DOI: [dado não identificado].
+
+    DU, J. Mean–variance portfolio optimization with deep learning based-forecasts for cointegrated stocks. Expert Systems with Applications, v. 201, n. [dado não identificado], p. [dado não identificado], 2022. DOI: [dado não identificado].
+
+    GIANTSIDI, S.; TARANTOLA, C. Deep learning for financial forecasting: A review of recent trends. International Review of Economics and Finance, v. 104, n. [dado não identificado], p. 104719, 2025. DOI: [dado não identificado].
+
+    JANG, J.; SEONG, N. Y. Deep reinforcement learning for stock portfolio optimization by connecting with modern portfolio theory. Expert Systems with Applications, v. 218, n. [dado não identificado], p. [dado não identificado], 2023. DOI: [dado não identificado].
+
+    JELESKOVIC, V. et al. Optimization of portfolios with cryptocurrencies: Markowitz and GARCH-Copula model approach. [dado não identificado], v. [dado não identificado], n. [dado não identificado], p. [dado não identificado], 2024. DOI: [dado não identificado].
+
+    JIANG, Y.; OLMO, J.; ATWI, M. Deep reinforcement learning for portfolio selection. Global Finance Journal, v. 62, n. [dado não identificado], p. [dado não identificado], 2024. DOI: [dado não identificado].
+
+    LÓPEZ DE PRADO, M. et al. Enhancing Markowitz’s portfolio selection paradigm with machine learning. Annals of Operations Research, v. 346, n. [dado não identificado], p. 319-340, 2025. DOI: [dado não identificado].
+
+    MA, Y.; HAN, R.; WANG, W. Portfolio optimization with return prediction using deep learning and machine learning. Expert Systems with Applications, v. 165, n. [dado não identificado], p. 113973, 2021. DOI: [dado não identificado].
+
+    PADHI, D. K. et al. An Intelligent Fusion Model with Portfolio Selection and Machine Learning for Stock Market Prediction. Computational Intelligence and Neuroscience, v. [dado não identificado], n. [dado não identificado], p. [dado não identificado], 2022. DOI: [dado não identificado].
+
+    PAIVA, F. D. et al. Decision-making for financial trading: a fusion approach of machine learning and portfolio selection. Expert Systems with Applications, v. 115, n. [dado não identificado], p. 635-655, 2019. DOI: [dado não identificado].
+
+    SUTIENE, K. et al. Enhancing portfolio management using artificial intelligence: literature review. Frontiers in Artificial Intelligence, v. 7, n. [dado não identificado], p. 1371502, 2024. DOI: [dado não identificado].
+
+    ŚLUSARCZYK, D.; ŚLEPACZUK, R. Optimal Markowitz portfolio using returns forecasted with time series and machine learning models. Journal of Big Data, v. 12, n. [dado não identificado], p. [dado não identificado], 2025. DOI: [dado não identificado].
+
+    WANG, W. et al. Portfolio formation with preselection using deep learning from long-term financial data. Expert Systems with Applications, v. 143, n. [dado não identificado], p. 113042, 2020. DOI: [dado não identificado].
+
+    ZOUAOUI, H.; NAAS, M. N. Portfolio Optimization Based on MPT-LSTM Neural Networks: A case study of Cryptocurrency Markets. Finance, Accounting and Business Analysis, v. 7, n. [dado não identificado], p. [dado não identificado], 2025. DOI: [dado não identificado].

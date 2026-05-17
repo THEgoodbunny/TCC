@@ -1,0 +1,127 @@
+% -----------------------------------------------------------------------------
+% Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG
+%
+% Modelo de trabalho acadêmico em conformidade com as normas da ABNT
+% (Tese de Doutorado, Dissertação de Mestrado ou Projeto de Qualificação)
+%
+% Projeto hospedado em: https://github.com/cfgnunes/latex-cefetmg
+%
+% Autor: Cristiano Fraga G. Nunes <cfgnunes@gmail.com>
+% -----------------------------------------------------------------------------
+
+% Utiliza um modelo para impressão apenas no anverso
+\documentclass[oneside]{cefetmg}
+
+% Utiliza um modelo para impressão em frente (anverso) e verso
+%\documentclass[twoside]{cefetmg}
+
+% Utiliza um modelo que mostra a palavra "Capítulo" no início de cada capítulo
+%\documentclass[oneside, nomecapitulo]{cefetmg}
+
+% -----------------------------------------------------------------------------
+% Pacotes utilizados
+% -----------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}         % Codificação do documento
+\usepackage[T1]{fontenc}            % Seleção de código de fonte
+\usepackage{booktabs}               % Réguas horizontais em tabelas
+\usepackage{color, colortbl}        % Uso de cores
+\usepackage{graphicx}               % Inclusão de gráficos
+\usepackage{indentfirst}            % Recua o primeiro parágrafo de cada seção
+\usepackage{microtype}              % Melhora a justificação do documento
+\usepackage{makecell}               % Tabelas com múltiplas linhas e colunas
+\usepackage{multirow, multicol}     % Layout em múltiplas linhas e colunas
+\usepackage{verbatim}               % Exibe texto tal como escrito no documento
+\usepackage{icomma}                 % Vírgulas em expressões matemáticas
+\usepackage{subeqnarray}            % Subenumeração de equações
+\usepackage{amsmath}                % Funções matemáticas
+%\usepackage[charter]{mathdesign}   % Utiliza a fonte 'Charter BT'
+%\usepackage{newtxtext, newtxmath}  % Utiliza a fonte 'Times New Roman' (clone)
+%\usepackage{palatino}              % Utiliza a fonte 'Palatino' (clone)
+%\usepackage{lmodern}               % Utiliza a fonte 'Computer Modern'
+%\usepackage{amsfonts}              % Fontes e símbolos matemáticos
+%\usepackage{latexsym}              % Mais símbolos matemáticos
+%\usepackage{xfrac}                 % Escreve frações de forma compacta
+
+% Utiliza a fonte 'Arial' (clone)
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+
+% -----------------------------------------------------------------------------
+% Configurações gerais
+% -----------------------------------------------------------------------------
+
+% Define o tamanho do recuo do parágrafo
+\setlength{\parindent}{1.25cm}
+
+% Define o espaçamento entre um parágrafo e outro
+\setlength{\parskip}{0.0cm}
+
+% Define as cores utilizadas no documento
+\definecolor{blue_link}{RGB}{0,80,128}
+
+% Define as palavras-chave nos metadados do PDF
+\hypersetup{pdfkeywords={%
+    Palavra-chave 1, Palavra-chave 2, Palavra-chave 3, Palavra-chave 4.
+}}
+
+% Define a hifenização de palavras que não estão no dicionário
+%\hyphenation{%
+%    qua-dros-cha-ve
+%    Kat-sa-gge-los
+%}
+
+% -----------------------------------------------------------------------------
+% Inclui os arquivos do trabalho acadêmico
+% -----------------------------------------------------------------------------
+
+% Inclui o arquivo que contém os dados do trabalho acadêmico
+\input{elementos-pre-textuais/preambulo.tex}
+% Citações longas: fonte 10, recuo 4 cm e espaçamento simples
+\renewcommand{\ABNTEXfontereduzida}{\footnotesize}
+\setlength{\ABNTEXcitacaorecuo}{4cm}
+% Início do documento
+\begin{document}
+% Espaçamento geral 1,5
+\OnehalfSpacing
+\pretextual % Define o estilo de página para os elementos pré-textuais
+
+\imprimircapa                                           % Capa
+\imprimirfolhaderosto*{}                                % Folha de rosto
+\importarfichacatalografica{ficha-catalografica.pdf}    % Ficha catalográfica
+
+% Use o comando abaixo para usar um modelo de folha de aprovação...
+%\input{elementos-pre-textuais/folha-aprovacao.tex}
+% ...ou use o comando abaixo para importar a folha digitalizada no formato PDF
+%\importarfolhadeaprovacao{folha-aprovacao.pdf}
+
+%\input{elementos-pre-textuais/dedicatoria.tex}    % (opcional) Dedicatória
+%\input{elementos-pre-textuais/agradecimentos.tex} % (opcional) Agradecimentos
+%\input{elementos-pre-textuais/epigrafe.tex}       % (opcional) Epígrafe
+%\input{elementos-pre-textuais/resumo-pt.tex}      % Resumo
+%\input{elementos-pre-textuais/resumo-en.tex}      % Abstract
+\imprimirlistafiguras                             % (opcional) Lista de figuras
+\imprimirlistatabelas                             % (opcional) Lista de tabelas
+\imprimirlistaquadros                             % (opcional) Lista de quadros
+\imprimirlistaalgoritmos                          % (opcional) Lista de algor.
+%\input{elementos-pre-textuais/lista-siglas.tex}   % (opcional) Lista de siglas
+%\input{elementos-pre-textuais/lista-simbolos.tex} % (opcional) Lista de símb.
+\imprimirsumario                                  % Sumário
+
+\textual % Define o estilo de página para os elementos textuais
+
+\input{elementos-textuais/introducao.tex}               % Introdução
+\input{elementos-textuais/fundamentacao-teorica.tex}    % Referencial teórico
+\input{elementos-textuais/trabalhos-relacionados.tex}   % Estudos relacionados
+\input{elementos-textuais/metodologia.tex}              % Metodologia
+\input{elementos-textuais/cronograma.tex}               % Cronograma
+%\input{elementos-textuais/resultados.tex}              % Resultados
+%\input{elementos-textuais/conclusao.tex}               % Conclusão
+
+\postextual % Define o estilo de página para os elementos pós-textuais
+
+\imprimirreferencias{referencias.bib}                   % Referências
+%\input{elementos-pos-textuais/apendices.tex}            % (opcional) Apêndices
+%\input{elementos-pos-textuais/anexos.tex}               % (opcional) Anexos
+%\printindex                                             % (opcional) Índice
+
+\end{document}

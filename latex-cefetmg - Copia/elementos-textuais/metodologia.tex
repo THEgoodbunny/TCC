@@ -1,0 +1,35 @@
+% !TEX root = ../meu-trabalho.tex
+% -----------------------------------------------------------------------------
+% Metodologia
+% -----------------------------------------------------------------------------
+
+\chapter{Metodologia}
+\label{chap_metodologia}
+
+\section{Classificação da pesquisa}
+\label{sec_classificacao_da_pesquisa}
+
+A presente pesquisa classifica-se, quanto à sua natureza, como aplicada. Seu foco transcende a ampliação do conhecimento teórico, buscando utilizar tal embasamento para solucionar problemas concretos e satisfazer necessidades específicas, em consonância com a definição de \citeonline{gil2010projetos}, que destaca a geração de conhecimentos dirigidos à aplicação prática e interesses locais.
+
+Do ponto de vista da abordagem, o estudo é quantitativo, priorizando a objetividade e a tradução de informações em números. Conforme \citeonline{richardson1999pesquisa}, essa metodologia garante a precisão dos dados e valida as hipóteses através de técnicas estatísticas, abrangendo desde a coleta até o tratamento complexo das informações.
+
+Em relação aos objetivos, a investigação define-se como descritiva. Ao propor analisar e comparar o desempenho de carteiras --- contrapondo o uso de Machine Learning a modelos tradicionais ---, o estudo visa descrever características do fenômeno e estabelecer relações entre variáveis. Essa classificação fundamenta-se em Gil (2002), para quem a pesquisa descritiva tem como foco principal a correlação de variáveis sem necessariamente aprofundar-se nas causas primárias.
+
+Quanto aos procedimentos técnicos, o trabalho assume caráter experimental, pois envolve a manipulação direta dos modelos de investimento para analisar os efeitos produzidos (retorno e risco) sob condições controladas, satisfazendo os critérios de manipulação e controle de variáveis descritos por \citeonline{gil2010projetos}.
+
+\section{Coleta de dados}
+\label{sec_coleta_de_dados}
+
+A operacionalização da pesquisa dar-se-á pela coleta de dados oriundos de múltiplas fontes, incluindo dados primários extraídos via APIs das corretoras Binance e Kraken, e dados secundários obtidos no banco de dados Kaggle.
+
+\section{Estratégias comparadas}
+\label{sec_estrategias_comparadas}
+
+A análise comparará duas vertentes: a estratégia alvo (método Adaboost+MV) e uma Base Line, ou referência (estratégia 1/N, que pressupõe divisão igualitária entre ativos), para verificar se o modelo proposto supera a média de mercado.
+
+\section{Procedimentos de análise}
+\label{sec_procedimentos_de_analise}
+
+O treinamento do modelo de aprendizado de máquina ocorrerá com dados in-sample, ou seja, dados usados para treinar o modelo, em período t a t+1.
+
+Sendo a avaliação de desempenho realizada com dados out-sample, ou seja, dados não utilizados no treinamento do modelo (t+2...t+n), garantindo a verificação do aprendizado fora da amostra de treino.

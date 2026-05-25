@@ -21,6 +21,7 @@
 % -----------------------------------------------------------------------------
 % Pacotes utilizados
 % -----------------------------------------------------------------------------
+\usepackage{setspace}
 \usepackage[utf8]{inputenc}         % Codificação do documento
 \usepackage[T1]{fontenc}            % Seleção de código de fonte
 \usepackage{booktabs}               % Réguas horizontais em tabelas
@@ -79,6 +80,38 @@
 % Citações longas: fonte 10, recuo 4 cm e espaçamento simples
 \renewcommand{\ABNTEXfontereduzida}{\footnotesize}
 \setlength{\ABNTEXcitacaorecuo}{4cm}
+
+%centraliza figuras e tabelas
+\usepackage{etoolbox}
+\AtBeginEnvironment{figure}{\centering}
+\AtBeginEnvironment{table}{\centering}
+
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{setspace}
+
+% Legendas/títulos de figuras e tabelas
+\captionsetup{
+    font=normalsize,
+    labelfont=normalfont,
+    textfont=normalfont,
+    justification=raggedright,
+    singlelinecheck=false,
+    labelsep=endash,
+    position=above
+}
+
+% Comando para fonte da figura/tabela
+\newcommand{\fontefigura}[1]{%
+    \vspace{2mm}
+    {\fontsize{10}{12}\selectfont Fonte: #1\par}
+}
+
+% Comando para legenda explicativa/nota
+\newcommand{\legendafig}[1]{%
+    {\fontsize{10}{12}\selectfont Legenda: #1\par}
+}
+
 % Início do documento
 \begin{document}
 % Espaçamento geral 1,5
@@ -87,7 +120,7 @@
 
 \imprimircapa                                           % Capa
 \imprimirfolhaderosto*{}                                % Folha de rosto
-\importarfichacatalografica{ficha-catalografica.pdf}    % Ficha catalográfica
+%\importarfichacatalografica{ficha-catalografica.pdf}    % Ficha catalográfica
 
 % Use o comando abaixo para usar um modelo de folha de aprovação...
 %\input{elementos-pre-textuais/folha-aprovacao.tex}
@@ -103,7 +136,7 @@
 \imprimirlistatabelas                             % (opcional) Lista de tabelas
 \imprimirlistaquadros                             % (opcional) Lista de quadros
 \imprimirlistaalgoritmos                          % (opcional) Lista de algor.
-%\input{elementos-pre-textuais/lista-siglas.tex}   % (opcional) Lista de siglas
+\input{elementos-pre-textuais/lista-siglas.tex}   % (opcional) Lista de siglas
 %\input{elementos-pre-textuais/lista-simbolos.tex} % (opcional) Lista de símb.
 \imprimirsumario                                  % Sumário
 

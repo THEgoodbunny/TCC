@@ -1,4 +1,4 @@
-% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------</
 % Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG
 %
 % Modelo de trabalho acadêmico em conformidade com as normas da ABNT
@@ -11,7 +11,6 @@
 
 % Utiliza um modelo para impressão apenas no anverso
 \documentclass[oneside]{cefetmg}
-
 % Utiliza um modelo para impressão em frente (anverso) e verso
 %\documentclass[twoside]{cefetmg}
 
@@ -27,6 +26,56 @@
 \usepackage{booktabs}               % Réguas horizontais em tabelas
 \usepackage{color, colortbl}        % Uso de cores
 \usepackage{graphicx}               % Inclusão de gráficos
+% Centraliza figuras, tabelas e quadros
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{xurl}
+\usepackage{float}
+
+
+\AtBeginEnvironment{figure}{\centering}
+\AtBeginEnvironment{table}{\centering}
+\AtBeginEnvironment{quadro}{\centering}
+
+\usepackage{caption}
+
+% Legendas/títulos de figuras, tabelas e quadros
+\captionsetup{
+    font=normalsize,
+    labelfont=normalfont,
+    textfont=normalfont,
+    justification=raggedright,
+    singlelinecheck=false,
+    labelsep=endash,
+    position=above
+}
+
+% Caminhos das imagens
+\graphicspath{{figuras/}{quadros/}{tabelas/}}
+
+% Fonte da figura/tabela/quadro
+\newcommand{\fontefigura}[1]{%
+    \vspace{2mm}
+    \par
+    {\raggedright\fontsize{10}{12}\selectfont Fonte: #1\par}
+}
+% Figura padronizada: legenda acima, imagem centralizada e fonte alinhada ao início da imagem
+\newcommand{\inserirfigura}[5][0.95\textwidth]{%
+    \begin{figure}[htbp]
+        \caption{#3}
+        \centering
+        \begin{minipage}{#1}
+            \includegraphics[width=\linewidth]{#2}
+
+            \vspace{2mm}
+            {\fontsize{10}{12}\selectfont Fonte: #4\par}
+        \end{minipage}
+        \label{#5}
+    \end{figure}
+}
+\graphicspath{{figuras/}{quadros/}{tabelas/}}
+
 \usepackage{indentfirst}            % Recua o primeiro parágrafo de cada seção
 \usepackage{microtype}              % Melhora a justificação do documento
 \usepackage{makecell}               % Tabelas com múltiplas linhas e colunas
@@ -58,12 +107,18 @@
 \setlength{\parskip}{0.0cm}
 
 % Define as cores utilizadas no documento
-\definecolor{blue_link}{RGB}{0,80,128}
+%\definecolor{blue_link}{RGB}{0,80,128}
 
 % Define as palavras-chave nos metadados do PDF
 \hypersetup{pdfkeywords={%
     Palavra-chave 1, Palavra-chave 2, Palavra-chave 3, Palavra-chave 4.
-}}
+},
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=green,
+    urlcolor=black,
+    filecolor=black
+}
 
 % Define a hifenização de palavras que não estão no dicionário
 %\hyphenation{%
@@ -81,43 +136,42 @@
 \renewcommand{\ABNTEXfontereduzida}{\footnotesize}
 \setlength{\ABNTEXcitacaorecuo}{4cm}
 
-%centraliza figuras e tabelas
-\usepackage{etoolbox}
-\AtBeginEnvironment{figure}{\centering}
-\AtBeginEnvironment{table}{\centering}
-
-\usepackage{caption}
-\usepackage{setspace}
-\usepackage{setspace}
-
-% Legendas/títulos de figuras e tabelas
-\captionsetup{
-    font=normalsize,
-    labelfont=normalfont,
-    textfont=normalfont,
-    justification=raggedright,
-    singlelinecheck=false,
-    labelsep=endash,
-    position=above
-}
-
-% Comando para fonte da figura/tabela
-\newcommand{\fontefigura}[1]{%
-    \vspace{2mm}
-    {\fontsize{10}{12}\selectfont Fonte: #1\par}
-}
-
 % Comando para legenda explicativa/nota
 \newcommand{\legendafig}[1]{%
     {\fontsize{10}{12}\selectfont Legenda: #1\par}
 }
+
+% Estilo de página sem título de capítulo no cabeçalho e sem linha horizontal
+\makepagestyle{semcabecalho}
+
+\makeoddhead{semcabecalho}{}{}{\normalfont\fontsize{10}{12}\selectfont\thepage}
+\makeevenhead{semcabecalho}{}{}{\normalfont\fontsize{10}{12}\selectfont\thepage}
+
+\makeheadrule{semcabecalho}{\textwidth}{0pt}
+
+\makeoddfoot{semcabecalho}{}{}{}
+\makeevenfoot{semcabecalho}{}{}{}
+
+% Títulos de capítulos, seções e subseções em tamanho normal
+\renewcommand{\ABNTEXchapterfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsectionfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsectionfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+
 
 % Início do documento
 \begin{document}
 % Espaçamento geral 1,5
 \OnehalfSpacing
 \pretextual % Define o estilo de página para os elementos pré-textuais
-
 \imprimircapa                                           % Capa
 \imprimirfolhaderosto*{}                                % Folha de rosto
 %\importarfichacatalografica{ficha-catalografica.pdf}    % Ficha catalográfica
@@ -137,11 +191,14 @@
 \imprimirlistaquadros                             % (opcional) Lista de quadros
 \imprimirlistaalgoritmos                          % (opcional) Lista de algor.
 \input{elementos-pre-textuais/lista-siglas.tex}   % (opcional) Lista de siglas
+
 %\input{elementos-pre-textuais/lista-simbolos.tex} % (opcional) Lista de símb.
 \imprimirsumario                                  % Sumário
 
 \textual % Define o estilo de página para os elementos textuais
-
+\pagestyle{semcabecalho}
+\aliaspagestyle{chapter}{semcabecalho}
+\aliaspagestyle{plain}{semcabecalho}
 \input{elementos-textuais/introducao.tex}               % Introdução
 \input{elementos-textuais/fundamentacao-teorica.tex}    % Referencial teórico
 \input{elementos-textuais/trabalhos-relacionados.tex}   % Estudos relacionados
@@ -150,8 +207,11 @@
 %\input{elementos-textuais/resultados.tex}              % Resultados
 %\input{elementos-textuais/conclusao.tex}               % Conclusão
 
-\postextual % Define o estilo de página para os elementos pós-textuais
 
+\postextual % Define o estilo de página para os elementos pós-textuais
+\pagestyle{semcabecalho}
+\aliaspagestyle{chapter}{semcabecalho}
+\aliaspagestyle{plain}{semcabecalho}
 \imprimirreferencias{referencias.bib}                   % Referências
 %\input{elementos-pos-textuais/apendices.tex}            % (opcional) Apêndices
 %\input{elementos-pos-textuais/anexos.tex}               % (opcional) Anexos

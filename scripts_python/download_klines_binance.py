@@ -125,13 +125,14 @@ def listar_zip_par(par, prefixo):
     return  dict_zip
 
 def listar_zip(prefixos):
-    cont = 0
-    for chave,prefixo in prefixos.items():
-        cont+=1
-        print(cont)
-        listar_zip_par(chave, prefixo)
-    IRÁ CONTER OS WORKERS E GERA O DICIONARIO FINAL NA ESTRUTURA {CHAVE:[LISTA DE ZIPS]}
-    CRIAR OS WORKERS
+    with ThreadPoolExecutor() as threads:
+        resultados = list(threads.map(
+                listar_zip_par,prefixos.keys(),prefixos.values()
+                ))
+                
+    
+    return resultados
+
 #def executor_threadpool(lista):
 
 #def gerar_parquets(arquivos):

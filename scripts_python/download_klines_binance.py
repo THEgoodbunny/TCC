@@ -1,7 +1,7 @@
 from pathlib import Path
 import requests
-from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 
 #definindo os caminhos relativos e criando as pastas necessárias
 PATH_PARENT = Path(__file__).resolve().parent.parent
@@ -16,44 +16,132 @@ PATH_BINANCE.mkdir(exist_ok=True,parents=True)
 # O ENDEREÇO É PAGINADO E PARA CONTINUAR É NECESSÁRIO OBTER O TOKEN
 # list-type=2 é importante para interceptar o token pelo XML
 
-# https://data.binance.vision/?prefix=data/spot/monthly/klines
-
-URL_BINANCE = "https://data.binance.vision/"
-
 URL_AWS_BUCKET = (
     "https://s3-ap-northeast-1.amazonaws.com/"
     "data.binance.vision?"
-
     )
-
 params = {
     "prefix":"data/spot/monthly/klines/",
     "list-type":"2",
     "delimiter":"/"
 }
-keys = []
-while True:
+namespace = {"nmsp":"http://s3.amazonaws.com/doc/2006-03-01/"}
 
-    response = requests.get(
-        URL_AWS_BUCKET, 
-        params=params
-    )
-    aws_xml = response.content
-    parsed_xml = ET.fromstring(aws_xml)
-    namespace = {"nmsp":"http://s3.amazonaws.com/doc/2006-03-01/"}
-    bool_trunc = parsed_xml.findtext("nmsp:IsTruncated",namespaces=namespace)
-    key_list = parsed_xml.findall("nmsp:CommonPrefixes/nmsp:Prefix",namespaces=namespace)
-    key_pairs = [element.text for element in key_list]
-    keys.append(key_pairs)
-    continuation_token = parsed_xml.findtext("nmsp:NextContinuationToken",namespaces=namespace)
-    current_token = parsed_xml.findtext("nmsp:ContinuationToken",namespaces=namespace)
-    params["continuation-token"] = continuation_token
-    print(continuation_token,"\n",bool_trunc,"\n","-"*10,current_token,"-"*10,"\n")
-    if bool_trunc == "false":
-        break
-    continuation_token = parsed_xml.findtext("nmsp:NextContinuationToken",namespaces=namespace)
-    current_token = parsed_xml.findtext("nmsp:ContinuationToken",namespaces=namespace)
-    params["continuation-token"] = continuation_token
+def listar_pares_aws(params):
+    print("iniciada a listagem de pares...")
+    keys = []
+    cont = 0
 
 
-print(keys)
+    while True:
+        cont+=1
+        try:
+            response = requests.get(
+                URL_AWS_BUCKET, 
+                params=params
+            )
+            response.raise_for_status()
+            aws_xml = response.content
+        except requests.exceptions.RequestException as e:
+            print(f"Exceção na requisição: {e}")
+            break
+        parsed_xml = ET.fromstring(aws_xml)
+
+        bool_trunc = parsed_xml.findtext("nmsp:IsTruncated",namespaces=namespace)
+
+        continuation_token = parsed_xml.findtext("nmsp:NextContinuationToken",namespaces=namespace)  
+        print(f"iteração {cont}... truncado: {bool_trunc}")
+
+        key_list = parsed_xml.findall("nmsp:CommonPrefixes/nmsp:Prefix",namespaces=namespace)
+
+        #estrutura das keys: data/spot/monthly/klines/ZRXBTC/
+        key_pairs = [element.text.rsplit("/",2)[-2] for element in key_list if element.text and element.text.endswith("USDT/")] 
+
+        keys.extend(key_pairs)
+
+        #current_token = parsed_xml.findtext("nmsp:ContinuationToken",namespaces=namespace)
+
+
+        if bool_trunc == "false":
+            break
+        params["continuation-token"] = continuation_token
+
+    print("quantidade de iterações: ", cont)
+    print("pares extraidos: ",len(keys))
+    return(keys)
+
+#REFERENCIA ENDPOINT ARQUIVOS: https://s3-ap-northeast-1.amazonaws.com/data.binance.vision?prefix=data/spot/monthly/klines/BTCUSDT/1h/&list-type=2
+
+def construir_prefixos(pares):
+    dict_prefixos = {}
+    std_uri = "data/spot/monthly/klines/"
+    for par in pares:
+         url = f"{std_uri}{par}/1h/"
+         dict_prefixos[par] = url
+
+    return dict_prefixos
+
+def listar_zip_par(par, prefixo):
+    zip_final_list= []
+    dict_zip={}
+    url = URL_AWS_BUCKET
+    params = {
+        "prefix": prefixo,
+        "list-type":"2",
+    }
+
+    while True:
+        try:
+            response = requests.get(
+                url=url,
+                params=params
+            )
+            response.raise_for_status()
+            aws_xml = response.content
+        except requests.exceptions.RequestException as e:
+            print(f"Exceção na requisição: {e}")
+            break
+        parsed_xml = ET.fromstring(aws_xml)
+
+        bool_trunc = parsed_xml.findtext("nmsp:IsTruncated",namespaces=namespace)
+
+        continuation_token = parsed_xml.findtext("nmsp:NextContinuationToken",namespaces=namespace)  
+
+        zip_element = parsed_xml.findall("nmsp:Contents/nmsp:Key",namespaces=namespace)
+   
+        zip_list = [element.text for element in zip_element]
+
+        zip_final_list.extend(zip_list)
+
+        #current_token = parsed_xml.findtext("nmsp:ContinuationToken",namespaces=namespace)
+
+        params["continuation-token"] = continuation_token
+
+        if bool_trunc == "false":
+            break
+    
+    dict_zip[par] = zip_final_list
+    print(dict_zip)
+    return  dict_zip
+
+def listar_zip(prefixos):
+    cont = 0
+    for chave,prefixo in prefixos.items():
+        cont+=1
+        print(cont)
+        listar_zip_par(chave, prefixo)
+    #IRÁ CONTER OS WORKERS E GERA O DICIONARIO FINAL NA ESTRUTURA {CHAVE:[LISTA DE ZIPS]}
+
+#def executor_threadpool(lista):
+
+#def gerar_parquets(arquivos):
+
+def main():
+    pares = listar_pares_aws(params)
+    prefixos = construir_prefixos(pares)
+    lista_zip = listar_zip(prefixos)
+    #arquivos = executor_threadpool(lista_zip)
+    #gerar_parquets(arquivos)
+
+if __name__ == "__main__":    
+    main()

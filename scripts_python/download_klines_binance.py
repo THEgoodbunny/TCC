@@ -109,7 +109,7 @@ def listar_zip_par(par, prefixo):
 
         zip_element = parsed_xml.findall("nmsp:Contents/nmsp:Key",namespaces=namespace)
    
-        zip_list = [element.text for element in zip_element]
+        zip_list = [element.text for element in zip_element if element.text and element.text.endswith(".zip")]
 
         zip_final_list.extend(zip_list)
 
@@ -130,8 +130,8 @@ def listar_zip(prefixos):
         cont+=1
         print(cont)
         listar_zip_par(chave, prefixo)
-    #IRÁ CONTER OS WORKERS E GERA O DICIONARIO FINAL NA ESTRUTURA {CHAVE:[LISTA DE ZIPS]}
-
+    IRÁ CONTER OS WORKERS E GERA O DICIONARIO FINAL NA ESTRUTURA {CHAVE:[LISTA DE ZIPS]}
+    CRIAR OS WORKERS
 #def executor_threadpool(lista):
 
 #def gerar_parquets(arquivos):

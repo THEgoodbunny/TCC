@@ -1,7 +1,8 @@
 from pathlib import Path
-import requests
+import requests, warnings, io
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from zipfile import ZipFile
 
 #definindo os caminhos relativos e criando as pastas necessárias
 PATH_PARENT = Path(__file__).resolve().parent.parent
@@ -121,7 +122,9 @@ def listar_zip_par(par, prefixo):
             break
     
     dict_zip[par] = zip_final_list
-    print(dict_zip)
+
+    print(f"{par}: {len(zip_final_list)} arquivos")
+
     return  dict_zip
 
 def listar_zip(prefixos):
@@ -130,10 +133,33 @@ def listar_zip(prefixos):
                 listar_zip_par,prefixos.keys(),prefixos.values()
                 ))
                 
-    
+    print("quantidade de pares com arquivos zip: ",len(resultados))
+    with open("output_zip.txt", "w",encoding="utf-8") as a:
+        a.write(str(resultados))
     return resultados
+   
+def downloader(par,url):
+    warnings.filterwarnings('ignore')
+    prefixo = "http://data.binance.vision/" 
+    path = PATH_BINANCE / par / "csv"
+    path.mkdir(exist_ok=True,parents=True)
+    url = prefixo + url
+    download = requests.get(url,verify=False)
+    buffer = io.BytesIO(download.content) #transforma em arquivo virtual de memoria
+    arquivo = ZipFile(buffer)
+    arquivo.extractall(path)
+    print('processado: ', url)
 
-#def executor_threadpool(lista):
+def executor_threadpool(lista):
+    with ThreadPoolExecutor() as threads:
+        for dicionario in lista:
+            for par,urls in dicionario.items():
+                for url in urls:
+                    threads.submit(downloader,par,url)
+                    futures.append(future)
+
+        for future in futures:
+            future.result()
 
 #def gerar_parquets(arquivos):
 
@@ -141,7 +167,7 @@ def main():
     pares = listar_pares_aws(params)
     prefixos = construir_prefixos(pares)
     lista_zip = listar_zip(prefixos)
-    #arquivos = executor_threadpool(lista_zip)
+    executor_threadpool(lista_zip)
     #gerar_parquets(arquivos)
 
 if __name__ == "__main__":    

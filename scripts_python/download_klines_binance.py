@@ -156,10 +156,6 @@ def executor_threadpool(lista):
             for par,urls in dicionario.items():
                 for url in urls:
                     threads.submit(downloader,par,url)
-                    futures.append(future)
-
-        for future in futures:
-            future.result()
 
 #def gerar_parquets(arquivos):
 

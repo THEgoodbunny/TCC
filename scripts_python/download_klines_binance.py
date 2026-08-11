@@ -3,7 +3,9 @@ import requests, warnings, io
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile
-
+import threading
+import pyarrow.csv
+import pyarrow.parquet
 #definindo os caminhos relativos e criando as pastas necessárias
 PATH_PARENT = Path(__file__).resolve().parent.parent
 PATH_DATA = PATH_PARENT / "data"
@@ -28,12 +30,11 @@ params = {
 }
 namespace = {"nmsp":"http://s3.amazonaws.com/doc/2006-03-01/"}
 
+
 def listar_pares_aws(params):
     print("iniciada a listagem de pares...")
     keys = []
     cont = 0
-
-
     while True:
         cont+=1
         try:
@@ -128,11 +129,12 @@ def listar_zip_par(par, prefixo):
     return  dict_zip
 
 def listar_zip(prefixos):
-    with ThreadPoolExecutor() as threads:
+
+    with ThreadPoolExecutor(max_workers=32) as threads:
         resultados = list(threads.map(
                 listar_zip_par,prefixos.keys(),prefixos.values()
                 ))
-                
+
     print("quantidade de pares com arquivos zip: ",len(resultados))
     with open("output_zip.txt", "w",encoding="utf-8") as a:
         a.write(str(resultados))
@@ -140,31 +142,66 @@ def listar_zip(prefixos):
    
 def downloader(par,url):
     warnings.filterwarnings('ignore')
-    prefixo = "http://data.binance.vision/" 
+    prefixo = "https://data.binance.vision/" 
     path = PATH_BINANCE / par / "csv"
     path.mkdir(exist_ok=True,parents=True)
     url = prefixo + url
     download = requests.get(url,verify=False)
+    download.raise_for_status()
     buffer = io.BytesIO(download.content) #transforma em arquivo virtual de memoria
     arquivo = ZipFile(buffer)
     arquivo.extractall(path)
-    print('processado: ', url)
 
 def executor_threadpool(lista):
-    with ThreadPoolExecutor() as threads:
+    futures = []
+    with ThreadPoolExecutor(max_workers=32) as threads:
         for dicionario in lista:
             for par,urls in dicionario.items():
                 for url in urls:
-                    threads.submit(downloader,par,url)
+                    future = threads.submit(downloader,par,url)
+                    futures.append(future)
+        for future in futures:
+            future.result()
 
-#def gerar_parquets(arquivos):
+def gerar_parquets():
+    
+    COLUNAS = [
+        "open_time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "close_time",
+        "quote_asset_volume",
+        "number_of_trades",
+        "taker_buy_base_asset_volume",
+        "taker_buy_quote_asset_volume",
+        "ignore",
+    ]
+    path_data = PATH_BINANCE
+    for arquivo in path_data.glob("*/csv/*.csv"):
+        final_path = arquivo.parent
+        csv = pyarrow.csv.read_csv(
+            arquivo, read_options=pyarrow.csv.ReadOptions(column_names=COLUNAS)
+        )
+        pyarrow.parquet.write_table(csv, rf"{final_path}\{arquivo.stem}.parquet" ) #"stem" pega somente a parte descritiva do nome antes da extensão
+        print(arquivo.stem, "done")
+
+def deletar_csv():
+    print("")
 
 def main():
     pares = listar_pares_aws(params)
     prefixos = construir_prefixos(pares)
     lista_zip = listar_zip(prefixos)
     executor_threadpool(lista_zip)
-    #gerar_parquets(arquivos)
+    gerar_parquets()
+    deletar_csv()
 
-if __name__ == "__main__":    
-    main()
+#if __name__ == "__main__":    
+#    main()
+
+gerar_parquets()
+
+#print(Path(__file__).resolve())

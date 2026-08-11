@@ -1,16 +1,19 @@
 from pathlib import Path
-import requests, warnings, io
+import requests, warnings, io, pyarrow.csv, pyarrow.parquet, shutil, time, concurrent.futures 
 import xml.etree.ElementTree as ET
+from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile
-import threading
-import pyarrow.csv
-import pyarrow.parquet
+
 #definindo os caminhos relativos e criando as pastas necessárias
 PATH_PARENT = Path(__file__).resolve().parent.parent
+
 PATH_DATA = PATH_PARENT / "data"
+
 PATH_BINANCE = PATH_DATA / "binance"
+
 PATH_KRAKEN = PATH_DATA / "kraken"
+
 PATH_BINANCE.mkdir(exist_ok=True,parents=True)
 
 # -----------------OS DADOS DA BINANCE SÃO ARMAZENADOS EM UM BUCKET DA AMAZON -------------------------------------
@@ -30,11 +33,14 @@ params = {
 }
 namespace = {"nmsp":"http://s3.amazonaws.com/doc/2006-03-01/"}
 
-
 def listar_pares_aws(params):
+
     print("iniciada a listagem de pares...")
+
     keys = []
+
     cont = 0
+
     while True:
         cont+=1
         try:
@@ -62,7 +68,6 @@ def listar_pares_aws(params):
         keys.extend(key_pairs)
 
         #current_token = parsed_xml.findtext("nmsp:ContinuationToken",namespaces=namespace)
-
 
         if bool_trunc == "false":
             break
@@ -142,14 +147,23 @@ def listar_zip(prefixos):
    
 def downloader(par,url):
     warnings.filterwarnings('ignore')
+
     prefixo = "https://data.binance.vision/" 
+
     path = PATH_BINANCE / par / "csv"
+
     path.mkdir(exist_ok=True,parents=True)
+
     url = prefixo + url
+
     download = requests.get(url,verify=False)
+
     download.raise_for_status()
+
     buffer = io.BytesIO(download.content) #transforma em arquivo virtual de memoria
+
     arquivo = ZipFile(buffer)
+
     arquivo.extractall(path)
 
 def executor_threadpool(lista):
@@ -160,8 +174,9 @@ def executor_threadpool(lista):
                 for url in urls:
                     future = threads.submit(downloader,par,url)
                     futures.append(future)
-        for future in futures:
+        for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures)):
             future.result()
+
 
 def gerar_parquets():
     
@@ -181,27 +196,37 @@ def gerar_parquets():
     ]
     path_data = PATH_BINANCE
     for arquivo in path_data.glob("*/csv/*.csv"):
+
         final_path = arquivo.parent
+
         csv = pyarrow.csv.read_csv(
             arquivo, read_options=pyarrow.csv.ReadOptions(column_names=COLUNAS)
         )
+        
         pyarrow.parquet.write_table(csv, rf"{final_path}\{arquivo.stem}.parquet" ) #"stem" pega somente a parte descritiva do nome antes da extensão
         print(arquivo.stem, "done")
 
 def deletar_csv():
-    print("")
+    pastas = PATH_BINANCE.glob("*/csv")
+
+    for pasta in pastas:
+        shutil.rmtree(pasta)
 
 def main():
     pares = listar_pares_aws(params)
+
     prefixos = construir_prefixos(pares)
+
     lista_zip = listar_zip(prefixos)
+
     executor_threadpool(lista_zip)
+
     gerar_parquets()
+
     deletar_csv()
 
-#if __name__ == "__main__":    
-#    main()
+    print("sucesso (eu acho)")
 
-gerar_parquets()
 
-#print(Path(__file__).resolve())
+if __name__ == "__main__":    
+   main()

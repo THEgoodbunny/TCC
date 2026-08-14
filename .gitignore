@@ -1,3 +1,9 @@
 ARTIGOS_MANUAIS/
 *.pdf
 data/
+
+.venv/
+venv/
+
+.env
+env/

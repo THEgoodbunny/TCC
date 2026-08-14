@@ -244,7 +244,7 @@ def gerar_parquets():
             arquivo, read_options=pyarrow.csv.ReadOptions(column_names=COLUNAS)
         )
         
-        pyarrow.parquet.write_table(csv, rf"{final_path}\{arquivo.stem}.parquet" ) 
+        pyarrow.parquet.write_table(csv, final_path / f"{arquivo.stem}.parquet" ) 
         #"stem" pega somente a parte descritiva do nome antes da extensão
         
         print(arquivo.stem, "done")

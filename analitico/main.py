@@ -16,9 +16,11 @@ def query():
         ORDER BY par,open_time
         
     """
+    print('query: ')
     return duckdb.execute(query)
 
 def corr(): 
+    print('matriz corr...')
     tbl = query()
 
     df = tbl.df()
@@ -30,7 +32,7 @@ def corr():
     )
 
     df.corr().to_excel("matriz_corr.xlsx")
-
+    print('exportado com sucesso\n')
     main()
 
 

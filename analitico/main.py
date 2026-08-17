@@ -6,6 +6,7 @@ def corr():
     pass
     main()
 def atualizar():
+
     download_binance.atualizar_base()
     main()
 def processar():
@@ -23,7 +24,8 @@ def main():
     3 - processar base (executa processamento analítico) 
 
     -> PRIMEIRA EXECUÇÃO E AINDA NÃO TEM OS DADOS? ATUALIZE A BASE
-    -> ATUALIZOU? PROCESSE A BASE"""
+    -> ATUALIZOU? PROCESSE A BASE
+    """
     )
 
     while True:

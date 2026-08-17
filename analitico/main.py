@@ -1,10 +1,39 @@
-import download_binance,processar_binance,sys
-from paths import PATH_LOGS
+import download_binance,processar_binance,sys, pandas as pd, duckdb,openpyxl
+from paths import (PATH_LOGS,PATH_BINANCE_PROCESSED)
 
+
+def query():
+    path = PATH_BINANCE_PROCESSED
+        
+    duckdb.execute("SET enable_progress_bar = true;")       # Ativa o mecanismo
+    duckdb.execute("SET enable_progress_bar_print = true;") # Garante o print no stdout
+    duckdb.execute("SET progress_bar_time = 100;")         # Mostra se demorar mais de 100ms
+
+    query = rf"""
+        SELECT 
+            *
+        FROM read_parquet('{path}/*/*.parquet', hive_partitioning=true)
+        ORDER BY par,open_time
+        
+    """
+    return duckdb.execute(query)
 
 def corr(): 
-    pass
+    tbl = query()
+
+    df = tbl.df()
+
+    df = df.pivot(
+        index="open_time",
+        columns="par",
+        values="close"
+    )
+
+    df.corr().to_excel("matriz_corr.xlsx")
+
     main()
+
+
 def atualizar():
 
     download_binance.atualizar_base()

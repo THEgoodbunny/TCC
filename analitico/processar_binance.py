@@ -6,7 +6,6 @@ from concurrent.futures import ProcessPoolExecutor
 from functools import lru_cache
 from paths import (
     PATH_BINANCE_RAW,
-    PATH_LOGS,
     PATH_BINANCE_PROCESSED
 )  
 
@@ -39,7 +38,7 @@ def processar_base():
 
     query = rf"""
     COPY(
-        SELECT 
+        SELECT DISTINCT
             {colunas}, 
             split(filename, '{separador}')[-2] AS par,
             split(filename, '-')[-2] AS ano,
@@ -50,7 +49,7 @@ def processar_base():
     TO '{processed}'
     (FORMAT parquet, PARTITION_BY(ano), OVERWRITE)
     """
-    df = duckdb.execute(query)
+    duckdb.execute(query)
     print('processo encerrado')    
 
 def main():

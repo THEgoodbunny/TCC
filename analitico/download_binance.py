@@ -1,21 +1,12 @@
-from pathlib import Path
-import requests, warnings, io, pyarrow.csv, pyarrow.parquet, shutil, time, concurrent.futures 
-import xml.etree.ElementTree as ET
+import requests, warnings, io, pyarrow.csv, pyarrow.parquet, shutil, time, concurrent.futures, xml.etree.ElementTree as ET
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile,BadZipFile
 from datetime import datetime
-
-#definindo os caminhos relativos e criando as pastas necessárias
-PATH_PARENT = Path(__file__).resolve().parent.parent
-
-PATH_DATA = PATH_PARENT / "data"
-
-PATH_BINANCE = PATH_DATA / "binance"
-
-PATH_KRAKEN = PATH_DATA / "kraken"
-
-PATH_BINANCE.mkdir(exist_ok=True,parents=True)
+from paths import (
+    PATH_BINANCE_RAW,
+    PATH_LOGS
+)
 
 # -----------------OS DADOS DA BINANCE SÃO ARMAZENADOS EM UM BUCKET DA AMAZON -------------------------------------
 # https://s3-ap-northeast-1.amazonaws.com/data.binance.vision?prefix=data/spot/monthly/klines/&list-type=2
@@ -43,7 +34,7 @@ def listar_pares_aws(params):
     params = params.copy()
 
     cont = 0
-
+    aws_xml = None
     while True:
         cont+=1
         for tentativa in range(1,6):
@@ -68,6 +59,9 @@ def listar_pares_aws(params):
 
                 time.sleep(2**(tentativa-1))
 
+        if aws_xml is None:
+            raise RuntimeError("Não foi possível obter o XML da AWS")
+        
         parsed_xml = ET.fromstring(aws_xml)
 
         bool_trunc = parsed_xml.findtext("nmsp:IsTruncated",namespaces=namespace)
@@ -111,7 +105,7 @@ def listar_zip_par(par, prefixo):
         "prefix": prefixo,
         "list-type":"2",
     }
-
+    aws_xml = None
     while True:
         for tentativa in range(1,6):
             try:
@@ -130,7 +124,8 @@ def listar_zip_par(par, prefixo):
                     raise
                 
                 time.sleep(2**(tentativa-1))
-
+        if aws_xml is None:
+            raise RuntimeError("Não foi possível obter o XML da AWS")
         parsed_xml = ET.fromstring(aws_xml)
 
         bool_trunc = parsed_xml.findtext("nmsp:IsTruncated",namespaces=namespace)
@@ -158,14 +153,13 @@ def listar_zip_par(par, prefixo):
 
 def listar_zip(prefixos):
 
-    with ThreadPoolExecutor(max_workers=32) as threads:
+    with ThreadPoolExecutor() as threads:
         resultados = list(threads.map(
                 listar_zip_par,prefixos.keys(),prefixos.values()
                 ))
 
     print("quantidade de pares com arquivos zip: ",len(resultados))
-    with open("output_zip.txt", "w",encoding="utf-8") as a:
-        a.write(str(resultados))
+
     return resultados
    
 def downloader(par,url):
@@ -173,7 +167,7 @@ def downloader(par,url):
 
     prefixo = "https://data.binance.vision/" 
 
-    path = PATH_BINANCE / par / "csv"
+    path = PATH_BINANCE_RAW / par / "csv"
 
     path.mkdir(exist_ok=True,parents=True)
 
@@ -235,7 +229,7 @@ def gerar_parquets():
         "taker_buy_quote_asset_volume",
         "ignore",
     ]
-    path_data = PATH_BINANCE
+    path_data = PATH_BINANCE_RAW
     for arquivo in path_data.glob("*/csv/*.csv"):
 
         final_path = arquivo.parent.parent
@@ -250,14 +244,17 @@ def gerar_parquets():
         print(arquivo.stem, "done")
 
 def deletar_csv():
-    for pasta in PATH_BINANCE.rglob("csv"):
+    for pasta in PATH_BINANCE_RAW.rglob("csv"):
         for item in pasta.iterdir():
             if item.is_file() or item.is_symlink():
                 item.unlink()
             elif item.is_dir():
                 shutil.rmtree(item)
 
-def main():
+def atualizar_base():
+
+    PATH_BINANCE_RAW.mkdir(exist_ok=True,parents=True)
+
     pares = listar_pares_aws(params)
 
     prefixos = construir_prefixos(pares)
@@ -271,17 +268,24 @@ def main():
     deletar_csv()
     if erros:
         print('arquivos que não baixaram: ',erros)
+
         now = datetime.now()
+
         format_time = now.strftime('%d-%m-%Y_%Hhr_%Mmin_%Sseg')
-        log_path = Path(__file__).resolve().parent / f"erros_download{format_time}.log"
+
+        log_path = PATH_LOGS / f"erros_download{format_time}.log"
+
         with open(log_path, "w", encoding="utf-8") as arquivo:
-            for par,url in erros.items():
-                arquivo.write(f"{par}: {url}\n")
+
+            for par, url, erro in erros:
+                arquivo.write(f"{par}: {url} | {erro}\n")
 
     else:
         print("sucesso (eu acho)")
 
-
+def main():
+    atualizar_base()
+    
 if __name__ == "__main__":    
 
    main()

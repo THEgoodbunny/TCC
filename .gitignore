@@ -1,6 +1,13 @@
 ARTIGOS_MANUAIS/
 *.pdf
+*.xlsx
+*.csv
+
+
 data/
+
+analitico/matriz_corr.xlsx
+analitico/.~lock.*#
 
 .venv/
 venv/

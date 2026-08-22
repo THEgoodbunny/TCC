@@ -40,9 +40,27 @@ def processar_base():
     COPY(
         SELECT DISTINCT
             {colunas}, 
+
             split(filename, '{separador}')[-2] AS par,
             split(filename, '-')[-2] AS ano,
-            to_timestamp(open_time/1000000) AS date_time_open
+
+            -- A Binance fez o favor de trocar o unix time 
+            -- de milissegundos(ms) para microsegundos(µs) em 2025
+            CASE
+                WHEN open_time >=100000000000000
+                    THEN
+                        to_timestamp(open_time/1000000.0)
+                ELSE
+                        to_timestamp(open_time / 1000.0)
+            END AS date_time_open,
+
+            CASE
+                WHEN close_time >= 100000000000000
+                    THEN to_timestamp(close_time / 1000000.0)
+                ELSE
+                    to_timestamp(close_time / 1000.0)
+            END AS date_time_close
+
         FROM read_parquet('{raw}/*/*.parquet', filename=true)
         ORDER BY par,open_time
         )

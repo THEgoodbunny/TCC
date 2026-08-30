@@ -1,12 +1,11 @@
-import download_binance,processar_binance,sys, pandas as pd, duckdb,openpyxl, pathlib
+import download_binance,processar_binance,sys, pandas as pd, duckdb,openpyxl, pathlib #pylint: disable=unused-import
 from paths import (PATH_LOGS,PATH_BINANCE_PROCESSED)
 import numpy as np
 import plotly.express as px
 
 
 def query():
-    path = PATH_BINANCE_PROCESSED
-        
+    path = PATH_BINANCE_PROCESSED        
     duckdb.execute("SET enable_progress_bar = true;")       # Ativa o mecanismo
     duckdb.execute("SET enable_progress_bar_print = true;") # Garante o print no stdout
     duckdb.execute("SET progress_bar_time = 100;")         # Mostra se demorar mais de 100ms
@@ -149,11 +148,9 @@ def hist():
         xaxis_title="Correlação",
         yaxis_title="Quantidade de pares"
     )
-
     fig.show()
 
 def atualizar():
-
     download_binance.atualizar_base()
     main()
 
@@ -180,7 +177,7 @@ def main():
         try:
             view = int(input("selecione a opção: "))
             if not view in range(0,5):
-                raise
+                raise #pylint: disable=misplaced-bare-raise
             break
         except:
             print("comando invalido ")
@@ -198,6 +195,4 @@ def main():
             hist()
 
 if __name__ == "__main__":    
-
-   main()
-
+    main()

@@ -2,7 +2,8 @@ ARTIGOS_MANUAIS/
 *.pdf
 *.xlsx
 *.csv
-
+*.parquet
+*.xlsx
 
 data/
 

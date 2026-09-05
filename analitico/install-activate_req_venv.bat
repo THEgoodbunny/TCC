@@ -1,21 +1,17 @@
 @echo off
 
-:: Se a venv nao existir ou estiver quebrada, cria uma nova
-if not exist venv\Scripts\activate (
+if not exist venv\Scripts\activate.bat (
     echo Criando novo ambiente virtual venv...
     python -m venv venv
 )
 
 echo Ativando ambiente virtual...
-call venv\Scripts\activate
+call venv\Scripts\activate.bat
 
 echo Instalando dependencias...
 python -m pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 echo Concluido!
-@echo off
-title Terminal Python (VENV Ativada)
-cmd /k "call venv\Scripts\activate"
 
-pause
+powershell -NoExit -Command "& '.\venv\Scripts\Activate.ps1'"

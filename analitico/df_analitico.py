@@ -1,10 +1,14 @@
 import duckdb,pandas as pd
-import gc
+import gc, plotly.express as px
+import plotly.io as pio
+
+pio.renderers.default = "png"
 gc.collect()
 
 from paths import (
     PATH_BINANCE_PROCESSED
 )  
+from main import corr
 
 # Montar df para volumetria
 # Montar df para retorno
@@ -147,7 +151,49 @@ print(picos_de_gaps)
 
 from pathlib import Path
 path = Path(__file__).resolve().parent
+
+# criação da matriz corr com base no top 20 volume de pares
+selecao = analise_par.sort_values(by="relacao_volume_global",ascending=False).head(20)
+
+str_pares = [ f"{valor}" for valor in selecao.index]
+print(str_pares)
+
+df_corr = corr(str_pares)
+fig = px.imshow(
+    df_corr,
+    text_auto=".2f",
+    color_continuous_scale="Spectral",
+    zmin=-1,
+    zmax=1,
+    color_continuous_midpoint=0,
+    title="Mapa de Calor de Correlação",
+    aspect="equal"
+)
+
+fig.update_layout(
+    width=1100,
+    height=1000,
+    margin=dict(
+        l=120,
+        r=80,
+        t=80,
+        b=140
+    ),
+    xaxis_title="",
+    yaxis_title=""
+)
+
+fig.update_xaxes(
+    tickangle=-45
+)
+
+fig.update_traces(
+    textfont_size=11
+)
+
+fig.show()
 analise_par.to_excel(path / 'analise_pares.xlsx')
+
 print('fim')
 gc.collect()
 

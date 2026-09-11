@@ -2,7 +2,7 @@ import duckdb,pandas as pd
 import gc, plotly.express as px
 import plotly.io as pio
 
-pio.renderers.default = "browser"
+pio.renderers.default = "png"
 gc.collect()
 
 from paths import (
@@ -96,6 +96,7 @@ def gerar_df():
         number_of_trades,
         taker_buy_base_asset_volume,
         taker_buy_quote_asset_volume,
+        (close / close_anterior) - 1 AS retorno_simples,
         LN(close / close_anterior) AS retorno
     FROM defasada;
         """
@@ -158,6 +159,9 @@ selecao = analise_par.sort_values(by="relacao_volume_global",ascending=False).he
 str_pares = [ f"{valor}" for valor in selecao.index]
 print(str_pares)
 
+#  -----------------------------  #
+# |     CORRELACAO DOS TOP 20   | #
+#  -----------------------------  #
 df_corr = corr(str_pares)
 fig = px.imshow(
     df_corr,
@@ -193,6 +197,33 @@ fig.update_traces(
 
 fig.show()
 analise_par.to_excel(path / 'analise_pares.xlsx')
+
+#  -------------------------------  #
+# | ESTATÍSTICAS DE RISCO-RETORNO | #
+#  -------------------------------  #
+
+estatisticas = (
+    df.groupby("par")["retorno"]
+      .agg(
+          mu="mean",
+          sigma="std"
+      )
+)
+
+print(estatisticas)
+
+
+import numpy as np
+
+HORAS_ANO = 24 * 365
+
+estatisticas["mu_anual"] = (
+    estatisticas["mu"] * HORAS_ANO
+)
+
+estatisticas["sigma_anual"] = (
+    estatisticas["sigma"] * np.sqrt(HORAS_ANO)
+)
 
 print('fim')
 gc.collect()

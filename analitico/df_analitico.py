@@ -2,7 +2,7 @@ import duckdb,pandas as pd
 import gc, plotly.express as px
 import plotly.io as pio
 
-pio.renderers.default = "png"
+pio.renderers.default = "browser"
 gc.collect()
 
 from paths import (

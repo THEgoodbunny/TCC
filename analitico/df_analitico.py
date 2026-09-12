@@ -159,6 +159,7 @@ selecao = analise_par.sort_values(by="relacao_volume_global",ascending=False).he
 str_pares = [ f"{valor}" for valor in selecao.index]
 print(str_pares)
 
+# %%
 #  -----------------------------  #
 # |     CORRELACAO DOS TOP 20   | #
 #  -----------------------------  #
@@ -198,6 +199,7 @@ fig.update_traces(
 fig.show()
 analise_par.to_excel(path / 'analise_pares.xlsx')
 
+#%%
 #  -------------------------------  #
 # | ESTATÍSTICAS DE RISCO-RETORNO | #
 #  -------------------------------  #

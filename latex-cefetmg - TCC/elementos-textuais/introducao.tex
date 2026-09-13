@@ -8,46 +8,54 @@
 \section{Contextualização}
 \label{sec_contextualizacao}
 
-``A administração financeira pode ser vista como uma forma de economia aplicada, que se baseia amplamente em conceitos teóricos econômicos'' \citeonline[p.~4]{gitman2004principles}. Com essa citação, se introduz o presente artigo abordando a definição de sua área de estudo, a Administração Financeira. Área que se caracteriza por dinamismo, utilizando de novas tecnologias em busca de maximização de resultados.
+``A administração financeira pode ser vista como uma forma de economia aplicada, que se baseia amplamente em conceitos teóricos econômicos'' \citeonline[p.~4]{gitman2004principles}. Com essa citação, se introduz o presente trabalho abordando a definição da área macro do estudo, a Administração Financeira. Área que se caracteriza por dinamismo, que cada vez mais vem se apropriando de novas tecnologias em busca de maximização de resultados.
 
-Nesse sentido, \citeonline[p.~15]{paiva2014redes}, diz que a possibilidade de prever preços futuros em ativos financeiros, contraria a teoria financeira dominante, a Hipótese de Mercado Eficiente (HME). Esta, denota ineficácia na previsão de preços do mercado se utilizando de informações passadas. A afirmativa é justificada pelo pressuposto de movimento browniano da HME, concebido por características randômicas e independentes. Entretanto, Paiva pontua que há estudos que defendem que o mercado acionário, na verdade, não se firma como aleatório e as séries financeiras têm memória de longo-prazo. De tal maneira que, caso seja possível identificar os padrões de comportamento do mercado, se tornaria plausível uma abordagem preditiva.
+Meio a essa instigante área, um dos assuntos bastante pesquisado trata-se das decisões de investimento \todo[inline]{Inserir umas 3 referências que trataram do assunto.}. Mas, \citeonline{paiva2014redes}, diz que a possibilidade de prever preços futuros em ativos financeiros a fim de obter ganhos anormais, contraria a teoria financeira dominante, a Hipótese de Mercado Eficiente (HME), mainstream da Finanças Moderna. A HME denota ineficácia na previsão de preços do mercado se utilizando de informações passadas. A afirmativa é justificada pelo pressuposto de movimento browniano da HME, concebido por características randômicas e independentes. Entretanto, \citeonline{paiva2014redes} pontua que há estudos que defendem que o mercado acionário, na verdade, não se firma como aleatório e as séries financeiras têm memória de longo-prazo. De tal maneira que, caso seja possível identificar os padrões de comportamento do mercado, se tornaria plausível uma abordagem preditiva.
 
-Sendo assim, diversos estudos demonstraram obter sucesso em previsões de preços de ativos, fazendo a utilização de ferramentas de aprendizado de máquina. Em sua definição clássica, \citeonline[p.~2]{mitchell1997machine} define aprendizado de máquina como a capacidade de um programa de computador aprender com experiência E, com respeito a uma determinada classe de tarefas T e em seguida, aferir a partir de uma métrica de desempenho P se seu desempenho em T melhora com experiência E.
+Sendo assim, diversos estudos demonstraram obter sucesso em previsões de preços de ativos, fazendo a utilização de ferramentas de aprendizado de máquina. Em sua definição clássica, \citeonline{mitchell1997machine} define aprendizado de máquina como o processo pelo qual um programa de computador melhora seu desempenho em determinada classe de tarefas a partir da experiência, considerando uma métrica específica de desempenho.
 
-\citeonline[p.~331]{aquart2022machine}, empregou e analisou vários modelos de Aprendizado de máquina para prever e negociar movimentos das 100 maiores criptomoedas concluiu que todos os modelos utilizados fazem previsões estatisticamente viáveis.
+\citeonline{aquart2022machine}, empregou e analisou vários modelos de Aprendizado de máquina para prever e negociar movimentos das 100 maiores criptomoedas concluiu que todos os modelos utilizados fazem previsões estatisticamente viáveis.
 
-\citeonline[p.~852]{wei2023forecasting} descobriram que, ao combinar a previsão de retornos do Bitcoin com uma estratégia de alavancagem híbrida que utiliza volatilidade e sentimento narrativo, que segundo o texto são informações de sentimento extraídas de fontes textuais formais e públicas, como publicações, notícias e artigos de negócios globais, que influenciam o mercado de criptomoedas, em contraste com dados brutos de mídias sociais ou indicadores técnicos. Todas as estratégias de alavancagem melhoraram significativamente o desempenho da negociação, sendo que a estratégia híbrida superou as demais.
+\citeonline{wei2023forecasting} descobriram que, ao combinar a previsão de retornos do Bitcoin com uma estratégia de alavancagem híbrida que utiliza volatilidade e sentimento narrativo, que segundo o texto são informações de sentimento extraídas de fontes textuais formais e públicas, como publicações, notícias e artigos de negócios globais, que influenciam o mercado de criptomoedas, em contraste com dados brutos de mídias sociais ou indicadores técnicos. Todas as estratégias de alavancagem melhoraram significativamente o desempenho da negociação, sendo que a estratégia híbrida superou as demais.
 
 \citeonline{belcastro2023enhancing} afirma que a partir da previsão de preços de criptomoedas através da integração de dados de mídias sociais e de mercado, alcançou um ganho médio geral de 194\% sem taxas de transação e de 117\% considerando as taxas.
 
 \section{Problema de Pesquisa}
+
 \label{sec_problema_de_pesquisa}
 
-Tendo em vista o cenário citado acima, a presente pesquisa busca responder: quais as contribuições da aprendizagem de máquina na gestão de carteiras de criptoativos?
+Tendo em vista o cenário citado acima, a presente pesquisa busca responder: como integrar previsões de criptoativos baseadas em \textit{machine learning} ao processo de otimização de portfólio fundamentado no modelo de Markowitz?
 
 \section{Objetivos de pesquisa}
+
 \label{sec_objetivos_de_pesquisa}
 
 \subsection{Objetivo geral}
+
 \label{subsec_objetivo_geral}
 
 Diante de tal pergunta, a pesquisa há de examinar as contribuições do uso de aprendizado de máquina para a gestão de carteiras de criptoativos.
 
 \subsection{Objetivos específicos}
+
 \label{subsec_objetivos_especificos}
 
 Firmando se a esse objetivo, delinearam-se os seguintes objetivos específicos para viabilizar a acurácia das determinações da pesquisa:
 
 \begin{alineas}
+
     \item Analisar os resultados obtidos a partir do modelo de diversificação de portifólio de Markowitz em conjunto com o aprendizado de máquina.
+
     \item Comparar estratégias de investimento tradicionais e as com base em modelos de aprendizado de máquina.
+
     \item Avaliar se há consistência entre os resultados apresentados em diferentes pesquisas.
+
 \end{alineas}
 
 \section{Justificativa}
 \label{sec_justificativa}
 
-Em um contexto de ascensão do termo ``inteligência artificial'', é difícil saber factualmente o que pode ser promissor na utilização de novas tecnologias computacionais baseadas em interações não lineares. Segundo \citeonline[p.~140]{molnar2019interpretable}, são interações não lineares,
+Em um contexto de ascensão do termo ``inteligência artificial'', é difícil saber factualmente o que pode ser promissor na utilização de novas tecnologias computacionais baseadas em interações não lineares. Segundo \citeonline{molnar2019interpretable}, são interações não lineares,
 
 \begin{citacao}
 Quando características interagem entre si em um modelo de previsão, a previsão não pode ser expressa como a soma dos efeitos das características, porque o efeito de uma característica depende do valor da outra característica.

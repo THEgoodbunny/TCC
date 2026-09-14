@@ -9,7 +9,8 @@
 - **Maria Rocha:** usar como referência para a tabela de estudos relacionados.
 
 ## Alterações solicitadas
-- [x] Abstrair a referencia a MITCHEL na intro 
+- [x] Abstrair a referencia a MITCHEL na intro
+- [x] Incluir na Intro decisões de investimento 
 
 - [ ] REVISAR TODA A 2.4 (MARKOWITZ)
     - [ ] Expandir a seção **2.4.2**.

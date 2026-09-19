@@ -1,6 +1,7 @@
 import duckdb,pandas as pd
 import gc, plotly.express as px
 import plotly.io as pio
+import requests 
 
 pio.renderers.default = "png"
 gc.collect()
@@ -214,7 +215,6 @@ estatisticas = (
 
 print(estatisticas)
 
-
 import numpy as np
 
 HORAS_ANO = 24 * 365
@@ -230,3 +230,19 @@ estatisticas["sigma_anual"] = (
 print('fim')
 gc.collect()
 
+#%%
+import requests
+#  -------------------------------  #
+# |       INDICE DE SHARPE        | #
+#  -------------------------------  #
+
+# ENDPOINT SELIC: https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2026&dataFinal=17/09/2026
+
+selic = requests.get(
+    url="https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2026&dataFinal=17/09/2026"
+)
+
+selic = selic.json()[-1]["valor"]
+print(selic)
+
+# %%

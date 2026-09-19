@@ -1,0 +1,5 @@
+Set-Location "C:\Users\gustavo.alves\Desktop\Pessoal\GIT\TCC\latex-cefetmg - TCC"
+
+pandoc ".\meu-trabalho.tex" `
+  --reference-doc="C:\Users\gustavo.alves\Desktop\Pessoal\GIT\TCC\conversão_pandoc\reference.docx" `
+  -o "C:\Users\gustavo.alves\Desktop\Pessoal\GIT\TCC\conversão_pandoc\meu-trabalho-teste.docx"

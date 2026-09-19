@@ -1,4 +1,4 @@
-% -----------------------------------------------------------------------------</
+% -----------------------------------------------------------------------------
 % Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG
 %
 % Modelo de trabalho acadêmico em conformidade com as normas da ABNT
@@ -12,7 +12,7 @@
 % Utiliza um modelo para impressão apenas no anverso
 \documentclass[oneside]{cefetmg}
 % Utiliza um modelo para impressão em frente (anverso) e verso
-%\documentclass[twoside]{cefetmg}fpaiva@cefetmg.br
+%\documentclass[twoside]{cefetmg}
 
 % Utiliza um modelo que mostra a palavra "Capítulo" no início de cada capítulo
 %\documentclass[oneside, nomecapitulo]{cefetmg}
@@ -28,17 +28,15 @@
 \usepackage{graphicx}               % Inclusão de gráficos
 % Centraliza figuras, tabelas e quadros
 \usepackage{etoolbox}
-\usepackage{graphicx}
 \usepackage{caption}
 \usepackage{xurl}
 \usepackage{float}
+\setlength{\marginparwidth}{2cm}
 \usepackage[colorinlistoftodos]{todonotes}
 
 \AtBeginEnvironment{figure}{\centering}
 \AtBeginEnvironment{table}{\centering}
 \AtBeginEnvironment{quadro}{\centering}
-
-\usepackage{caption}
 
 % Legendas/títulos de figuras, tabelas e quadros
 \captionsetup{
@@ -189,7 +187,7 @@
 \imprimirlistafiguras                             % (opcional) Lista de figuras
 \imprimirlistatabelas                             % (opcional) Lista de tabelas
 \imprimirlistaquadros                             % (opcional) Lista de quadros
-\imprimirlistaalgoritmos                          % (opcional) Lista de algor.
+%\imprimirlistaalgoritmos                          % (opcional) Lista de algor.
 \input{elementos-pre-textuais/lista-siglas.tex}   % (opcional) Lista de siglas
 
 %\input{elementos-pre-textuais/lista-simbolos.tex} % (opcional) Lista de símb.

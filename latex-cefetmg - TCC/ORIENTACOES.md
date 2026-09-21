@@ -19,18 +19,18 @@
     - [ ] 2.3
        - [ ] tirar "criptoativos" na 2.3.3
     - [ ] REVISAR  A 2.4 (MARKOWITZ)
-      - [ ] Diminuir referencias de PAIVA 
-       - [ ] Expandir a seção **2.4.2**.
-            -  [ ] Explicar mitigação de risco.
+      - [x] Diminuir referencias de PAIVA 
+       - [x] Expandir a seção **2.4.2**.
+            -  [x] Explicar mitigação de risco.
               - 
             - [x] Diferenciar **risco sistêmico** e **risco diversificável**.
-          - [ ] Expandir **fronteira eficiente** e **curva de indiferença** 2.4.4.
+        - [ ] Expandir **fronteira eficiente** e **curva de indiferença** 2.4.4.
             - [ ] Incluir gráficos.
             - [ ] Fazer desenho da fronteira ressaltando ponto de mínima variancia
-    - [ ] Consultar fórmulas das páginas **246 e 249** do livro de neto.
+
     - [ ] Explicar melhor as métricas e fórmulas.
     
-    - [ ] Relacionar diversificação e risco ao modelo de Markowitz.
+    - [x] Relacionar diversificação e risco ao modelo de Markowitz.
 
 - [ ] 3: ESTUDOS RELACIONADOS
   - [ ] Criar tabela de **Estudos Relacionados**.

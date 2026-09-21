@@ -1,0 +1,127 @@
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/3 parte intro - machine learning/Class-imbalanced dynamic financial distress prediction based on Adaboost-SVM ensemble combined with SMOTE and time weighting.pdf
+============================================================
+
+251-empirical results demonstrate its applicability for forecasting eﬀectiveness of asset restructuring. Cordón et al. [37] introduce a newly developed novel package written in R and C++, for preprocessing of imbalanced dataset with some relatively new oversampling algorithms such
+252-as majority weighted minority oversampling [38], rapidly converging
+253:gibbs (RACOG) and wrapper-based RACOG [39], random walk oversampling [40], and probability distribution density function estimation
+254-based oversampling [41]. Data level approaches for coping with class
+255-imbalance are applicable to various classiﬁcation algorithms, and can
+--
+1954-Eng. 26 (2) (2014) 405–425.
+1955-[39] B. Das, N.C. Krishnan, D.J. Cook, RACOG and wRACOG: two probabilistic oversampling techniques, IEEE Trans. Knowl. Data Eng. 27 (1) (2015) 222–234.
+1956:[40] H. Zhang, M. Li, RWO-sampling: a random walk over-sampling approach to imbalanced data classiﬁcation, Inf. Fusion 20 (2014) 99–116.
+1957-[41] M. Gao, X. Hong, S. Chen, C.J. Harris, E. Khalaf, PDFOS: PDF estimation based
+1958-over-sampling for imbalanced two-class problems, Neurocomputing 138 (2014)
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/3 parte intro - machine learning/Ensemble Deep Learning Models for Forecasting.pdf
+============================================================
+
+206-for predicting major cryptocurrency prices and movements. Additionally, they conducted a detailed
+207-discussion regarding the fundamental research questions: Can deep learning algorithms efficiently
+208:predict cryptocurrency prices? Are cryptocurrency prices a random walk process? Which is a proper
+209-validation method of cryptocurrency price prediction models? Their comprehensive experimental
+210-results revealed that even the LSTM-based and CNN-based models, which are generally preferable
+211-for time-series forecasting [8–10], were unable to generate efficient and reliable forecasting models.
+212:Moreover, the authors stated that cryptocurrency prices probably follow an almost random walk
+213-process while few hidden patterns may probably exist. Therefore, new sophisticated algorithmic
+214-approaches should be considered and explored for the development of a prediction model to make
+--
+2438-6.1. Discussion of Proposed Methodology
+2439-Cryptocurrency prediction is considered a very challenging forecasting problem, since the
+2440:historical prices follow a random walk process, characterized by large variations in the volatility,
+2441-although a few hidden patterns may probably exist [48,49]. Therefore, the investigation and the
+2442-development of a powerful forecasting model for assisting decision making and investment policies is
+--
+2486-and highly volatile prices [37]. The numerical experiments demonstrated that averaging ensemble
+2487-models trained on perturbed training dataset is a means to favor invariance to these perturbations
+2488:and better capture the directional movements of the presented random walk processes. However,
+2489-the ACF plots revealed that bagging ensemble models violate the assumption of no autocorrelation
+2490-in the residuals, which implies that their predictions may be inefficient. In contrast, the ACF plots of
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/3 parte intro - machine learning/Crude oil price prediction A comparison between AdaBoost-LSTM and AdaBoost-GRU for improving forecasting performance.pdf
+============================================================
+
+77-techniques include the autoregressive integrated moving average
+78-(ARIMA) model (Xiang, and Zhuang, 2013; Zhao and Wang, 2014),
+79:Random walk (RW) (Yu et al., 2017), generalized autoregressive
+80-conditional heteroskedasticity (GARCH) (Ahmed and Shabri, 2014);
+81-Wei et al., 2010), vector autoregressive (VAR) models (Ramyar and
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/1 parte intro - decisoes de investimentos e tomada de decisao/Bitcoin A safe haven asset and a winner amid political and economic.pdf
+============================================================
+
+845-compliant. Therefore, if the parameters are unstable, they may not be
+846-applicable to the full sample test. In order to verify whether the pa­
+847:rameters obey the random walk processes, we conducted parameter
+848-stability tests, containing the Sup-F, Ave-F, and Exp-F tests (Hansen,
+849-1992; Nyblom, 1989), that are capable of assessing the structural
+--
+1201-happens at a 5% significance level for VAR. Additionally, the Lc statistics
+1202-test demonstrates that the VAR system parameters cannot follow the
+1203:random walk process at a level of 1%, which further proves that the
+1204-parameters are marked by non-constancy. Furthermore, based on the
+1205-stability tests, we have also found that the parameters exhibit unstable
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/2 parte intro - Cripto/Volatility dynamics of crypto-currencies’ returns.pdf
+============================================================
+
+140-crypto-currency returns. Mensi et al. (2018) explored the impact of dual long-memory and structural breaks on the conditional
+141-volatility of the Bitcoin and Ethereum markets. On implementing four diﬀerent models, more speciﬁcally, ARFIMAGARCH, ARFIMAFIGARCH, ARFIMA-FIAPARCH, and ARFIMA-HYGARCH, they reached the conclusion that the dual long-memory property of the
+142:Bitcoin and Ethereum proved to refute the market eﬃciency and random walk hypothesis. Their attained ﬁndings revealed that the
+143-mean and variance equations’ long-memory aspect turns out to decrease signiﬁcantly. They also outlined that the FIGARCH model
+144-with SB variables appeared to provide a comparatively superior forecasting capacity as compared to the other models. Peng et al.
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/5 parte intro - estudos relacionados/Portfolio formation with preselection using deep learning from long-term financial data.pdf
+============================================================
+
+2429-17
+2430-
+2431:Malkiel, B. G. (2007). A random walk down wall street: The time-tested strategy for
+2432-successful investing WW Norton & Company.
+2433-Markowitz, H. (1952). Portfolio selection. Journal of Finance, 7(1), 77–91.
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/5 parte intro - estudos relacionados/Deep learning for financial forecasting A review of recent trends.pdf
+============================================================
+
+1377-and Cagcag Yolcu (2022) propose a modified CNN architecture specifically designed for financial time series, improving forecast
+1378-accuracy for indices such as TAIEX and FTSE. Notably, Yilmaz and Yildiztepe (2024) find that TCNs outperform LSTM, GRU, ARIMA,
+1379:and Random Walk models in stock return forecasting. Their success is largely attributed to the TCNs’ causal, dilated convolution
+1380-structure, which allows for efficient modeling of long-term dependencies without the vanishing gradient issues typically faced by
+1381-recurrent networks.
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/5 parte intro - estudos relacionados/Enhancing portfolio.pdf
+============================================================
+
+4337-540:123082. doi: 10.1016/j.physa.2019.123082
+4338-
+4339:Pinches, G. E. (1970). The random walk hypothesis and technical analysis. Finan.
+4340-Anal. J. 26, 104–110. doi: 10.2469/faj.v26.n2.104
+4341-
+
+
+============================================================
+ARQUIVO: /mnt/SSD_SEC/GIT/TCC/REPOSITORIO/TRABALHOS_REFERENCIA/5 parte intro - estudos relacionados/Computational Intelligence and Neuroscience - 2022 - Padhi - An Intelligent Fusion Model with Portfolio Selection and.pdf
+============================================================
+
+1990-eﬃciency, J,” Finance and Economics, vol. 6, no. 2–3,
+1991-pp. 95–101, 1978.
+1992:[6] E. F. Fama, “Random walks in stock market prices,” Financial Analysts Journal, vol. 21, no. 5, pp. 55–59, 1965.
+1993-[7] P. Yu and X. Yan, “Stock price prediction based on deep
+1994-neural networks,” Neural Computing & Applications, vol. 32,

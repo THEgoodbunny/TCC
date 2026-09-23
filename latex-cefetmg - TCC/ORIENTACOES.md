@@ -9,8 +9,7 @@
 - **Maria Rocha:** usar como referência para a tabela de estudos relacionado.
 
 ## Alterações solicitadas
-- 
-- [x] 1 - INTRODUÇÃO
+-  [x] 1 - INTRODUÇÃO
     - [x] Abstrair a referencia de MITCHEL na intro
     - [x] Incluir na Intro decisões de investimento
 - [ ] 2 - REFERENCIAL TEÓRICO

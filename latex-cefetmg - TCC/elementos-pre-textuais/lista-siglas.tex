@@ -3,14 +3,156 @@
 % Lista de Siglas
 % -----------------------------------------------------------------------------
 
-\begin{siglas}
-    \item[ANNs] \textit{Artificial Neural Networks}
-    \item[COVID-19] \textit{Coronavirus Disease 2019}
-    \item[HME] Hipótese de Mercado Eficiente
-    \item[ML] \textit{Machine Learning}
-    \item[MV] \textit{Média-variância}
-    \item[SVM] \textit{Support Vector Machine}
-\end{siglas}
+\DeclareAcronym{adaboost}{
+    short = AdaBoost,
+    long = Adaptive Boosting,
+    long-format = \itshape,
+    list-format = \itshape
+
+}
+
+\DeclareAcronym{anns}{
+    short = ANNs,
+    long = Artificial Neural Networks,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{api}{
+    short = API,
+    long = Application Programming Interface,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{arima}{
+    short = ARIMA,
+    long = Autoregressive Integrated Moving Average,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{alstm}{
+    short = A-LSTM,
+    long = Attention-based Long Short-Term Memory,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{bilstm}{
+    short = BiLSTM,
+    long = Bidirectional Long Short-Term Memory,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{cnn}{
+    short = CNN,
+    long = Convolutional Neural Network,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{covid19}{
+    short = COVID-19,
+    long = Coronavirus Disease 2019,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{cvar}{
+    short = CVaR,
+    long = Conditional Value at Risk,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{drl}{
+    short = DRL,
+    long = Deep Reinforcement Learning,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{garch}{
+    short = GARCH,
+    long = Generalized Autoregressive Conditional Heteroskedasticity,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{hme}{
+    short = HME,
+    long = Hipótese de Mercado Eficiente
+}
+
+\DeclareAcronym{lstm}{
+    short = LSTM,
+    long = Long Short-Term Memory,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{ml}{
+    short = ML,
+    long = Machine Learning,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{mv}{
+    short = MV,
+    long = Média-variância
+}
+
+\DeclareAcronym{ods}{
+    short = ODS,
+    long = Objetivos de Desenvolvimento Sustentável
+}
+
+\DeclareAcronym{svm}{
+    short = SVM,
+    long = Support Vector Machine,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{var}{
+    short = VaR,
+    long = Value at Risk,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{xai}{
+    short = XAI,
+    long = Explainable Artificial Intelligence,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+\DeclareAcronym{xgboost}{
+    short = XGBoost,
+    long = Extreme Gradient Boosting,
+    long-format = \itshape,
+    list-format = \itshape
+}
+
+% REMOVE O NEGRÍTO
+\acsetup{
+    list/template = tabular,
+    list/display = all,
+    list/sort = true,
+    templates/colspec = {lp{.7\linewidth}}
+}
+
+\newcommand{\imprimirlistadesiglas}{
+    \printacronyms[
+        name = {LISTA DE ABREVIATURAS E SIGLAS}
+    ]%
+    \clearpage
+
+}
 
 % -----------------------------------------------------------------------------
 % Edite a lista acima para definir as siglas utilizadas neste trabalho.

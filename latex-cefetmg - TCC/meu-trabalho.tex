@@ -1,4 +1,5 @@
 % -----------------------------------------------------------------------------
+% LTeX: enabled=false
 % Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG
 %
 % Modelo de trabalho acadêmico em conformidade com as normas da ABNT
@@ -20,6 +21,7 @@
 % -----------------------------------------------------------------------------
 % Pacotes utilizados
 % -----------------------------------------------------------------------------
+\usepackage{acro} %para lista de acronimos e abreviaturas
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}         % Codificação do documento
 \usepackage[T1]{fontenc}            % Seleção de código de fonte
@@ -131,6 +133,10 @@
 % Inclui o arquivo que contém os dados do trabalho acadêmico
 \input{elementos-pre-textuais/preambulo.tex}
 % Citações longas: fonte 10, recuo 4 cm e espaçamento simples
+
+%precisa estar aqui pela função DeclareAcronym
+\input{elementos-pre-textuais/lista-siglas.tex} 
+
 \renewcommand{\ABNTEXfontereduzida}{\footnotesize}
 \setlength{\ABNTEXcitacaorecuo}{4cm}
 
@@ -163,8 +169,6 @@
 \renewcommand{\ABNTEXsubsubsectionfont}{\normalfont\bfseries}
 \renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
 
-
-
 % Início do documento
 \begin{document}
 % Espaçamento geral 1,5
@@ -188,8 +192,8 @@
 \imprimirlistatabelas                             % (opcional) Lista de tabelas
 \imprimirlistaquadros                             % (opcional) Lista de quadros
 %\imprimirlistaalgoritmos                          % (opcional) Lista de algor.
-\input{elementos-pre-textuais/lista-siglas.tex}   % (opcional) Lista de siglas
-
+\imprimirlistadesiglas                            % (opcional) Lista de siglas
+\clearpage
 %\input{elementos-pre-textuais/lista-simbolos.tex} % (opcional) Lista de símb.
 \imprimirsumario                                  % Sumário
 

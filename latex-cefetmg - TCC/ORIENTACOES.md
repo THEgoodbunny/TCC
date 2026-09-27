@@ -27,8 +27,7 @@
             - [ ] Incluir gráficos.
             - [ ] Fazer desenho da fronteira ressaltando ponto de mínima variancia
 
-    - [ ] Explicar melhor as métricas e fórmulas.
-    
+
     - [x] Relacionar diversificação e risco ao modelo de Markowitz.
 
 - [ ] 3: ESTUDOS RELACIONADOS

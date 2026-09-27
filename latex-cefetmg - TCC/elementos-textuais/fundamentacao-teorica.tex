@@ -157,7 +157,7 @@ Sendo assim, o risco é definido pela variação dos retornos em relação à su
 
 O resultado da fórmula é evidenciado na figura~\ref{fig:risco-retorno}. Pode-se observar que o comportamento de uma carteira é influenciado pela correlação entre os ativos que a compõem. O gráfico mostra possíveis combinações dos ativos $X$ e $Y$. Comparativamente, o ativo $X$ apresenta maior risco e retorno, sendo representado pelo ponto $W$, enquanto o ativo $Y$ apresenta menor risco e retorno, sendo representado pelo ponto $K$. O ponto $M$ representa a carteira de variância mínima, considerando um cenário em que os ativos apresentem correlação ($\rho$) menor que $1$ e maior que $-1$. Quanto à correlação, o gráfico também demonstra que, quanto mais próximo de $-1$, menor tende a ser o desvio padrão da carteira no ponto de variância mínima; quanto mais próximo de $1$, maior tende a ser o desvio. Em um cenário de correlação positiva perfeita ($\rho=1$), não há redução adicional do risco por meio da diversificação. Considerando a composição do risco discutida anteriormente, torna-se necessário compreender sua mitigação. Segundo à teoria de mercado, conforme pontua \citeonline{assaf2014financas}, o risco passível de mitigação é o não sistemático, pois está relacionado às características específicas de cada ativo. Essa dinâmica será abordada em maiores detalhes na seção~\ref{subsec_diversificacao_e_fronteira_eficiente}
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \caption{Linha do conjunto de combinações}
     \centering
     \includegraphics[
@@ -172,6 +172,7 @@ O resultado da fórmula é evidenciado na figura~\ref{fig:risco-retorno}. Pode-s
 \subsection{Diversificação e fronteira eficiente}
 \label{subsec_diversificacao_e_fronteira_eficiente}
 
+
 O propósito central da diversificação de portfólios consiste em estruturar uma combinação de ativos que apresentem correlação nula ou moderada entre si, para maximizar os retornos ajustados ao risco do investimento \cite{bakry2021bitcoin}. A diversificação atua não apenas como um mecanismo de mitigação da exposição ao risco, mas também como um impulsionador para a obtenção de rentabilidade superior \cite{jeleskovic2024cryptocurrency}. Essa estratégia demonstra eficácia empírica mesmo quando incorpora classes de ativos caracterizadas por elevada volatilidade na composição da carteira \cite{bakry2021bitcoin}.
 
 Sob a ótica do modelo de \ac{mv}, a formulação matemática configura-se como um problema de otimização multiobjetivo, cujo resultado é um conjunto de soluções ótimas denominado fronteira eficiente de investimentos \cite{paiva2019decision}. Essa fronteira delimita a carteira de ativos capaz de alcançar o patamar máximo de retorno esperado para um dado limite mínimo de risco estabelecido, indicando as estratégias de alocação mais eficientes para qualquer nível de retorno desejado pelo investidor \cite{paiva2019decision}.\todo[inline]{mexer aqui, tirar p-aiva ou colocar outros}
@@ -179,6 +180,20 @@ Sob a ótica do modelo de \ac{mv}, a formulação matemática configura-se como 
 A otimização de carteiras é a técnica voltada à extração do benefício máximo derivado da alocação de recursos financeiros, respeitando estritamente o perfil de risco-retorno do investidor \cite{jeleskovic2024cryptocurrency}. O procedimento requer o ajuste percentual do peso de cada ativo visando, em termos estatísticos, a minimização da variância ou desvio padrão e a maximização da média dos retornos \cite{jeleskovic2024cryptocurrency}. Profissionais de investimento exploram o potencial de diferentes ativos por meio de simulações e da aplicação de cenários de restrição sobre os pesos de alocação \cite{bakry2021bitcoin}.
 
 Do ponto de vista empírico, a determinação da ponderação ideal utiliza frequentemente a maximização do Índice de Sharpe \todo{expandir indice de sharpe} como objetivo principal, método que origina o que a literatura técnica denomina como carteira de tangência \cite{jeleskovic2024cryptocurrency}. As modelagens aplicam restrições orçamentárias unitárias, permitindo o posicionamento do investidor em ativos arbitrários dentro dos limites impostos pelo cenário \cite{bakry2021bitcoin}. Contudo, a aplicação dessa técnica em múltiplos ativos de alto risco pode gerar carteiras ótimas compostas por uma abundância de frações diminutas (pesos de pequena escala), impondo barreiras práticas para a implementação da estratégia, especialmente no caso de investidores individuais \cite{chaweewanchon2022markowitz}.
+
+
+\begin{figure}[htb]
+
+    \caption{Fronteira eficiente e curva de indiferença.}
+    \label{fig:fronteira_eficiente}
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \input{figuras/fronteira_eficiente_adapt.tex}%
+    }
+
+    \fontefigura{Adaptado de \citeonline{assaf2014financas}.}
+\end{figure}
+
 
 \todo[inline]{expandir}
 \todo[inline]{incluir gráfico de fronteira eficiente ressaltando o ponto de minima variância}

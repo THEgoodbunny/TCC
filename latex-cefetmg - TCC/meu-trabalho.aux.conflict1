@@ -1,0 +1,1128 @@
+\relax 
+\providecommand*{\memsetcounter}[2]{}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand\BKM@entry[2]{}
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
+\catcode `"\active 
+\citation{abnt-url-package=url}
+\citation{abnt-emphasize=bf}
+\citation{abnt-doi=expand}
+\citation{abnt-refinfo=yes}
+\citation{abnt-etal-cite=3}
+\citation{abnt-etal-list=3}
+\citation{abnt-thesis-year=final}
+\@writefile{toc}{\changetocdepth  {4}}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\acswitchoff }
+\@writefile{lof}{\acswitchoff }
+\@writefile{lot}{\acswitchoff }
+\babel@aux{brazil}{}
+\BKM@entry{id=1,dest={6368617074657262312E30},srcline={185}}{5C3337365C3337375C303030465C3030306F5C3030306C5C303030685C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030725C3030306F5C303030735C303030745C3030306F}
+\BKM@entry{id=2,dest={6C6F662E30},srcline={198}}{5C3337365C3337375C3030304C5C303030695C303030735C303030745C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030465C303030695C303030675C303030755C303030725C303030615C30303073}
+\@writefile{toc}{\setlength  {\cftchapterindent }{\cftlastnumwidth } \setlength  {\cftchapternumwidth }{2em}}
+\BKM@entry{id=3,dest={6C6F742E30},srcline={199}}{5C3337365C3337375C3030304C5C303030695C303030735C303030745C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030545C303030615C303030625C303030655C3030306C5C303030615C30303073}
+\@writefile{toc}{\setlength  {\cftchapterindent }{\cftlastnumwidth } \setlength  {\cftchapternumwidth }{2em}}
+\BKM@entry{id=4,dest={6C6F712E30},srcline={200}}{5C3337365C3337375C3030304C5C303030695C303030735C303030745C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030515C303030755C303030615C303030645C303030725C3030306F5C30303073}
+\@writefile{toc}{\setlength  {\cftchapterindent }{\cftlastnumwidth } \setlength  {\cftchapternumwidth }{2em}}
+\@writefile{toc}{\setlength  {\cftchapterindent }{\cftlastnumwidth } \setlength  {\cftchapternumwidth }{2em}}
+\BKM@entry{id=5,dest={746F632E30},srcline={205}}{5C3337365C3337375C303030535C303030755C3030306D5C3030305C3334315C303030725C303030695C3030306F}
+\@writefile{toc}{\setlength  {\cftchapterindent }{\cftlastnumwidth } \setlength  {\cftchapternumwidth }{2em}}
+\BKM@entry{id=6,dest={636861707465722E31},srcline={6}}{5C3337365C3337375C303030495C3030306E5C303030745C303030725C3030306F5C303030645C303030755C3030305C3334375C3030305C3334335C3030306F}
+\BKM@entry{id=7,dest={73656374696F6E2E312E31},srcline={8}}{5C3337365C3337375C303030435C3030306F5C3030306E5C303030745C303030655C303030785C303030745C303030755C303030615C3030306C5C303030695C3030307A5C303030615C3030305C3334375C3030305C3334335C3030306F}
+\citation{gitman2004principles}
+\citation{babaei2022explainable}
+\citation{almansour2023behavioral}
+\citation{adil2022financial}
+\citation{paiva2014redes}
+\citation{paiva2014redes}
+\citation{mitchell1997machine}
+\citation{aquart2022machine}
+\citation{wei2023forecasting}
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapternumwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase    []{Introdução}}{7}{chapter.1}\protected@file@percent }
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap_introducao}{{1}{7}{\texorpdfstring {\MakeTextUppercase {\tempf@rtoc }}{\tempf@rtoc }}{chapter.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contextualização}{7}{section.1.1}\protected@file@percent }
+\newlabel{sec_contextualizacao}{{1.1}{7}{Contextualização}{section.1.1}{}}
+\@writefile{brf}{\backcite{gitman2004principles}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{babaei2022explainable}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{almansour2023behavioral}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{adil2022financial}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{paiva2014redes}{{7}{1.1}{section.1.1}}}
+\ACRO{recordpage}{hme}{8}{1}{7}
+\ACRO{recordpage}{hme}{8}{1}{7}
+\ACRO{recordpage}{hme}{8}{1}{7}
+\@writefile{brf}{\backcite{paiva2014redes}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{mitchell1997machine}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{aquart2022machine}{{7}{1.1}{section.1.1}}}
+\@writefile{brf}{\backcite{wei2023forecasting}{{7}{1.1}{section.1.1}}}
+\citation{belcastro2023enhancing}
+\BKM@entry{id=8,dest={73656374696F6E2E312E32},srcline={23}}{5C3337365C3337375C303030505C303030725C3030306F5C303030625C3030306C5C303030655C3030306D5C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030505C303030655C303030735C303030715C303030755C303030695C303030735C30303061}
+\BKM@entry{id=9,dest={73656374696F6E2E312E33},srcline={29}}{5C3337365C3337375C3030304F5C303030625C3030306A5C303030655C303030745C303030695C303030765C3030306F5C303030735C3030305C3034305C303030645C303030655C3030305C3034305C303030705C303030655C303030735C303030715C303030755C303030695C303030735C30303061}
+\BKM@entry{id=10,dest={73756273656374696F6E2E312E332E31},srcline={33}}{5C3337365C3337375C3030304F5C303030625C3030306A5C303030655C303030745C303030695C303030765C3030306F5C3030305C3034305C303030675C303030655C303030725C303030615C3030306C}
+\BKM@entry{id=11,dest={73756273656374696F6E2E312E332E32},srcline={39}}{5C3337365C3337375C3030304F5C303030625C3030306A5C303030655C303030745C303030695C303030765C3030306F5C303030735C3030305C3034305C303030655C303030735C303030705C303030655C303030635C3030305C3335355C303030665C303030695C303030635C3030306F5C30303073}
+\BKM@entry{id=12,dest={73656374696F6E2E312E34},srcline={55}}{5C3337365C3337375C3030304A5C303030755C303030735C303030745C303030695C303030665C303030695C303030635C303030615C303030745C303030695C303030765C30303061}
+\citation{molnar2019interpretable}
+\citation{kelly2023financial}
+\@writefile{brf}{\backcite{belcastro2023enhancing}{{8}{1.1}{section.1.1}}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Problema de Pesquisa}{8}{section.1.2}\protected@file@percent }
+\newlabel{sec_problema_de_pesquisa}{{1.2}{8}{Problema de Pesquisa}{section.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Objetivos de pesquisa}{8}{section.1.3}\protected@file@percent }
+\newlabel{sec_objetivos_de_pesquisa}{{1.3}{8}{Objetivos de pesquisa}{section.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Objetivo geral}{8}{subsection.1.3.1}\protected@file@percent }
+\newlabel{subsec_objetivo_geral}{{1.3.1}{8}{Objetivo geral}{subsection.1.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Objetivos específicos}{8}{subsection.1.3.2}\protected@file@percent }
+\newlabel{subsec_objetivos_especificos}{{1.3.2}{8}{Objetivos específicos}{subsection.1.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Justificativa}{8}{section.1.4}\protected@file@percent }
+\newlabel{sec_justificativa}{{1.4}{8}{Justificativa}{section.1.4}{}}
+\@writefile{brf}{\backcite{molnar2019interpretable}{{8}{1.4}{section.1.4}}}
+\citation{fama1970efficient}
+\citation{sarker2021machine}
+\citation{clara2024survey}
+\citation{scherbina2013asset}
+\@writefile{brf}{\backcite{kelly2023financial}{{9}{1.4}{section.1.4}}}
+\ACRO{recordpage}{hme}{10}{1}{9}
+\@writefile{brf}{\backcite{fama1970efficient}{{9}{1.4}{section.1.4}}}
+\ACRO{recordpage}{hme}{10}{1}{9}
+\@writefile{brf}{\backcite{sarker2021machine}{{9}{1.4}{section.1.4}}}
+\@writefile{brf}{\backcite{clara2024survey}{{9}{1.4}{section.1.4}}}
+\@writefile{brf}{\backcite{scherbina2013asset}{{9}{1.4}{section.1.4}}}
+\ACRO{recordpage}{ods}{10}{1}{9}
+\ACRO{recordpage}{ods}{10}{1}{9}
+\BKM@entry{id=13,dest={636861707465722E32},srcline={6}}{5C3337365C3337375C303030525C303030655C303030665C303030655C303030725C303030655C3030306E5C303030635C303030695C303030615C3030306C5C3030305C3034305C303030745C303030655C3030305C3336335C303030725C303030695C303030635C3030306F}
+\BKM@entry{id=14,dest={73656374696F6E2E322E31},srcline={9}}{5C3337365C3337375C303030545C3030306F5C3030306D5C303030615C303030645C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030645C303030655C303030635C303030695C303030735C3030305C3334335C3030306F5C3030305C3034305C3030306E5C3030306F5C3030305C3034305C3030306D5C303030655C303030725C303030635C303030615C303030645C3030306F5C3030305C3034305C303030665C303030695C3030306E5C303030615C3030306E5C303030635C303030655C303030695C303030725C3030306F}
+\citation{adil2022financial}
+\citation{neugebauer2026portfolio}
+\citation{umar2021bitcoin}
+\citation{umar2021bitcoin}
+\citation{adil2022financial}
+\citation{sutiene2024enhancing}
+\citation{almansour2023behavioral}
+\citation{sutiene2024enhancing}
+\citation{charfeddine2020investigating}
+\citation{adil2022financial}
+\citation{ferreira2021artificial}
+\citation{livieris2020ensemble}
+\citation{ferreira2021artificial}
+\citation{du2022mean}
+\citation{ferreira2021artificial}
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapternumwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase    []{Referencial teórico}}{10}{chapter.2}\protected@file@percent }
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap_referencial_teorico}{{2}{10}{\texorpdfstring {\MakeTextUppercase {\tempf@rtoc }}{\tempf@rtoc }}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Tomada de decisão no mercado financeiro}{10}{section.2.1}\protected@file@percent }
+\newlabel{sec_tomada_de_decisao_no_mercado_financeiro}{{2.1}{10}{Tomada de decisão no mercado financeiro}{section.2.1}{}}
+\@writefile{brf}{\backcite{adil2022financial}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{neugebauer2026portfolio}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{umar2021bitcoin}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{umar2021bitcoin}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{adil2022financial}{{10}{2.1}{section.2.1}}}
+\ACRO{recordpage}{hme}{11}{1}{10}
+\@writefile{brf}{\backcite{sutiene2024enhancing}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{almansour2023behavioral,sutiene2024enhancing}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{almansour2023behavioral,sutiene2024enhancing}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{10}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{adil2022financial}{{10}{2.1}{section.2.1}}}
+\ACRO{recordpage}{hme}{11}{1}{10}
+\citation{adil2022financial}
+\citation{almansour2023behavioral}
+\citation{almansour2023behavioral}
+\citation{adil2022financial}
+\citation{paiva2019decision}
+\citation{paiva2019decision}
+\citation{wang2020portfolio}
+\citation{charfeddine2020investigating}
+\citation{umar2021bitcoin}
+\@writefile{brf}{\backcite{ferreira2021artificial,livieris2020ensemble}{{11}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{ferreira2021artificial,livieris2020ensemble}{{11}{2.1}{section.2.1}}}
+\ACRO{recordpage}{hme}{12}{1}{11}
+\@writefile{brf}{\backcite{ferreira2021artificial}{{11}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{du2022mean}{{11}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{ferreira2021artificial}{{11}{2.1}{section.2.1}}}
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ aqui caberia colocar markowitz por encaixar cronologicamente, poderia citar ''teoria alvo desse trabalho''}{11}{section*.8}\protected@file@percent }
+\pgfsyspdfmark {pgfid1}{20481310}{36975095}
+\@writefile{brf}{\backcite{adil2022financial}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{almansour2023behavioral}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{almansour2023behavioral,adil2022financial}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{almansour2023behavioral,adil2022financial}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{paiva2019decision}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{paiva2019decision}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{wang2020portfolio}{{11}{2.1}{section*.8}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{11}{2.1}{section*.8}}}
+\BKM@entry{id=15,dest={73656374696F6E2E322E32},srcline={26}}{5C3337365C3337375C303030435C303030725C303030695C303030705C303030745C3030306F5C3030305C3034305C303030415C303030745C303030695C303030765C3030306F5C30303073}
+\BKM@entry{id=16,dest={73756273656374696F6E2E322E322E31},srcline={29}}{5C3337365C3337375C303030435C3030306F5C3030306E5C303030635C303030655C303030695C303030745C3030306F5C3030302C5C3030305C3034305C3030306F5C303030725C303030695C303030675C303030655C3030306D5C3030305C3034305C303030655C3030305C3034305C303030665C303030755C3030306E5C303030635C303030695C3030306F5C3030306E5C303030615C3030306D5C303030655C3030306E5C303030745C3030306F5C3030305C3034305C303030645C3030306F5C303030735C3030305C3034305C303030635C303030725C303030695C303030705C303030745C3030306F5C303030615C303030745C303030695C303030765C3030306F5C30303073}
+\citation{doran2014forensic}
+\citation{ballis2020herding}
+\citation{chevallier2021forecast}
+\citation{fakhfekh2020volatility}
+\citation{charfeddine2020investigating}
+\citation{sebastiao2021forecasting}
+\citation{wang2020stablecoins}
+\citation{narayanan2016bitcoin}
+\citation{charfeddine2020investigating}
+\citation{harwick2016cryptocurrency}
+\citation{wang2020stablecoins}
+\citation{ahmed2020risk}
+\citation{goodell2021diversifying}
+\citation{goodell2021diversifying}
+\@writefile{brf}{\backcite{umar2021bitcoin}{{12}{2.1}{section*.8}}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Cripto Ativos}{12}{section.2.2}\protected@file@percent }
+\newlabel{sec_cripto_ativos}{{2.2}{12}{Cripto Ativos}{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Conceito, origem e funcionamento dos criptoativos}{12}{subsection.2.2.1}\protected@file@percent }
+\newlabel{subsec_conceito_origem_e_funcionamento_dos_criptoativos}{{2.2.1}{12}{Conceito, origem e funcionamento dos criptoativos}{subsection.2.2.1}{}}
+\@writefile{brf}{\backcite{doran2014forensic,ballis2020herding,chevallier2021forecast}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{doran2014forensic,ballis2020herding,chevallier2021forecast}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{doran2014forensic,ballis2020herding,chevallier2021forecast}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{fakhfekh2020volatility}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{sebastiao2021forecasting}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{wang2020stablecoins}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{narayanan2016bitcoin}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{harwick2016cryptocurrency,wang2020stablecoins}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{harwick2016cryptocurrency,wang2020stablecoins}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{ahmed2020risk}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{goodell2021diversifying}{{12}{2.2.1}{subsection.2.2.1}}}
+\@writefile{brf}{\backcite{goodell2021diversifying}{{12}{2.2.1}{subsection.2.2.1}}}
+\BKM@entry{id=17,dest={73756273656374696F6E2E322E322E32},srcline={38}}{5C3337365C3337375C303030435C303030615C303030725C303030615C303030635C303030745C303030655C303030725C3030305C3335355C303030735C303030745C303030695C303030635C303030615C303030735C3030305C3034305C303030645C3030306F5C3030305C3034305C3030306D5C303030655C303030725C303030635C303030615C303030645C3030306F5C3030305C3034305C303030645C303030655C3030305C3034305C303030635C303030725C303030695C303030705C303030745C3030306F5C303030615C303030745C303030695C303030765C3030306F5C30303073}
+\citation{sebastiao2021forecasting}
+\citation{baur2021crypto}
+\citation{fakhfekh2020volatility}
+\citation{park2023intelligent}
+\citation{ahmed2020risk}
+\citation{charfeddine2020investigating}
+\citation{charfeddine2020investigating}
+\citation{charfeddine2020investigating}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Características do mercado de criptoativos}{13}{subsection.2.2.2}\protected@file@percent }
+\newlabel{subsec_caracteristicas_do_mercado_de_criptoativos}{{2.2.2}{13}{Características do mercado de criptoativos}{subsection.2.2.2}{}}
+\@writefile{brf}{\backcite{sebastiao2021forecasting}{{13}{2.2.2}{subsection.2.2.2}}}
+\@writefile{brf}{\backcite{baur2021crypto}{{13}{2.2.2}{subsection.2.2.2}}}
+\@writefile{brf}{\backcite{fakhfekh2020volatility,park2023intelligent}{{13}{2.2.2}{subsection.2.2.2}}}
+\@writefile{brf}{\backcite{fakhfekh2020volatility,park2023intelligent}{{13}{2.2.2}{subsection.2.2.2}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Valor de mercado global dos criptoativos}}{13}{figure.caption.9}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:mercado-cripto}{{1}{13}{Valor de mercado global dos criptoativos}{figure.caption.9}{}}
+\@writefile{brf}{\backcite{ahmed2020risk,charfeddine2020investigating}{{13}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{ahmed2020risk,charfeddine2020investigating}{{13}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{13}{2.2.2}{figure.caption.9}}}
+\citation{chevallier2021forecast}
+\citation{fakhfekh2020volatility}
+\citation{brauneis2019cryptocurrency}
+\citation{wang2020stablecoins}
+\citation{wang2020stablecoins}
+\citation{park2023intelligent}
+\citation{fang2022cryptocurrency}
+\citation{corbet2020contagion}
+\citation{wang2020stablecoins}
+\citation{park2023intelligent}
+\citation{charfeddine2020investigating}
+\citation{ballis2020herding}
+\citation{ballis2020herding}
+\citation{ballis2020herding}
+\citation{umar2021bitcoin}
+\citation{umar2021bitcoin}
+\citation{goodell2021diversifying}
+\citation{goodell2021diversifying}
+\citation{goodell2021diversifying}
+\citation{wang2020stablecoins}
+\citation{corbet2020contagion}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{chevallier2021forecast}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{fakhfekh2020volatility}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{wang2020stablecoins}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{wang2020stablecoins}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{fang2022cryptocurrency}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{corbet2020contagion}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{wang2020stablecoins}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{ballis2020herding}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{ballis2020herding}{{14}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{ballis2020herding}{{14}{2.2.2}{figure.caption.9}}}
+\citation{park2023intelligent}
+\citation{sebastiao2021forecasting}
+\citation{goodell2021diversifying}
+\citation{fakhfekh2020volatility}
+\citation{park2023intelligent}
+\citation{park2023intelligent}
+\@writefile{brf}{\backcite{umar2021bitcoin}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{umar2021bitcoin}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{goodell2021diversifying}{{15}{2.2.2}{figure.caption.9}}}
+\ACRO{recordpage}{covid19}{16}{1}{15}
+\@writefile{brf}{\backcite{goodell2021diversifying}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{goodell2021diversifying}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{wang2020stablecoins}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{corbet2020contagion}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{15}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{sebastiao2021forecasting}{{15}{2.2.2}{figure.caption.9}}}
+\citation{sebastiao2021forecasting}
+\citation{fang2022cryptocurrency}
+\citation{sebastiao2021forecasting}
+\citation{chevallier2021forecast}
+\citation{babaei2022explainable}
+\citation{chevallier2021forecast}
+\citation{park2023intelligent}
+\citation{charfeddine2020investigating}
+\citation{charfeddine2020investigating}
+\citation{fang2022cryptocurrency}
+\@writefile{brf}{\backcite{goodell2021diversifying}{{16}{2.2.2}{figure.caption.9}}}
+\ACRO{recordpage}{hme}{17}{1}{16}
+\@writefile{brf}{\backcite{fakhfekh2020volatility}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{16}{2.2.2}{figure.caption.9}}}
+\ACRO{recordpage}{ml}{17}{1}{16}
+\ACRO{recordpage}{ml}{17}{1}{16}
+\@writefile{brf}{\backcite{sebastiao2021forecasting}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{fang2022cryptocurrency}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{sebastiao2021forecasting}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{chevallier2021forecast}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{babaei2022explainable}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{chevallier2021forecast}{{16}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{16}{2.2.2}{figure.caption.9}}}
+\BKM@entry{id=18,dest={73656374696F6E2E322E33},srcline={78}}{5C3337365C3337375C3030304D5C303030615C303030635C303030685C303030695C3030306E5C303030655C3030305C3034305C3030304C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C30303067}
+\BKM@entry{id=19,dest={73756273656374696F6E2E322E332E31},srcline={81}}{5C3337365C3337375C303030465C303030755C3030306E5C303030645C303030615C3030306D5C303030655C3030306E5C303030745C3030306F5C303030735C3030305C3034305C303030645C3030306F5C3030305C3034305C3030304D5C303030615C303030635C303030685C303030695C3030306E5C303030655C3030305C3034305C3030304C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C30303067}
+\citation{hamayel2021novel}
+\citation{livieris2020ensemble}
+\citation{park2023intelligent}
+\citation{hamayel2021novel}
+\citation{derbentsev2021comparative}
+\citation{livieris2020ensemble}
+\citation{park2023intelligent}
+\citation{livieris2020ensemble}
+\citation{derbentsev2021comparative}
+\citation{sebastiao2021forecasting}
+\citation{derbentsev2021comparative}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{17}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{charfeddine2020investigating}{{17}{2.2.2}{figure.caption.9}}}
+\@writefile{brf}{\backcite{fang2022cryptocurrency}{{17}{2.2.2}{figure.caption.9}}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}\textit  {Machine Learning}}{17}{section.2.3}\protected@file@percent }
+\newlabel{sec_machine_learning}{{2.3}{17}{\textit {Machine Learning}}{section.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Fundamentos do \textit  {Machine Learning}}{17}{subsection.2.3.1}\protected@file@percent }
+\newlabel{subsec_fundamentos_do_machine_learning}{{2.3.1}{17}{Fundamentos do \textit {Machine Learning}}{subsection.2.3.1}{}}
+\ACRO{recordpage}{ml}{18}{1}{17}
+\@writefile{brf}{\backcite{hamayel2021novel}{{17}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{livieris2020ensemble}{{17}{2.3.1}{subsection.2.3.1}}}
+\ACRO{recordpage}{ml}{18}{1}{17}
+\ACRO{recordpage}{anns}{18}{1}{17}
+\ACRO{recordpage}{anns}{18}{1}{17}
+\ACRO{recordpage}{svm}{18}{1}{17}
+\@writefile{brf}{\backcite{park2023intelligent}{{17}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{hamayel2021novel}{{17}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{17}{2.3.1}{subsection.2.3.1}}}
+\ACRO{recordpage}{ml}{18}{1}{17}
+\@writefile{brf}{\backcite{livieris2020ensemble}{{17}{2.3.1}{subsection.2.3.1}}}
+\citation{derbentsev2021comparative}
+\citation{livieris2020ensemble}
+\citation{derbentsev2021comparative}
+\citation{park2023intelligent}
+\citation{park2023intelligent}
+\citation{derbentsev2021comparative}
+\citation{park2023intelligent}
+\citation{derbentsev2021comparative}
+\BKM@entry{id=20,dest={73756273656374696F6E2E322E332E32},srcline={96}}{5C3337365C3337375C303030415C303030645C303030615C303030425C3030306F5C3030306F5C303030735C303030745C3030303A5C3030305C3034305C303030665C303030755C3030306E5C303030635C303030695C3030306F5C3030306E5C303030615C3030306D5C303030655C3030306E5C303030745C3030306F5C3030305C3034305C303030655C3030305C3034305C303030635C303030615C303030725C303030615C303030635C303030745C303030655C303030725C3030305C3335355C303030735C303030745C303030695C303030635C303030615C30303073}
+\citation{busari2021crude}
+\citation{park2023intelligent}
+\citation{derbentsev2021comparative}
+\@writefile{brf}{\backcite{park2023intelligent}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{livieris2020ensemble,derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{livieris2020ensemble,derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{sebastiao2021forecasting}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{livieris2020ensemble}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{18}{2.3.1}{subsection.2.3.1}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}AdaBoost: funcionamento e características}{18}{subsection.2.3.2}\protected@file@percent }
+\newlabel{subsec_adaboost_funcionamento_e_caracteristicas}{{2.3.2}{18}{AdaBoost: funcionamento e características}{subsection.2.3.2}{}}
+\@writefile{brf}{\backcite{busari2021crude}{{18}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{18}{2.3.2}{subsection.2.3.2}}}
+\citation{busari2021crude}
+\citation{busari2021crude}
+\citation{park2023intelligent}
+\citation{park2023intelligent}
+\citation{park2023intelligent}
+\citation{busari2021crude}
+\citation{park2023intelligent}
+\citation{derbentsev2021comparative}
+\citation{park2023intelligent}
+\BKM@entry{id=21,dest={73756273656374696F6E2E322E332E33},srcline={107}}{5C3337365C3337375C303030415C303030705C3030306C5C303030695C303030635C303030615C3030305C3334375C3030305C3336355C303030655C303030735C3030305C3034305C303030645C303030655C3030305C3034305C3030304D5C303030615C303030635C303030685C303030695C3030306E5C303030655C3030305C3034305C3030304C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C303030675C3030305C3034305C303030655C3030306D5C3030305C3034305C303030665C303030695C3030306E5C303030615C3030306E5C3030305C3334375C303030615C30303073}
+\BKM@entry{id=22,dest={73656374696F6E2E322E34},srcline={125}}{5C3337365C3337375C303030545C303030655C3030306F5C303030725C303030695C303030615C3030305C3034305C3030304D5C3030306F5C303030645C303030655C303030725C3030306E5C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030505C3030306F5C303030725C303030745C303030665C3030305C3336335C3030306C5C303030695C3030306F}
+\citation{chaweewanchon2022markowitz}
+\citation{chaweewanchon2022markowitz}
+\citation{markowitz1952portfolio}
+\citation{wang2020portfolio}
+\citation{wang2020portfolio}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{busari2021crude}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{busari2021crude}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{busari2021crude}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{derbentsev2021comparative}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{brf}{\backcite{park2023intelligent}{{19}{2.3.2}{subsection.2.3.2}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Aplicações de \textit  {Machine Learning} em finanças}{19}{subsection.2.3.3}\protected@file@percent }
+\newlabel{subsec_aplicacoes_de_machine_learning_em_financas}{{2.3.3}{19}{Aplicações de \textit {Machine Learning} em finanças}{subsection.2.3.3}{}}
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ REFAZER COM A HISTÓRIA E CASOS DE USO DO \acs {ml} NAS FINANÇAS}{19}{section*.10}\protected@file@percent }
+\ACRO{recordpage}{ml}{20}{1}{19}
+\pgfsyspdfmark {pgfid2}{20481310}{14558156}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Teoria Moderna de Portfólio}{19}{section.2.4}\protected@file@percent }
+\newlabel{sec_teoria_moderna_de_portfolio}{{2.4}{19}{Teoria Moderna de Portfólio}{section.2.4}{}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz}{{19}{2.4}{section.2.4}}}
+\ACRO{recordpage}{mv}{20}{1}{19}
+\citation{jeleskovic2024cryptocurrency}
+\citation{assaf2014financas}
+\citation{chaweewanchon2022markowitz}
+\citation{bakry2021bitcoin}
+\citation{ross2006fundamentals}
+\citation{assaf2014financas}
+\citation{assaf2014financas}
+\citation{ross2006fundamentals}
+\citation{jeleskovic2024cryptocurrency}
+\citation{paiva2019decision}
+\citation{assaf2014financas}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{markowitz1952portfolio}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{wang2020portfolio}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{wang2020portfolio}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{20}{2.4}{section.2.4}}}
+\ACRO{recordpage}{mv}{21}{1}{20}
+\@writefile{brf}{\backcite{assaf2014financas}{{20}{2.4}{section.2.4}}}
+\ACRO{recordpage}{mv}{21}{1}{20}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{bakry2021bitcoin}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{ross2006fundamentals}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{assaf2014financas}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{assaf2014financas}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{ross2006fundamentals}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{paiva2019decision}{{20}{2.4}{section.2.4}}}
+\@writefile{brf}{\backcite{assaf2014financas}{{20}{2.4}{section.2.4}}}
+\citation{assaf2014financas}
+\citation{assaf2014financas}
+\BKM@entry{id=23,dest={73756273656374696F6E2E322E342E31},srcline={162}}{5C3337365C3337375C303030445C303030695C303030765C303030655C303030725C303030735C303030695C303030665C303030695C303030635C303030615C3030305C3334375C3030305C3334335C3030306F5C3030305C3034305C303030655C3030305C3034305C303030665C303030725C3030306F5C3030306E5C303030745C303030655C303030695C303030725C303030615C3030305C3034305C303030655C303030665C303030695C303030635C303030695C303030655C3030306E5C303030745C30303065}
+\citation{bakry2021bitcoin}
+\citation{jeleskovic2024cryptocurrency}
+\citation{bakry2021bitcoin}
+\newlabel{eq:risco-carteira}{{1}{21}{Teoria Moderna de Portfólio}{equation.2.1}{}}
+\@writefile{brf}{\backcite{assaf2014financas}{{21}{2.4}{equation.2.1}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Linha do conjunto de combinações}}{21}{figure.caption.11}\protected@file@percent }
+\@writefile{brf}{\backcite{assaf2014financas}{{21}{2}{figure.caption.11}}}
+\newlabel{fig:risco-retorno}{{2}{21}{Linha do conjunto de combinações}{figure.caption.11}{}}
+\citation{jeleskovic2024cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{bakry2021bitcoin}
+\citation{paiva2019decision}
+\citation{franco2025integrating}
+\citation{assaf2014financas}
+\citation{chen2021mean}
+\citation{assaf2014financas}
+\citation{jiang2024deep}
+\citation{assaf2014financas}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Diversificação e fronteira eficiente}{22}{subsection.2.4.1}\protected@file@percent }
+\newlabel{subsec_diversificacao_e_fronteira_eficiente}{{2.4.1}{22}{Diversificação e fronteira eficiente}{subsection.2.4.1}{}}
+\@writefile{brf}{\backcite{bakry2021bitcoin}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{bakry2021bitcoin}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{bakry2021bitcoin}{{22}{2.4.1}{subsection.2.4.1}}}
+\ACRO{recordpage}{mv}{23}{1}{22}
+\@writefile{brf}{\backcite{paiva2019decision}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{franco2025integrating}{{22}{2.4.1}{subsection.2.4.1}}}
+\ACRO{recordpage}{mv}{23}{1}{22}
+\@writefile{brf}{\backcite{assaf2014financas}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{chen2021mean}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{assaf2014financas}{{22}{2.4.1}{subsection.2.4.1}}}
+\@writefile{brf}{\backcite{jiang2024deep}{{22}{2.4.1}{subsection.2.4.1}}}
+\citation{jeleskovic2024cryptocurrency}
+\citation{lorenzo2023online}
+\citation{lorenzo2023online}
+\citation{demosthenous2026portfolio}
+\citation{bakry2021bitcoin}
+\citation{jeleskovic2024cryptocurrency}
+\citation{bakry2021bitcoin}
+\citation{chaweewanchon2022markowitz}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Fronteira eficiente e curva de indiferença.}}{23}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:fronteira_eficiente}{{3}{23}{Fronteira eficiente e curva de indiferença}{figure.caption.12}{}}
+\@writefile{brf}{\backcite{assaf2014financas}{{23}{3}{figure.caption.12}}}
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Mantém Sharpe? Vi que é muito utilizado juntamente com MV}{23}{section*.13}\protected@file@percent }
+\pgfsyspdfmark {pgfid3}{20481310}{21788198}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{23}{2.4.1}{section*.13}}}
+\newlabel{eq:indice_sharpe}{{2}{23}{Diversificação e fronteira eficiente}{equation.2.2}{}}
+\@writefile{brf}{\backcite{lorenzo2023online}{{23}{2.4.1}{equation.2.2}}}
+\@writefile{brf}{\backcite{lorenzo2023online}{{23}{2.4.1}{equation.2.2}}}
+\@writefile{brf}{\backcite{demosthenous2026portfolio,bakry2021bitcoin,jeleskovic2024cryptocurrency}{{23}{2.4.1}{equation.2.2}}}
+\@writefile{brf}{\backcite{demosthenous2026portfolio,bakry2021bitcoin,jeleskovic2024cryptocurrency}{{23}{2.4.1}{equation.2.2}}}
+\@writefile{brf}{\backcite{demosthenous2026portfolio,bakry2021bitcoin,jeleskovic2024cryptocurrency}{{23}{2.4.1}{equation.2.2}}}
+\@writefile{brf}{\backcite{bakry2021bitcoin}{{24}{2.4.1}{equation.2.2}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz}{{24}{2.4.1}{equation.2.2}}}
+\BKM@entry{id=24,dest={636861707465722E33},srcline={6}}{5C3337365C3337375C303030455C303030735C303030745C303030755C303030645C3030306F5C303030735C3030305C3034305C303030725C303030655C3030306C5C303030615C303030635C303030695C3030306F5C3030306E5C303030615C303030645C3030306F5C30303073}
+\BKM@entry{id=25,dest={73656374696F6E2E332E31},srcline={9}}{5C3337365C3337375C303030455C303030735C303030745C303030755C303030645C3030306F5C303030735C3030305C3034305C303030735C3030306F5C303030625C303030725C303030655C3030305C3034305C3030304D5C303030615C303030635C303030685C303030695C3030306E5C303030655C3030305C3034305C3030304C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C303030675C3030305C3034305C303030615C303030705C3030306C5C303030695C303030635C303030615C303030645C3030306F5C3030305C3034305C3030305C3334305C3030305C3034305C3030306F5C303030745C303030695C3030306D5C303030695C3030307A5C303030615C3030305C3334375C3030305C3334335C3030306F5C3030305C3034305C303030645C303030655C3030305C3034305C303030705C3030306F5C303030725C303030745C303030665C3030305C3336335C3030306C5C303030695C3030306F5C30303073}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{padhi2022intelligent}
+\citation{paiva2019decision}
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapternumwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase    []{Estudos relacionados}}{25}{chapter.3}\protected@file@percent }
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap_estudos_relacionados}{{3}{25}{\texorpdfstring {\MakeTextUppercase {\tempf@rtoc }}{\tempf@rtoc }}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Estudos sobre \textit  {Machine Learning} aplicado à otimização de portfólios}{25}{section.3.1}\protected@file@percent }
+\newlabel{sec_estudos_sobre_machine_learning_aplicado_a_otimizacao_de_portfolios}{{3.1}{25}{Estudos sobre \textit {Machine Learning} aplicado à otimização de portfólios}{section.3.1}{}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{ma2021portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\ACRO{recordpage}{lstm}{26}{1}{25}
+\@writefile{brf}{\backcite{chen2021mean}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{ma2021portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{chen2021mean}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{ma2021portfolio}{{25}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{wang2020portfolio}{{25}{3.1}{section.3.1}}}
+\ACRO{recordpage}{lstm}{26}{1}{25}
+\ACRO{recordpage}{mv}{26}{1}{25}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{padhi2022intelligent}
+\citation{paiva2019decision}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{padhi2022intelligent}
+\BKM@entry{id=26,dest={73656374696F6E2E332E32},srcline={24}}{5C3337365C3337375C303030455C303030735C303030745C303030755C303030645C3030306F5C303030735C3030305C3034305C303030735C3030306F5C303030625C303030725C303030655C3030305C3034305C3030306D5C3030305C3335315C303030645C303030695C303030615C3030302D5C303030765C303030615C303030725C303030695C3030305C3334325C3030306E5C303030635C303030695C303030615C3030305C3034305C303030655C3030305C3034305C3030304D5C303030615C303030725C3030306B5C3030306F5C303030775C303030695C303030745C3030307A5C3030305C3034305C303030655C3030306D5C3030305C3034305C303030635C303030725C303030695C303030705C303030745C3030306F5C303030615C303030745C303030695C303030765C3030306F5C30303073}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\@writefile{brf}{\backcite{padhi2022intelligent}{{26}{3.1}{section.3.1}}}
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Tá estranho isso... mudar}{26}{section*.14}\protected@file@percent }
+\pgfsyspdfmark {pgfid4}{13626445}{44576430}
+\@writefile{brf}{\backcite{paiva2019decision}{{26}{3.1}{section*.14}}}
+\oddpage@label{1}{26}
+\pgfsyspdfmark {pgfid7}{37714181}{44549533}
+\pgfsyspdfmark {pgfid8}{39562476}{44283379}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent,paiva2019decision}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent,paiva2019decision}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent,paiva2019decision}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent,paiva2019decision}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent,paiva2019decision}{{26}{3.1}{section*.14}}}
+\ACRO{recordpage}{var}{27}{1}{26}
+\ACRO{recordpage}{cvar}{27}{1}{26}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{26}{3.1}{section*.14}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{26}{3.1}{section*.14}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Estudos sobre média-variância e Markowitz em criptoativos}{26}{section.3.2}\protected@file@percent }
+\newlabel{sec_estudos_sobre_media_variancia_e_markowitz_em_criptoativos}{{3.2}{26}{Estudos sobre média-variância e Markowitz em criptoativos}{section.3.2}{}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{26}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency}{{26}{3.2}{section.3.2}}}
+\citation{brauneis2019cryptocurrency}
+\citation{brauneis2019cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{zouaoui2025portfolio}
+\citation{jeleskovic2024cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{brauneis2019cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{brauneis2019cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{zouaoui2025portfolio}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{zouaoui2025portfolio}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{zouaoui2025portfolio}{{27}{3.2}{section.3.2}}}
+\ACRO{recordpage}{lstm}{28}{1}{27}
+\BKM@entry{id=27,dest={73656374696F6E2E332E33},srcline={39}}{5C3337365C3337375C303030455C303030735C303030745C303030755C303030645C3030306F5C303030735C3030305C3034305C303030685C3030305C3335355C303030625C303030725C303030695C303030645C3030306F5C303030735C3030305C3034305C303030655C3030306E5C303030745C303030725C303030655C3030305C3034305C3030304D5C303030615C303030725C3030306B5C3030306F5C303030775C303030695C303030745C3030307A5C3030302C5C3030305C3034305C3030304D5C303030615C303030635C303030685C303030695C3030306E5C303030655C3030305C3034305C3030304C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C303030675C3030302C5C3030305C3034305C303030645C303030655C303030655C303030705C3030305C3034305C3030306C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C303030675C3030305C3034305C303030655C3030305C3034305C303030725C303030655C303030695C3030306E5C303030665C3030306F5C303030725C303030635C303030655C3030306D5C303030655C3030306E5C303030745C3030305C3034305C3030306C5C303030655C303030615C303030725C3030306E5C303030695C3030306E5C30303067}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{lopez2025enhancing}
+\citation{chaweewanchon2022markowitz}
+\citation{slusarczyk2025optimal}
+\citation{lopez2025enhancing}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{slusarczyk2025optimal}
+\citation{slusarczyk2025optimal}
+\citation{lopez2025enhancing}
+\citation{jiang2024deep}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{28}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{28}{3.2}{section.3.2}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{28}{3.2}{section.3.2}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Estudos híbridos entre Markowitz, \textit  {Machine Learning}, deep learning e reinforcement learning}{28}{section.3.3}\protected@file@percent }
+\newlabel{sec_estudos_hibridos_entre_markowitz_machine_learning_deep_learning_e_reinforcement_learning}{{3.3}{28}{Estudos híbridos entre Markowitz, \textit {Machine Learning}, deep learning e reinforcement learning}{section.3.3}{}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,slusarczyk2025optimal,lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,slusarczyk2025optimal,lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,slusarczyk2025optimal,lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz}{{28}{3.3}{section.3.3}}}
+\ACRO{recordpage}{cnn}{29}{1}{28}
+\ACRO{recordpage}{bilstm}{29}{1}{28}
+\@writefile{brf}{\backcite{du2022mean}{{28}{3.3}{section.3.3}}}
+\ACRO{recordpage}{alstm}{29}{1}{28}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{slusarczyk2025optimal}{{28}{3.3}{section.3.3}}}
+\ACRO{recordpage}{arima}{29}{1}{28}
+\ACRO{recordpage}{garch}{29}{1}{28}
+\ACRO{recordpage}{xgboost}{29}{1}{28}
+\@writefile{brf}{\backcite{slusarczyk2025optimal}{{28}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{lopez2025enhancing}{{28}{3.3}{section.3.3}}}
+\ACRO{recordpage}{cvar}{29}{1}{28}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\citation{slusarczyk2025optimal}
+\citation{slusarczyk2025optimal}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{slusarczyk2025optimal}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\citation{lopez2025enhancing}
+\citation{jiang2024deep}
+\citation{lopez2025enhancing}
+\citation{slusarczyk2025optimal}
+\@writefile{brf}{\backcite{jiang2024deep}{{29}{3.3}{section.3.3}}}
+\ACRO{recordpage}{drl}{30}{1}{29}
+\@writefile{brf}{\backcite{jiang2024deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,jiang2024deep,jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,jiang2024deep,jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,jiang2024deep,jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,jiang2024deep,jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{jiang2024deep,jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{jiang2024deep,jang2023deep}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{slusarczyk2025optimal}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{slusarczyk2025optimal}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{29}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{29}{3.3}{section.3.3}}}
+\BKM@entry{id=28,dest={73656374696F6E2E332E34},srcline={56}}{5C3337365C3337375C303030535C3030305C3335355C3030306E5C303030745C303030655C303030735C303030655C3030305C3034305C303030635C303030725C3030305C3335355C303030745C303030695C303030635C303030615C3030305C3034305C303030645C3030306F5C303030735C3030305C3034305C303030655C303030735C303030745C303030755C303030645C3030306F5C303030735C3030305C3034305C303030725C303030655C3030306C5C303030615C303030635C303030695C3030306F5C3030306E5C303030615C303030645C3030306F5C30303073}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{slusarczyk2025optimal}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\citation{lopez2025enhancing}
+\citation{sutiene2024enhancing}
+\citation{giantsidi2025deep}
+\citation{lopez2025enhancing}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{slusarczyk2025optimal}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\citation{slusarczyk2025optimal}
+\citation{brauneis2019cryptocurrency}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{padhi2022intelligent}
+\citation{giantsidi2025deep}
+\citation{giantsidi2025deep}
+\citation{lopez2025enhancing}
+\citation{lopez2025enhancing}
+\@writefile{brf}{\backcite{jiang2024deep,lopez2025enhancing,slusarczyk2025optimal}{{30}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{jiang2024deep,lopez2025enhancing,slusarczyk2025optimal}{{30}{3.3}{section.3.3}}}
+\@writefile{brf}{\backcite{jiang2024deep,lopez2025enhancing,slusarczyk2025optimal}{{30}{3.3}{section.3.3}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Síntese crítica dos estudos relacionados}{30}{section.3.4}\protected@file@percent }
+\newlabel{sec_sintese_critica_dos_estudos_relacionados}{{3.4}{30}{Síntese crítica dos estudos relacionados}{section.3.4}{}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep,lopez2025enhancing}{{30}{3.4}{section.3.4}}}
+\ACRO{recordpage}{xgboost}{31}{1}{30}
+\ACRO{recordpage}{lstm}{31}{1}{30}
+\ACRO{recordpage}{cnn}{31}{1}{30}
+\ACRO{recordpage}{bilstm}{31}{1}{30}
+\ACRO{recordpage}{alstm}{31}{1}{30}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{jiang2024deep,jang2023deep}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{jiang2024deep,jang2023deep}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{slusarczyk2025optimal}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{30}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{30}{3.4}{section.3.4}}}
+\citation{sutiene2024enhancing}
+\citation{giantsidi2025deep}
+\citation{sutiene2024enhancing}
+\citation{giantsidi2025deep}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{chaweewanchon2022markowitz}
+\citation{du2022mean}
+\citation{slusarczyk2025optimal}
+\citation{jiang2024deep}
+\citation{jang2023deep}
+\citation{brauneis2019cryptocurrency}
+\citation{jeleskovic2024cryptocurrency}
+\citation{zouaoui2025portfolio}
+\citation{chen2021mean}
+\citation{ma2021portfolio}
+\citation{wang2020portfolio}
+\citation{padhi2022intelligent}
+\citation{slusarczyk2025optimal}
+\citation{giantsidi2025deep}
+\citation{lopez2025enhancing}
+\citation{sutiene2024enhancing}
+\citation{giantsidi2025deep}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{giantsidi2025deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{giantsidi2025deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{lopez2025enhancing}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{lopez2025enhancing}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{giantsidi2025deep}{{31}{3.4}{section.3.4}}}
+\ACRO{recordpage}{xai}{32}{1}{31}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chaweewanchon2022markowitz,du2022mean,slusarczyk2025optimal,jiang2024deep,jang2023deep}{{31}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{chen2021mean,ma2021portfolio,wang2020portfolio,padhi2022intelligent}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{slusarczyk2025optimal}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{giantsidi2025deep,lopez2025enhancing}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{giantsidi2025deep,lopez2025enhancing}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep}{{32}{3.4}{section.3.4}}}
+\@writefile{brf}{\backcite{sutiene2024enhancing,giantsidi2025deep}{{32}{3.4}{section.3.4}}}
+\BKM@entry{id=29,dest={636861707465722E34},srcline={6}}{5C3337365C3337375C3030304D5C303030655C303030745C3030306F5C303030645C3030306F5C3030306C5C3030306F5C303030675C303030695C30303061}
+\BKM@entry{id=30,dest={73656374696F6E2E342E31},srcline={9}}{5C3337365C3337375C303030435C3030306C5C303030615C303030735C303030735C303030695C303030665C303030695C303030635C303030615C3030305C3334375C3030305C3334335C3030306F5C3030305C3034305C303030645C303030615C3030305C3034305C303030705C303030655C303030735C303030715C303030755C303030695C303030735C30303061}
+\citation{gil2010projetos}
+\citation{richardson1999pesquisa}
+\citation{gil2010projetos}
+\citation{gil2010projetos}
+\BKM@entry{id=31,dest={73656374696F6E2E342E32},srcline={20}}{5C3337365C3337375C303030435C3030306F5C3030306C5C303030655C303030745C303030615C3030305C3034305C303030645C303030655C3030305C3034305C303030645C303030615C303030645C3030306F5C30303073}
+\BKM@entry{id=32,dest={73656374696F6E2E342E33},srcline={25}}{5C3337365C3337375C303030455C303030735C303030745C303030725C303030615C303030745C3030305C3335315C303030675C303030695C303030615C303030735C3030305C3034305C303030635C3030306F5C3030306D5C303030705C303030615C303030725C303030615C303030645C303030615C30303073}
+\BKM@entry{id=33,dest={73656374696F6E2E342E34},srcline={30}}{5C3337365C3337375C303030505C303030725C3030306F5C303030635C303030655C303030645C303030695C3030306D5C303030655C3030306E5C303030745C3030306F5C303030735C3030305C3034305C303030645C303030655C3030305C3034305C303030615C3030306E5C3030305C3334315C3030306C5C303030695C303030735C30303065}
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapternumwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase    []{Metodologia}}{33}{chapter.4}\protected@file@percent }
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap_metodologia}{{4}{33}{\texorpdfstring {\MakeTextUppercase {\tempf@rtoc }}{\tempf@rtoc }}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Classificação da pesquisa}{33}{section.4.1}\protected@file@percent }
+\newlabel{sec_classificacao_da_pesquisa}{{4.1}{33}{Classificação da pesquisa}{section.4.1}{}}
+\@writefile{brf}{\backcite{gil2010projetos}{{33}{4.1}{section.4.1}}}
+\@writefile{brf}{\backcite{richardson1999pesquisa}{{33}{4.1}{section.4.1}}}
+\@writefile{brf}{\backcite{gil2010projetos}{{33}{4.1}{section.4.1}}}
+\@writefile{brf}{\backcite{gil2010projetos}{{33}{4.1}{section.4.1}}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Coleta de dados}{33}{section.4.2}\protected@file@percent }
+\newlabel{sec_coleta_de_dados}{{4.2}{33}{Coleta de dados}{section.4.2}{}}
+\ACRO{recordpage}{api}{34}{1}{33}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Estratégias comparadas}{33}{section.4.3}\protected@file@percent }
+\newlabel{sec_estrategias_comparadas}{{4.3}{33}{Estratégias comparadas}{section.4.3}{}}
+\ACRO{recordpage}{mv}{34}{1}{33}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Procedimentos de análise}{34}{section.4.4}\protected@file@percent }
+\newlabel{sec_procedimentos_de_analise}{{4.4}{34}{Procedimentos de análise}{section.4.4}{}}
+\BKM@entry{id=34,dest={636861707465722E35},srcline={6}}{5C3337365C3337375C303030435C303030725C3030306F5C3030306E5C3030306F5C303030675C303030725C303030615C3030306D5C30303061}
+\bibdata{abntex2-options,referencias.bib}
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapternumwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase    []{Cronograma}}{35}{chapter.5}\protected@file@percent }
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap_cronograma}{{5}{35}{\texorpdfstring {\MakeTextUppercase {\tempf@rtoc }}{\tempf@rtoc }}{chapter.5}{}}
+\@writefile{loq}{\contentsline {quadro}{\numberline {1}{\ignorespaces Cronograma}}{35}{quadro.caption.15}\protected@file@percent }
+\BKM@entry{id=35,dest={73656374696F6E2A2E3138},srcline={3}}{5C3337365C3337375C303030525C303030655C303030665C303030655C303030725C3030305C3335325C3030306E5C303030635C303030695C303030615C30303073}
+\bibcite{adil2022financial}{Adil, Singh e Ansari 2022}
+\bibciteEXPL{adil2022financial}{Adil, Singh e Ansari}
+\bibciteIMPL{adil2022financial}{ADIL; SINGH; ANSARI}
+\bibciteYEAR{adil2022financial}{2022}
+\bibcite{ahmed2020risk}{Ahmed 2020}
+\bibciteEXPL{ahmed2020risk}{Ahmed}
+\bibciteIMPL{ahmed2020risk}{AHMED}
+\bibciteYEAR{ahmed2020risk}{2020}
+\bibcite{almansour2023behavioral}{Almansour, Elkrghli e Almansour 2023}
+\bibciteEXPL{almansour2023behavioral}{Almansour, Elkrghli e Almansour}
+\bibciteIMPL{almansour2023behavioral}{ALMANSOUR; ELKRGHLI; ALMANSOUR}
+\bibciteYEAR{almansour2023behavioral}{2023}
+\bibcite{aquart2022machine}{Aquart, Köpke e Weinhardt 2022}
+\bibciteEXPL{aquart2022machine}{Aquart, Köpke e Weinhardt}
+\bibciteIMPL{aquart2022machine}{AQUART; KöPKE; WEINHARDT}
+\bibciteYEAR{aquart2022machine}{2022}
+\bibcite{babaei2022explainable}{Babaei, Giudici e Raffinetti 2022}
+\bibciteEXPL{babaei2022explainable}{Babaei, Giudici e Raffinetti}
+\bibciteIMPL{babaei2022explainable}{BABAEI; GIUDICI; RAFFINETTI}
+\bibciteYEAR{babaei2022explainable}{2022}
+\bibcite{bakry2021bitcoin}{Bakry et al. 2021}
+\bibciteEXPL{bakry2021bitcoin}{Bakry et al.}
+\bibciteIMPL{bakry2021bitcoin}{BAKRY et al.}
+\bibciteYEAR{bakry2021bitcoin}{2021}
+\bibcite{ballis2020herding}{Ballis e Drakos 2020}
+\bibciteEXPL{ballis2020herding}{Ballis e Drakos}
+\bibciteIMPL{ballis2020herding}{BALLIS; DRAKOS}
+\bibciteYEAR{ballis2020herding}{2020}
+\bibcite{baur2021crypto}{Baur e Hoang 2021}
+\bibciteEXPL{baur2021crypto}{Baur e Hoang}
+\bibciteIMPL{baur2021crypto}{BAUR; HOANG}
+\bibciteYEAR{baur2021crypto}{2021}
+\bibcite{belcastro2023enhancing}{Belcastro et al. 2023}
+\bibciteEXPL{belcastro2023enhancing}{Belcastro et al.}
+\bibciteIMPL{belcastro2023enhancing}{BELCASTRO et al.}
+\bibciteYEAR{belcastro2023enhancing}{2023}
+\bibcite{brauneis2019cryptocurrency}{Brauneis e Mestel 2019}
+\bibciteEXPL{brauneis2019cryptocurrency}{Brauneis e Mestel}
+\bibciteIMPL{brauneis2019cryptocurrency}{BRAUNEIS; MESTEL}
+\bibciteYEAR{brauneis2019cryptocurrency}{2019}
+\bibcite{busari2021crude}{Busari e Lim 2021}
+\bibciteEXPL{busari2021crude}{Busari e Lim}
+\bibciteIMPL{busari2021crude}{BUSARI; LIM}
+\bibciteYEAR{busari2021crude}{2021}
+\bibcite{charfeddine2020investigating}{Charfeddine, Benlagha e Maouchi 2020}
+\bibciteEXPL{charfeddine2020investigating}{Charfeddine, Benlagha e Maouchi}
+\bibciteIMPL{charfeddine2020investigating}{CHARFEDDINE; BENLAGHA; MAOUCHI}
+\bibciteYEAR{charfeddine2020investigating}{2020}
+\bibcite{chaweewanchon2022markowitz}{Chaweewanchon e Chaysiri 2022}
+\bibciteEXPL{chaweewanchon2022markowitz}{Chaweewanchon e Chaysiri}
+\bibciteIMPL{chaweewanchon2022markowitz}{CHAWEEWANCHON; CHAYSIRI}
+\bibciteYEAR{chaweewanchon2022markowitz}{2022}
+\bibcite{chen2021mean}{Chen et al. 2021}
+\bibciteEXPL{chen2021mean}{Chen et al.}
+\bibciteIMPL{chen2021mean}{CHEN et al.}
+\bibciteYEAR{chen2021mean}{2021}
+\bibcite{chevallier2021forecast}{Chevallier, Guégan e Goutte 2021}
+\bibciteEXPL{chevallier2021forecast}{Chevallier, Guégan e Goutte}
+\bibciteIMPL{chevallier2021forecast}{CHEVALLIER; GUéGAN; GOUTTE}
+\bibciteYEAR{chevallier2021forecast}{2021}
+\@writefile{toc}{\setlength  {\cftchapterindent }{\cftlastnumwidth } \setlength  {\cftchapternumwidth }{2em}}
+\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase    []{Refer\^encias}}{36}{section*.18}\protected@file@percent }
+\bibcite{clara2024survey}{Clara 2024}
+\bibciteEXPL{clara2024survey}{Clara}
+\bibciteIMPL{clara2024survey}{CLARA}
+\bibciteYEAR{clara2024survey}{2024}
+\bibcite{corbet2020contagion}{Corbet, Larkin e Lucey 2020}
+\bibciteEXPL{corbet2020contagion}{Corbet, Larkin e Lucey}
+\bibciteIMPL{corbet2020contagion}{CORBET; LARKIN; LUCEY}
+\bibciteYEAR{corbet2020contagion}{2020}
+\bibcite{demosthenous2026portfolio}{Demosthenous e Georgiou 2026}
+\bibciteEXPL{demosthenous2026portfolio}{Demosthenous e Georgiou}
+\bibciteIMPL{demosthenous2026portfolio}{DEMOSTHENOUS; GEORGIOU}
+\bibciteYEAR{demosthenous2026portfolio}{2026}
+\bibcite{derbentsev2021comparative}{Derbentsev et al. 2021}
+\bibciteEXPL{derbentsev2021comparative}{Derbentsev et al.}
+\bibciteIMPL{derbentsev2021comparative}{DERBENTSEV et al.}
+\bibciteYEAR{derbentsev2021comparative}{2021}
+\bibcite{doran2014forensic}{Doran 2014}
+\bibciteEXPL{doran2014forensic}{Doran}
+\bibciteIMPL{doran2014forensic}{DORAN}
+\bibciteYEAR{doran2014forensic}{2014}
+\bibcite{du2022mean}{Du 2022}
+\bibciteEXPL{du2022mean}{Du}
+\bibciteIMPL{du2022mean}{DU}
+\bibciteYEAR{du2022mean}{2022}
+\bibcite{fakhfekh2020volatility}{Fakhfekh e Jeribi 2020}
+\bibciteEXPL{fakhfekh2020volatility}{Fakhfekh e Jeribi}
+\bibciteIMPL{fakhfekh2020volatility}{FAKHFEKH; JERIBI}
+\bibciteYEAR{fakhfekh2020volatility}{2020}
+\bibcite{fama1970efficient}{Fama 1970}
+\bibciteEXPL{fama1970efficient}{Fama}
+\bibciteIMPL{fama1970efficient}{FAMA}
+\bibciteYEAR{fama1970efficient}{1970}
+\bibcite{fang2022cryptocurrency}{Fang et al. 2022}
+\bibciteEXPL{fang2022cryptocurrency}{Fang et al.}
+\bibciteIMPL{fang2022cryptocurrency}{FANG et al.}
+\bibciteYEAR{fang2022cryptocurrency}{2022}
+\bibcite{ferreira2021artificial}{Ferreira, Gandomi e Cardoso 2021}
+\bibciteEXPL{ferreira2021artificial}{Ferreira, Gandomi e Cardoso}
+\bibciteIMPL{ferreira2021artificial}{FERREIRA; GANDOMI; CARDOSO}
+\bibciteYEAR{ferreira2021artificial}{2021}
+\bibcite{franco2025integrating}{Franco e Laurini 2025}
+\bibciteEXPL{franco2025integrating}{Franco e Laurini}
+\bibciteIMPL{franco2025integrating}{FRANCO; LAURINI}
+\bibciteYEAR{franco2025integrating}{2025}
+\bibcite{giantsidi2025deep}{Giantsidi e Tarantola 2025}
+\bibciteEXPL{giantsidi2025deep}{Giantsidi e Tarantola}
+\bibciteIMPL{giantsidi2025deep}{GIANTSIDI; TARANTOLA}
+\bibciteYEAR{giantsidi2025deep}{2025}
+\bibcite{gil2010projetos}{Gil 2010}
+\bibciteEXPL{gil2010projetos}{Gil}
+\bibciteIMPL{gil2010projetos}{GIL}
+\bibciteYEAR{gil2010projetos}{2010}
+\bibcite{gitman2004principles}{Gitman 2004}
+\bibciteEXPL{gitman2004principles}{Gitman}
+\bibciteIMPL{gitman2004principles}{GITMAN}
+\bibciteYEAR{gitman2004principles}{2004}
+\bibcite{goodell2021diversifying}{Goodell e Goutte 2021}
+\bibciteEXPL{goodell2021diversifying}{Goodell e Goutte}
+\bibciteIMPL{goodell2021diversifying}{GOODELL; GOUTTE}
+\bibciteYEAR{goodell2021diversifying}{2021}
+\bibcite{hamayel2021novel}{Hamayel e Owda 2021}
+\bibciteEXPL{hamayel2021novel}{Hamayel e Owda}
+\bibciteIMPL{hamayel2021novel}{HAMAYEL; OWDA}
+\bibciteYEAR{hamayel2021novel}{2021}
+\bibcite{harwick2016cryptocurrency}{Harwick 2016}
+\bibciteEXPL{harwick2016cryptocurrency}{Harwick}
+\bibciteIMPL{harwick2016cryptocurrency}{HARWICK}
+\bibciteYEAR{harwick2016cryptocurrency}{2016}
+\bibcite{jang2023deep}{Jang e Seong 2023}
+\bibciteEXPL{jang2023deep}{Jang e Seong}
+\bibciteIMPL{jang2023deep}{JANG; SEONG}
+\bibciteYEAR{jang2023deep}{2023}
+\bibcite{jeleskovic2024cryptocurrency}{Jeleskovic et al. 2024}
+\bibciteEXPL{jeleskovic2024cryptocurrency}{Jeleskovic et al.}
+\bibciteIMPL{jeleskovic2024cryptocurrency}{JELESKOVIC et al.}
+\bibciteYEAR{jeleskovic2024cryptocurrency}{2024}
+\bibcite{jiang2024deep}{Jiang, Olmo e Atwi 2024}
+\bibciteEXPL{jiang2024deep}{Jiang, Olmo e Atwi}
+\bibciteIMPL{jiang2024deep}{JIANG; OLMO; ATWI}
+\bibciteYEAR{jiang2024deep}{2024}
+\bibcite{kelly2023financial}{Kelly e Xiu 2023}
+\bibciteEXPL{kelly2023financial}{Kelly e Xiu}
+\bibciteIMPL{kelly2023financial}{KELLY; XIU}
+\bibciteYEAR{kelly2023financial}{2023}
+\bibcite{livieris2020ensemble}{Livieris et al. 2020}
+\bibciteEXPL{livieris2020ensemble}{Livieris et al.}
+\bibciteIMPL{livieris2020ensemble}{LIVIERIS et al.}
+\bibciteYEAR{livieris2020ensemble}{2020}
+\bibcite{lorenzo2023online}{Lorenzo e Arroyo 2023}
+\bibciteEXPL{lorenzo2023online}{Lorenzo e Arroyo}
+\bibciteIMPL{lorenzo2023online}{LORENZO; ARROYO}
+\bibciteYEAR{lorenzo2023online}{2023}
+\bibcite{ma2021portfolio}{Ma, Han e Wang 2021}
+\bibciteEXPL{ma2021portfolio}{Ma, Han e Wang}
+\bibciteIMPL{ma2021portfolio}{MA; HAN; WANG}
+\bibciteYEAR{ma2021portfolio}{2021}
+\bibcite{markowitz1952portfolio}{Markowitz 1952}
+\bibciteEXPL{markowitz1952portfolio}{Markowitz}
+\bibciteIMPL{markowitz1952portfolio}{MARKOWITZ}
+\bibciteYEAR{markowitz1952portfolio}{1952}
+\bibcite{mitchell1997machine}{Mitchell 1997}
+\bibciteEXPL{mitchell1997machine}{Mitchell}
+\bibciteIMPL{mitchell1997machine}{MITCHELL}
+\bibciteYEAR{mitchell1997machine}{1997}
+\bibcite{molnar2019interpretable}{Molnar 2019}
+\bibciteEXPL{molnar2019interpretable}{Molnar}
+\bibciteIMPL{molnar2019interpretable}{MOLNAR}
+\bibciteYEAR{molnar2019interpretable}{2019}
+\bibcite{narayanan2016bitcoin}{Narayanan et al. 2016}
+\bibciteEXPL{narayanan2016bitcoin}{Narayanan et al.}
+\bibciteIMPL{narayanan2016bitcoin}{NARAYANAN et al.}
+\bibciteYEAR{narayanan2016bitcoin}{2016}
+\bibcite{assaf2014financas}{Neto 2014}
+\bibciteEXPL{assaf2014financas}{Neto}
+\bibciteIMPL{assaf2014financas}{NETO}
+\bibciteYEAR{assaf2014financas}{2014}
+\bibcite{neugebauer2026portfolio}{Neugebauer 2026}
+\bibciteEXPL{neugebauer2026portfolio}{Neugebauer}
+\bibciteIMPL{neugebauer2026portfolio}{NEUGEBAUER}
+\bibciteYEAR{neugebauer2026portfolio}{2026}
+\bibcite{padhi2022intelligent}{Padhi et al. 2022}
+\bibciteEXPL{padhi2022intelligent}{Padhi et al.}
+\bibciteIMPL{padhi2022intelligent}{PADHI et al.}
+\bibciteYEAR{padhi2022intelligent}{2022}
+\bibcite{paiva2014redes}{Paiva 2014}
+\bibciteEXPL{paiva2014redes}{Paiva}
+\bibciteIMPL{paiva2014redes}{PAIVA}
+\bibciteYEAR{paiva2014redes}{2014}
+\bibcite{paiva2019decision}{Paiva et al. 2019}
+\bibciteEXPL{paiva2019decision}{Paiva et al.}
+\bibciteIMPL{paiva2019decision}{PAIVA et al.}
+\bibciteYEAR{paiva2019decision}{2019}
+\bibcite{park2023intelligent}{Park e Yang 2023}
+\bibciteEXPL{park2023intelligent}{Park e Yang}
+\bibciteIMPL{park2023intelligent}{PARK; YANG}
+\bibciteYEAR{park2023intelligent}{2023}
+\bibcite{lopez2025enhancing}{Prado et al. 2025}
+\bibciteEXPL{lopez2025enhancing}{Prado et al.}
+\bibciteIMPL{lopez2025enhancing}{PRADO et al.}
+\bibciteYEAR{lopez2025enhancing}{2025}
+\bibcite{richardson1999pesquisa}{Richardson 1999}
+\bibciteEXPL{richardson1999pesquisa}{Richardson}
+\bibciteIMPL{richardson1999pesquisa}{RICHARDSON}
+\bibciteYEAR{richardson1999pesquisa}{1999}
+\bibcite{ross2006fundamentals}{Ross, Westerfield e Jordan 2006}
+\bibciteEXPL{ross2006fundamentals}{Ross, Westerfield e Jordan}
+\bibciteIMPL{ross2006fundamentals}{ROSS; WESTERFIELD; JORDAN}
+\bibciteYEAR{ross2006fundamentals}{2006}
+\bibcite{sarker2021machine}{Sarker 2021}
+\bibciteEXPL{sarker2021machine}{Sarker}
+\bibciteIMPL{sarker2021machine}{SARKER}
+\bibciteYEAR{sarker2021machine}{2021}
+\bibcite{scherbina2013asset}{Scherbina 2013}
+\bibciteEXPL{scherbina2013asset}{Scherbina}
+\bibciteIMPL{scherbina2013asset}{SCHERBINA}
+\bibciteYEAR{scherbina2013asset}{2013}
+\bibcite{sebastiao2021forecasting}{Sebastião e Godinho 2021}
+\bibciteEXPL{sebastiao2021forecasting}{Sebastião e Godinho}
+\bibciteIMPL{sebastiao2021forecasting}{SEBASTIãO; GODINHO}
+\bibciteYEAR{sebastiao2021forecasting}{2021}
+\bibcite{sutiene2024enhancing}{Sutiene et al. 2024}
+\bibciteEXPL{sutiene2024enhancing}{Sutiene et al.}
+\bibciteIMPL{sutiene2024enhancing}{SUTIENE et al.}
+\bibciteYEAR{sutiene2024enhancing}{2024}
+\bibcite{umar2021bitcoin}{Umar et al. 2021}
+\bibciteEXPL{umar2021bitcoin}{Umar et al.}
+\bibciteIMPL{umar2021bitcoin}{UMAR et al.}
+\bibciteYEAR{umar2021bitcoin}{2021}
+\bibcite{wang2020stablecoins}{Wang, Ma e Wu 2020}
+\bibciteEXPL{wang2020stablecoins}{Wang, Ma e Wu}
+\bibciteIMPL{wang2020stablecoins}{WANG; MA; WU}
+\bibciteYEAR{wang2020stablecoins}{2020}
+\bibcite{wang2020portfolio}{Wang et al. 2020}
+\bibciteEXPL{wang2020portfolio}{Wang et al.}
+\bibciteIMPL{wang2020portfolio}{WANG et al.}
+\bibciteYEAR{wang2020portfolio}{2020}
+\bibcite{wei2023forecasting}{Wei, Sermpinis e Stasinakis 2023}
+\bibciteEXPL{wei2023forecasting}{Wei, Sermpinis e Stasinakis}
+\bibciteIMPL{wei2023forecasting}{WEI; SERMPINIS; STASINAKIS}
+\bibciteYEAR{wei2023forecasting}{2023}
+\bibcite{zouaoui2025portfolio}{Zouaoui e Naas 2025}
+\bibciteEXPL{zouaoui2025portfolio}{Zouaoui e Naas}
+\bibciteIMPL{zouaoui2025portfolio}{ZOUAOUI; NAAS}
+\bibciteYEAR{zouaoui2025portfolio}{2025}
+\bibcite{slusarczyk2025optimal}{Ślusarczyk e Ślepaczuk 2025}
+\bibciteEXPL{slusarczyk2025optimal}{Ślusarczyk e Ślepaczuk}
+\bibciteIMPL{slusarczyk2025optimal}{ŚLUSARCZYK; ŚLEPACZUK}
+\bibciteYEAR{slusarczyk2025optimal}{2025}
+\bibstyle{abntex2-alf}
+\ACRO{total-barriers}{1}
+\memsetcounter{lastsheet}{41}
+\memsetcounter{lastpage}{40}
+\ACRO{usage}{adaboost=={0}}
+\ACRO{usage}{anns=={2}}
+\ACRO{usage}{api=={1}}
+\ACRO{usage}{arima=={1}}
+\ACRO{usage}{alstm=={2}}
+\ACRO{usage}{bilstm=={2}}
+\ACRO{usage}{cnn=={2}}
+\ACRO{usage}{covid19=={1}}
+\ACRO{usage}{cvar=={2}}
+\ACRO{usage}{drl=={1}}
+\ACRO{usage}{garch=={1}}
+\ACRO{usage}{hme=={9}}
+\ACRO{usage}{lstm=={4}}
+\ACRO{usage}{ml=={6}}
+\ACRO{usage}{mv=={7}}
+\ACRO{usage}{ods=={2}}
+\ACRO{usage}{svm=={1}}
+\ACRO{usage}{var=={1}}
+\ACRO{usage}{xai=={1}}
+\ACRO{usage}{xgboost=={2}}
+\ACRO{pages}{ods=={10@1@9}}
+\ACRO{pages}{covid19=={16@1@15}}
+\ACRO{pages}{hme=={8@1@7|10@1@9|11@1@10|12@1@11|17@1@16}}
+\ACRO{pages}{anns=={18@1@17}}
+\ACRO{pages}{svm=={18@1@17}}
+\ACRO{pages}{ml=={17@1@16|18@1@17|20@1@19}}
+\ACRO{pages}{var=={27@1@26}}
+\ACRO{pages}{arima=={29@1@28}}
+\ACRO{pages}{garch=={29@1@28}}
+\ACRO{pages}{cvar=={27@1@26|29@1@28}}
+\ACRO{pages}{drl=={30@1@29}}
+\ACRO{pages}{xgboost=={29@1@28|31@1@30}}
+\ACRO{pages}{lstm=={26@1@25|28@1@27|31@1@30}}
+\ACRO{pages}{cnn=={29@1@28|31@1@30}}
+\ACRO{pages}{bilstm=={29@1@28|31@1@30}}
+\ACRO{pages}{alstm=={29@1@28|31@1@30}}
+\ACRO{pages}{xai=={32@1@31}}
+\ACRO{pages}{api=={34@1@33}}
+\ACRO{pages}{mv=={20@1@19|21@1@20|23@1@22|26@1@25|34@1@33}}
+\gdef \@abspage@last{41}

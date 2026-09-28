@@ -36,8 +36,12 @@
 \setlength{\marginparwidth}{2cm}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{tikz}
-\usetikzlibrary{patterns,arrows.meta}
-
+\usetikzlibrary{
+    positioning,
+    patterns,
+    arrows.meta,
+    calc
+}
 
 \AtBeginEnvironment{figure}{\centering}
 \AtBeginEnvironment{table}{\centering}

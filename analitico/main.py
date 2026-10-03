@@ -195,6 +195,7 @@ def corr(pares=[]) -> None:
     print('exportado com sucesso\n')
     
     return df_corr
+    
 def hist(): 
     print("histograma correlações...")
 

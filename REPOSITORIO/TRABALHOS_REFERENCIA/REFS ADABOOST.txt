@@ -1,0 +1,9 @@
+
+2 parte intro - Cripto
+	Intelligent cryptocurrency trading system using integrated.pdf
+
+3 parte intro - machine learning
+	Class-imbalanced dynamic financial distress prediction based on Adaboost-SVM ensemble combined with SMOTE and time weighting.pdf
+
+3 parte intro - machine learning
+	Crude oil price prediction A comparison between AdaBoost-LSTM and AdaBoost-GRU for improving forecasting performance.pdf

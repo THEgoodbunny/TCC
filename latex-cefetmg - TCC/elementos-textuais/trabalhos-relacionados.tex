@@ -27,7 +27,6 @@
 %INTRODUÇÃO
 Os estudos analisados sobre otimização de portfólios mostram que modelos preditivos vêm sendo combinados com métodos tradicionais de alocação de recursos. A partir das limitações da média-variância aplicada de forma isolada, parte da literatura passou a investigar modelos híbridos que combinam Markowitz com técnicas preditivas e adaptativas. Nos estudos analisados, a Teoria Moderna de Portfólio não é abandonada, mas utilizada como base de alocação à qual são incorporados algoritmos voltados a melhorar estimativas, selecionar ativos ou ajustar dinamicamente os pesos do portfólio \cite{chaweewanchon2022markowitz,du2022mean,lopez2025enhancing}. Essa lógica se aproxima do presente anteprojeto, pois articula otimização média-variância e métodos computacionais voltados à previsão e à tomada de decisão em carteiras financeiras \cite{chaweewanchon2022markowitz,slusarczyk2025optimal,lopez2025enhancing}. Em geral, essa combinação ocorre em duas etapas: primeiro, algoritmos de \textit{Machine Learning} ou deep learning são usados para prever preços, retornos ou movimentos futuros dos ativos; depois, essas previsões são incorporadas em modelos de seleção e otimização de carteiras, especialmente ao modelo média-variância de Markowitz \cite{chen2021mean,ma2021portfolio,wang2020portfolio}. Embora a literatura seja mais ampla em estudos com ações e índices de mercados tradicionais, novos trabalhos já abordam a utilização das tecnologias em criptoativos.
 
-
 % PREVISÃO
 A previsão aparece como uma etapa importante porque fornece informações para a montagem posterior da carteira. \citeonline{chen2021mean} combinam previsão de preços por \textit{Machine Learning} com a definição dos pesos da carteira pelo modelo média-variância. \citeonline{ma2021portfolio} também relacionam previsões de retorno à otimização de portfólios, destacando que modelos de \textit{Machine Learning} e deep learning podem apresentar desempenho preditivo mais favorável do que modelos tradicionais de séries temporais. De forma semelhante, \citeonline{wang2020portfolio} utilizam o modelo \ac{lstm} para capturar dependências de longo prazo nos retornos dos ativos e, em seguida, formar carteiras otimizadas pelo critério média-variância. \citeonline{chaweewanchon2022markowitz} combinam \acs{cnn}, \acs{bilstm} e modelo média-variância, utilizando previsões para selecionar previamente ações antes da formação do portfólio. \citeonline{du2022mean}, por sua vez, parte da limitação de que alocações média-variância são sensíveis a pequenos erros nas estimativas de médias e covariâncias, propondo o uso de redes \ac{alstm} para prever portfólios cointegrados antes da otimização. Em ambos os casos, os algoritmos preditivos funcionam como etapa anterior ou complementar ao modelo de Markowitz, buscando melhorar os dados usados na construção da carteira \cite{chaweewanchon2022markowitz,du2022mean}.
 
@@ -54,7 +53,22 @@ Em síntese, os estudos analisados evidenciam que a integração entre Markowitz
 \section{Estudos aplicação de \textit{Machine Learning} ao mercado de criptoativos}
 \label{sec_estudos_machine_learning_aplicado_ao_mercado_de_criptoativos}
 
+\cite{lucarelli2020deepq}
+Mercado/universo:** BTC, LTC, ETH e XRP.
+Período e frequência:** dados horários de 1/7/2017 a 25/12/2018, cerca de 13 mil observações; dez testes consecutivos de 15 dias fora da amostra.
 
+Papel do ML:** decidir dinamicamente comprar, manter ou vender e a exposição; substitui a otimização MV.
+
+Principais resultados:** todos os frameworks foram lucrativos em média, mas nenhum foi positivo em todos os períodos; o melhor retorno diário médio reportado foi 4,67%, com alta variabilidade. Custos de 0,2% por compra e venda foram incorporados.
+
+> “All deep Q-learning portfolio management frameworks are tested and compared by sampling 10 consecutive test periods, from 25 July 2018 to 25 December 2018. Each framework is run 5 times for each test period. Each test period is composed by 15 out-of-sample trading days for each framework. [...] In 80\% of the cases the proposed frameworks have a higher daily returns with respect to the cryptocurrencies. No frameworks reach positive daily returns in all test periods.”
+
+> “On test period 8, DQN-RF2 gets an exceptional result obtaining daily returns equal to 24.781\%. On the same test period, DDDQN-RF2 obtains the worst result (\textminus12.052\%). Daily returns values are positive for all frameworks on 40\% of the test periods. On the remaining 60\%, at least one framework gets negative performance. However, all frameworks obtain positive daily returns values on average. [...] DQN-RF2 reaches the highest value of average daily return, more precisely 4.67\%.”
+
+\cite{park2023intelligent} \todo[inline]{UM DOS POUCOS COM \textbf{ADABOOST}}
+ “We propose a fusion approach combining technology with economic knowledge to achieve accurate predictions. Firstly, we provide an ensemble prediction framework that integrates the AdaBoost algorithm with the LSTM deep learning model [...]. Secondly [...] we combine the econometrics Markov regime-switching model with the AdaBoost-LSTM model.”
+
+** “The simulation of our trading system for one year (from April 1, 2021 to April 30, 2022) showed cumulative returns and Sharpe ratios that greatly exceeded those of other trading strategies such as the stochastic oscillator and MACD.”
 
 
 % MV + CRIPTO

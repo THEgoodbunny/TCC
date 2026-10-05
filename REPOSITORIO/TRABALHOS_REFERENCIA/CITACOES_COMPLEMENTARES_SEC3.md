@@ -103,7 +103,6 @@ Nenhuma dessas 16 chaves corresponde aos nove trabalhos publicados novos e váli
 - **Afirmação atual que pode reforçar:** ML também pode atuar na pré-seleção, antes da otimização matemática.
 - **Nova discussão que permite:** redução de dimensionalidade e erro de covariância em universos cripto grandes, com trade-off entre retorno e drawdown.
 - **Relação específica com o presente TCC:** compartilha a sequência seleção algorítmica→MV, mas usa clustering não supervisionado em vez de previsão de retornos e trabalha com um universo muito maior.
-- **Impacto sobre a lacuna declarada no capítulo:** evidencia uma aplicação publicada e ampla de MV + cripto + aprendizado não supervisionado, tornando inadequada uma formulação genérica de escassez de estudos híbridos.
 
 ### Portfolio constructions in cryptocurrency market: A CVaR-based deep reinforcement learning approach
 

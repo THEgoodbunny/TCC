@@ -29,8 +29,18 @@
   - [ ] REVISÃO CRÍTICA DA SEÇÃO 3 - ***P0***
     - [ ] reestruturação/expansão da seção   - ***P0***
       - [x] 1 - ML + MV  - ***P0***
-      - [ ] 2 - MV + C  - ***P0***
+      - [x] 2 - MV + C  - ***P0***
       - [ ] 3 - ML + C  - ***P0***
       - [ ] 4 - ML + MV + C  - ***P0***
         - [ ] Aumentar referencias  - ***P0***
   - [ ] Criar tabela de **Estudos Relacionados**. - ***P1***
+   
+## CHECKLIST 202622
+
+
+- [ ] **1** - INTRODUÇÃO
+- [ ] 2 Referencias
+  - [ ] Observar se ja tem algo explicando In Sample e Out Sample em ML
+  - [ ] Observar se ja tem explicação sobre o que são modelos Ensemble (talvez incluir dentro de AdaBoost se não tiver, que ja explica contextualizando_
+- [ ] **4** - METODOLOGIA
+    - [ ] colocar análise de correlação dos criptoativos total e por ano ultimos 5 anos

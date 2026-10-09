@@ -75,49 +75,19 @@ Essas limitações estão relacionadas às próprias premissas do modelo. \citeo
 
 Nesse cenário, a incorporação de técnicas preditivas aparece como uma alternativa para lidar com parte dessas fragilidades. \citeonline{zouaoui2025portfolio} indicam que redes neurais, como \acs{lstm}, quando associadas à Teoria Moderna de Portfólio no mercado de criptomoedas, podem reduzir algumas limitações observadas no modelo clássico e gerar Índices de Sharpe mais elevados. Essa discussão reforça a relevância de investigar abordagens híbridas que combinem média-variância e \textit{Machine Learning}, uma vez que os estudos apontam tanto o potencial da diversificação em criptoativos quanto os limites da aplicação isolada de Markowitz nesse mercado \cite{brauneis2019cryptocurrency,jeleskovic2024cryptocurrency,zouaoui2025portfolio}.
 
-
-
 % TRIPE: MV+ML+CRIPTO
 \section{Estudos híbridos \textit{Machine Learning} e \acs{mv} aplicados ao mercado de criptoativos}
 \label{sec_estudos_hibridos_machine_learning_e_media_variancia_aplicados_ao_mercado_de_criptoativos}
 
-\todo[inline]{colocando as citações literais por trabalho}
+\todo[inline]{tem que ter: zhou2023multisource,lorenzo2023online,cui2023portfolio,xu2025cryptocurrency}
 
-\todo[inline]{1}
-% Multi-source data driven cryptocurrency price movement prediction and portfolio optimization
-\cite{zhou2023multisource}  
-“Third, we use SVM to forecast the movement of cryptocurrency prices based on the above multi-source data. Fourth, we propose a novel portfolio model by combining the forecasting results with the global minimum variance model, and the corresponding portfolio strategy is also derived.”
+\todo[inline]{unir estudos que sustentam que previsões podem alimentar diretamente a alocação MV e melhorar desempenho fora da amostra}
 
-“The proposed strategy has a better out-of-sample Sharpe ratio, Sortino ratio, and Certainty-equivalent (CEQ) return than other strategies. More importantly, the robustness test further confirms the effectiveness of the proposed strategy. Finally, we discuss the case where there are transaction costs, and the results show that the strategy proposed in this paper outperforms other strategies even with transaction costs.”
-
-Mercado/dados:** sete criptomoedas (BTC, ETH, XRP, ADA, DOGE, DOT e LTC); dados de negociação, Google Trends e 28.799.774 tweets de 1/1/2021 a 30/6/2021; testes fora da amostra com horizontes de 1, 3 e 5 dias.
-
-Componente MV/Markowitz:** modelo de variância mínima global modificado pela informação prevista; comparação com minimum variance, máximo Sharpe, 1/N, Black–Litterman, CRIX e outro método de pré-seleção.
-- Componente cripto: previsão de movimentos e alocação exclusivamente entre criptomoedas.
-- Componente ML/DL/RL: SVM para classificar a direção futura dos preços; VADER para extrair sentimento dos tweets.
-- Como os três componentes são integrados:** probabilidades/direções previstas pela SVM, construídas com dados de mercado, atenção e sentimento, modificam a função de otimização de variância mínima; a carteira é atualizada em janela móvel.
+Finalmente, após apresentado como as bases do trabalho dialogam, vale levantar o que já foi produzido que se assemelha com o escopo do presente trabalho. \citeonline{zhou2023multisource} criou uma abordagem preditiva com modelo \acs{svm} baseada em volume de negociação e análise de sentimento com o modelo \ac{vader}, extraindo dados das plataformas \textit{Google Trends} e \textit{Twitter}, obtidos entre 1/1/2021 a 30/6/2021 e testes fora da amostra com horizontes de 1, 3 e 5 dias. Sete criptoativos foram testados, BTC, ETH, XRP, ADA, DOGE, DOT e LTC, utilizando-se  modelo de variância mínima global modificado pela informação prevista; foi realizada comparação entre referências de variância mínima, máximo Sharpe, 1/N, modelo \textit{Black–Litterman}, \textit{CRyptocurrency IndeX} e outro método de pré-seleção baseado em \acs{lstm}. Foi observado pelo autor que a estratégia proposta teve a melhor desempenho em índice de Sharpe, Índice Sortino e equivalente de certeza em relação as demais estratégias \cite{zhou2023multisource}. Em consonância, \citeonline{lorenzo2023online} desenvolveu uma abordagem baseada em algorítimos de \textit{clusterização}, ou seja, algorítimos que classificam e preveem com base em agrupamentos segregados, tendo em vista algum valor de referência, a depender do modelo
 
 
-
-\todo[inline]{2}
-% ### Online risk-based portfolio allocation on subsets of crypto assets applying a prototype-based clustering algorithm
-\cite{lorenzo2023online}  
-Mercado/dados:** mercado cripto completo com 534 ativos elegíveis e subconjuntos dos 175 e 250 maiores; simulação de janeiro de 2020 a maio de 2021, janela de estimação de dois anos, holding de 30 dias e 1.500 trajetórias de investimento.
-Componente MV/Markowitz:** MV é aplicado somente ao cluster selecionado; MV integral, risk parity, hierarchical risk parity e CCI30 são benchmarks.
-Componente ML/DL/RL:** clustering não supervisionado CLARA/k-medoids, seleção automática do número de clusters e escolha do protótipo conforme perfil de risco/Sharpe.
-Como os três componentes são integrados:** clustering pré-seleciona dinamicamente um subconjunto coerente com o perfil do investidor; MV calcula os pesos apenas nesse subconjunto.
-Principais resultados:** estratégias de cluster por Sharpe e mean-risk melhoram retornos e Sharpe quando o universo cresce e evitam falhas de convergência do MV aplicado a todo o mercado; o MV clássico preserva vantagem em algumas métricas puras de risco.
-Limitações:** maior drawdown/risco em algumas estratégias; sensibilidade ao número de moedas; fricções, liquidez, múltiplas exchanges e negociabilidade de todos os 534 ativos não foram incorporadas.
-Citação literal 1:** “We propose enhancing the mean-variance (MV) model with a pre-selection stage that uses a prototype-based clustering algorithm to reduce the number of crypto assets considered at each investment period. [...] We then run the MV portfolio optimization with the crypto assets of the selected cluster.”
-Citação literal 2:** “One of the drawbacks of the proposed strategies is the higher drawdown and risk compared with the classical MV, which is the more evident weakness of the proposed strategies, so it is comparable to the HRP model. We consider that SR and MR strategies independent of market size offer a good trade-off between returns, risk, and drawdown.”
-
-
-\todo[inline]{3}
-% ### Portfolio constructions in cryptocurrency market: A CVaR-based deep reinforcement learning approach
-\cite{cui2023portfolio}  
-
-Mercado/dados:** BTC, Dash, ETH, LTC, USDT e XRP; 2.199 observações diárias do Yahoo Finance, de 6/8/2015 a 6/8/2021; treino até 31/12/2019 e teste posterior.
-
+\todo[inline]{CONCLUSAO:}
+os estudos sustentam que previsões podem alimentar diretamente a alocação MV e melhorar desempenho fora da amostra
 
 
 \section{Síntese crítica dos estudos relacionados}

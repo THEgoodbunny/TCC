@@ -829,6 +829,191 @@
 - **Relação específica com o presente TCC:** complementa diretamente a discussão de interpretabilidade, mas não concorre com o pipeline de previsão de retornos do TCC.
 - **Por que é útil nesta subseção:** XAI pode ser aplicada às decisões de alocação e aos pesos de carteiras cripto baseadas em Markowitz.
 
+---
+
+### Safari et al. (2025) — Mean–Variance Portfolio Optimization Using Ensemble Learning-Based Cryptocurrency Price Prediction
+- **Classificação do papel do ML:** **A — fornece parâmetros/sinais ao MV**.
+
+- **Autores:** Mojtaba Safari; Nawapon Nakharutai; Phisanu Chiawkhun; Parkpoom Phetpradap.
+- **Ano:** 2025 — preprint v1 publicado no Research Square em 6/1/2025; revisão por pares não comprovada.
+- **Caminho do PDF:** não localizado no repositório; cópia temporária consultada em `/tmp/cripto_ml_review/safari.pdf`; [PDF original do Research Square](https://assets-eu.researchsquare.com/files/rs-5734118/v1_covered_ba89db23-121e-4609-888f-ac39fbd74b38.pdf?c=1736263027).
+- **DOI:** `10.21203/rs.3.rs-5734118/v1`.
+- **BibTeX:** existe — `safari2025meanvariance`.
+- **Mercado/dados:** BTC, ETH, BNB, SOL, XRP, DOGE, ADA e TRX; dados diários OHLCV e indicadores técnicos, com janela agregada declarada de 1/1/2017 a 31/12/2023. Modelos-base treinados em 2017–2021, validados em 2022 e testados em 2023. A avaliação de carteiras usa três períodos: fevereiro de 2023 (T1), março–abril de 2023 (T2) e abril–junho de 2023 (T3), precedidos por amostras de estimação iniciadas em janeiro de 2023.
+- **Stack de otimização/risco:** MV tradicional, MV com previsão (MVF), MV reotimizado (RMV), MV com previsão de preços (MVP) e forecast-based MV (FBMV); referência 1/N. Carteiras integralmente investidas, sem venda a descoberto; avaliação por Sharpe, Sortino, drawdown máximo e retorno cumulativo, sem custos, impostos ou comissões.
+- **Componente cripto:** carteiras exclusivamente compostas pelas oito criptomoedas.
+- **Stack e métodos de ML/DL/RL:** LSTM, BLSTM, GRU, DMLP, Random Forest, XGBoost e SVR para prever preços; combinações por regressão ridge (RR), regressão por componentes principais (PCR) e média de pesos iguais (EWR). A PCR combina previsões após redução dimensional; RR estima pesos regularizados. RMSE, MAE e MAPE avaliam a previsão; o melhor ensemble fornece a entrada da etapa de carteira.
+- **Integração da stack:** preços previstos são convertidos em retornos; no FBMV, médias e covariâncias são calculadas a partir desses retornos previstos e entram no objetivo MV das equações 23–25. A covariância não provém de uma rede separada treinada para prever risco. MVF e outras variantes combinam previsões com informações históricas de maneiras distintas.
+- **Principais resultados:** na tabela 6, FBMV apresenta Sharpes de 0,38 / 0,96 / 0,83 em T1/T2/T3, contra −0,23 / 0,78 / 0,23 do MV; Sortinos de 0,55 / 1,74 / 1,34 e drawdowns máximos de −7,44% / −14,43% / −13,25%. A vantagem reportada corresponde aos três testes de carteira, não a uma comprovação universal de superioridade.
+- **Limitações:** preprint; apenas oito ativos e períodos curtos de carteira, com sobreposição entre os testes T2/T3; custos e negociabilidade não modelados. A cobertura histórica efetiva por moeda precisa ser reconciliada com a janela agregada declarada. O desenho temporal separa treino, validação e teste preditivos, mas não demonstra generalização para regimes posteriores a 2023 nem testes formais de diferença dos índices de carteira.
+#### Citações diretas verificadas
+
+- **Citação literal 1 — Metodologia:**
+
+> “we integrated forecasting results to develop forward-looking strategies.”
+
+- **Página:** PDF 20; página impressa 19.
+- **Contexto:** conclusão do preprint, ao retomar a passagem das previsões dos ensembles às estratégias de carteira; a formulação específica do FBMV está na seção 2.2.2, equações 23–25, PDF 10–11, páginas impressas 9–10.
+- **O que o trecho comprova:** resultados preditivos participam da construção das estratégias; as equações citadas identificam retornos e covariâncias previstos como entradas do MV.
+- **Citação literal 2 — Resultados:**
+
+> “The lowest drawdown can be obtained at −7.44% for the FBMV strategy.”
+
+- **Página:** PDF 19; página impressa 18.
+- **Contexto:** comentário da tabela 6 sobre T1; o valor não é o drawdown de todos os períodos. Na mesma página, a tabela discrimina Sharpe, Sortino e drawdown em T1/T2/T3.
+- **O que o trecho comprova:** o FBMV tem o menor drawdown máximo no primeiro teste; os resultados dos demais períodos precisam ser recuperados separadamente da tabela.
+- **Afirmações que pode sustentar no TCC:** ensembles podem fornecer retornos e uma matriz de covariância construída com valores previstos ao MV; a comparação fora da amostra apresenta ganhos condicionais à amostra e às hipóteses de negociação.
+- **Relação específica com o presente TCC:** aproxima-se do pipeline previsão→estimativas→MV em carteira exclusivamente cripto; amplia a comparação de modelos e permite discutir o efeito de usar previsões também na estimação do risco.
+- **Por que é útil nesta subseção:** documenta integração operacional do tipo A e separa a qualidade da previsão do desempenho das carteiras, com resultados quantitativos nos três períodos.
+
+---
+
+### Chen e Zheng (2025) — Cryptocurrency price prediction and portfolio optimization based on LSTM and multi-task neural network
+- **Classificação do papel do ML:** **C — substitui a otimização por política aprendida**; os pesos são produzidos por rede multitarefa, sem aprendizado por reforço.
+
+- **Autores:** Weiqi Chen; Hang Zheng.
+- **Ano:** 2025 — *Quantitative Finance and Economics*, 9(3), 658–681.
+- **Caminho do PDF:** não localizado no repositório; cópia temporária consultada em `/tmp/cripto_ml_review/chen2025.pdf`; [PDF original da AIMS Press](https://www.aimspress.com/aimspress-data/qfe/2025/3/PDF/QFE-09-03-023.pdf).
+- **DOI:** `10.3934/QFE.2025023`.
+- **BibTeX:** existe — `chen2025multitask`.
+- **Mercado/dados:** BCH, BTC, EOS, ETC, ETH, LTC e XRP; dados diários da API da OKX de 29/5/2022 a 22/2/2025, com preços de fechamento, volume e informação de volatilidade. O ajuste preditivo divide a amostra em 70%/30%; a etapa de alocação declara divisão de 75%/25%.
+- **Stack de otimização/risco:** alocação neural orientada pelo Sharpe da carteira e regularização L2, com risco calculado por `√(wᵀΣw)` e taxa livre de risco zero. Comparação com MV, máxima diversificação (MD), CAPM, pesos dinâmicos (DWP) e modelo profundo de tarefa única (DLS); avaliação inclui Sharpe, CVaR e ranking multicritério.
+- **Componente cripto:** carteira exclusivamente formada pelas sete criptomoedas.
+- **Stack e métodos de ML/DL/RL:** LSTM individual para previsão de preços; rede multitarefa DLM com camadas LSTM compartilhadas, dropout, camadas densas por tarefa e saída softmax. As entradas da alocação combinam rendimento, volatilidade e desvio preditivo; escores dos ativos são convertidos em pesos normalizados.
+- **Integração da stack:** a segunda rede aprende os pesos usando uma função de perda de carteira, em vez de entregar retornos previstos a um solucionador Markowitz convencional. As equações 17–20 ligam pesos, retorno, covariância, Sharpe e softmax. A categoria C descreve essa substituição do cálculo dos pesos por uma função aprendida, embora a rede utilize informações da etapa preditiva.
+- **Principais resultados:** na tabela 5, DLM tem Sharpe 0,062865 contra 0,021538 do MV, mas CVaR 0,058374 contra 0,031644; portanto, o maior Sharpe não implica menor risco de cauda. O ranking multicritério favorece DLM, mas depende dos indicadores e pesos utilizados.
+- **Limitações:** sete moedas e um único intervalo; custos de transação desconsiderados. O texto apresenta o Sharpe negativo como perda, enquanto a equação 17 imprime Sharpe positivo acrescido de L2; essa inconsistência documental limita a reprodução, sem demonstrar erro na implementação computacional. Divisões amostrais distintas e uso de pseudorrótulos exigem cuidado na reconstrução do protocolo temporal; os índices não devem ser interpretados como anualizados sem confirmação.
+#### Citações diretas verificadas
+
+- **Citação literal 1 — Metodologia:**
+
+> “Finally, we input the obtained set of scores into the Softmax layer to calculate weights.”
+
+- **Página:** PDF 14; página impressa 671.
+- **Contexto:** seção 3, descrição das tarefas individuais após as camadas compartilhadas; as equações 17–19 da página anterior e desta página estabelecem a função de carteira.
+- **O que o trecho comprova:** a rede produz os pesos diretamente por softmax a partir dos escores, distinguindo DLM de previsão→otimizador Markowitz.
+- **Citação literal 2 — Resultados:**
+
+> “DLM 0.062865 1.251308 0.058374 0.043596”
+
+- **Página:** PDF 21; página impressa 678.
+- **Contexto:** linha DLM da tabela 5; transcrição dos valores na ordem original das colunas: Sharpe, CV, CVaR e p. Os espaços entre as células foram normalizados; a linha MV da mesma tabela permite a comparação.
+- **O que o trecho comprova:** os valores de Sharpe e CVaR do DLM são 0,062865 e 0,058374; a comparação com MV mostra ganho em Sharpe acompanhado por CVaR maior.
+- **Afirmações que pode sustentar no TCC:** uma rede pode aprender pesos com objetivo fundamentado em retorno e variância; desempenho em Sharpe e risco de cauda pode divergir, e a formulação da perda precisa ser documentada sem ambiguidades.
+- **Relação específica com o presente TCC:** fornece uma alternativa à separação entre previsão e otimização MV; mantém objetivo de carteira baseado em covariância, mas aprende a regra de pesos dentro da arquitetura neural.
+- **Por que é útil nesta subseção:** representa a categoria C sem confundi-la com RL e permite comparar aprendizado direto da alocação com o pipeline modular do TCC.
+
+---
+
+### Sun et al. (2025) — Enhancing Portfolio Optimization with Weighted Scoring for Return Prediction Through Machine Learning and Neural Networks
+- **Classificação do papel do ML:** **A — fornece parâmetros/sinais ao MV**.
+
+- **Autores:** Ruili Sun; Qiongchao Xia; Shiguo Huang.
+- **Ano:** 2025 — *International Journal of Advanced Computer Science and Applications*, 16(7), 826–840.
+- **Caminho do PDF:** não localizado no repositório; cópia temporária consultada em `/tmp/cripto_ml_review/sun.raw` (arquivo PDF); [PDF original da publicação](https://thesai.org/Downloads/Volume16No7/Paper_81-Enhancing_Portfolio_Optimization.pdf).
+- **DOI:** `10.14569/IJACSA.2025.0160781`.
+- **BibTeX:** existe — `sun2025enhancing`.
+- **Mercado/dados:** ADA, AVAX, BNB, BTC, DOGE, ETH, LINK, SHIB, SOL e XRP; dados diários de janeiro de 2023 a outubro de 2024, com OHLCV e indicadores RSI, MACD e OBV. Experimentos com ações norte-americanas e chinesas são separados do cripto. A alocação cripto é atualizada a cada sete dias.
+- **Stack de otimização/risco:** Return Prediction Weighted Scoring (RPWS), que combina mínima variância com penalização L2 da distância a pesos de referência; comparação com mínima variância (MVM), máximo Sharpe (MSRM), risk parity (RPM), 1/N e BTC. Sharpe, Sortino, retorno e volatilidade anualizados, drawdown máximo e VaR avaliam as carteiras; taxas de transação, alavancagem e venda a descoberto são desconsideradas.
+- **Componente cripto:** carteira exclusivamente composta pelas dez criptomoedas; não há carteira mista no experimento elegível.
+- **Stack e métodos de ML/DL/RL:** SVR, k-NN, XGBoost, LSTM, Transformer e Informer, avaliados separadamente para previsão; normalização Max–Min e ajuste de hiperparâmetros. A qualidade preditiva é medida por MSE, RMSE e MAE; não se trata de ensemble dos seis algoritmos.
+- **Integração da stack:** o ranking dos retornos previstos gera pesos de referência proporcionais ao inverso do quadrado da posição no ranking. O otimizador minimiza a variância da carteira acrescida da penalização de distância a esses pesos; λ controla a influência do sinal preditivo, e λ = 0 recupera mínima variância. O ML fornece uma referência à função objetivo, não apenas uma classificação posterior da carteira.
+- **Principais resultados:** na tabela VIII, SVR–RPWS tem retorno anualizado 75,01%, Sharpe 1,2522 e drawdown máximo −39,61%; 1/N apresenta 52,46%, 1,1196 e −45,36%, respectivamente. SVR–RPWS lidera retorno e Sharpe entre as variantes, mas seu drawdown é pior que o de BTC (−26,24%) e Informer–RPWS (−24,01%). Transformer–RPWS tem Sharpe 0,7420 e XGBoost–RPWS 0,4881, evidenciando heterogeneidade entre algoritmos.
+- **Limitações:** resultados brutos, sem custos, em janela cripto curta e de forte valorização; maior retorno/Sharpe não significa menor drawdown. Qualidade preditiva isolada não acompanha necessariamente o desempenho da carteira; os melhores resultados dos experimentos de ações não podem ser transferidos automaticamente ao mercado cripto.
+#### Citações diretas verificadas
+
+- **Citação literal 1 — Metodologia:**
+
+> “This formulation integrates machine learning predictions”
+
+- **Página:** PDF 6; página impressa 831.
+- **Contexto:** seção III, explicação imediatamente posterior à formulação RPWS; o restante da passagem identifica o vetor de referência e a otimização pela matriz de covariância.
+- **O que o trecho comprova:** a previsão integra a formulação; o ranking, os pesos de referência e a penalização apresentados na mesma página identificam operacionalmente essa participação no problema de mínima variância.
+- **Citação literal 2 — Resultados:**
+
+> “SVR-RPWS 75.01% 1.2522 -39.61% 2.1192 59.90% -4.41%”
+
+- **Página:** PDF 12; página impressa 837.
+- **Contexto:** linha SVR–RPWS da tabela VIII, exclusivamente do experimento cripto; valores na ordem retorno anualizado, Sharpe, drawdown máximo, Sortino, volatilidade anualizada e VaR de 95%. Os espaços entre células foram normalizados.
+- **O que o trecho comprova:** confirma os resultados quantitativos do SVR–RPWS e o drawdown expressivo; as linhas de 1/N, BTC e Informer da mesma tabela sustentam a comparação, sob a hipótese de ausência de taxas indicada no protocolo.
+- **Afirmações que pode sustentar no TCC:** previsões podem influenciar MV por pesos de referência e regularização; algoritmos preditivos distintos produzem resultados de carteira distintos, inclusive perdas de eficiência e diferenças de drawdown.
+- **Relação específica com o presente TCC:** preserva previsão→otimização em carteira cripto, mas transmite sinais por ranking e penalização, oferecendo uma alternativa à substituição direta do vetor de retornos esperados.
+- **Por que é útil nesta subseção:** amplia a categoria A com uma ligação explícita entre sinais preditivos e objetivo de mínima variância, com benchmarks e unidades identificados.
+
+---
+
+### Bulani et al. (2025) — Improving Portfolio Management Using Clustering and Particle Swarm Optimisation
+- **Classificação do papel do ML:** **B — seleciona ativos antes da otimização**; os pesos são otimizados por PSO com objetivo de máximo Sharpe, variante elegível do paradigma MV.
+
+- **Autores:** Vivek Bulani; Marija Bezbradica; Martin Crane.
+- **Ano:** 2025 — *Mathematics*, 13(10), artigo 1623.
+- **Caminho do PDF:** não localizado no repositório; cópia temporária consultada em `/tmp/cripto_ml_review/bulani.pdf`; [PDF original da MDPI](https://mdpi-res.com/d_attachment/mathematics/mathematics-13-01623/article_deploy/mathematics-13-01623.pdf).
+- **DOI:** `10.3390/math13101623`.
+- **BibTeX:** existe — `bulani2025improving`.
+- **Mercado/dados:** dados cripto horários OHLCV de janeiro de 2018 a maio de 2023; testes iniciais com dez moedas por capitalização e análise de clustering no universo de 53 disponíveis. Ações S&P 500/Nasdaq são avaliadas separadamente. Pré-processamento compara imputação de dados ausentes e suavização por médias móveis.
+- **Stack de otimização/risco:** Standard PSO (SPSO), Improved PSO (IPSO) e Drift PSO (DPSO) otimizam pesos; objetivos incluem Sharpe, Sharpe ajustado e Sortino. A elegibilidade decorre da maximização de Sharpe, fundamentada em retorno e desvio-padrão, após seleção por clustering; o Markowitz de PyPortfolioOpt também aparece como comparação. Sortino sozinho não fundamenta a inclusão.
+- **Componente cripto:** carteiras exclusivamente cripto no experimento correspondente, sem mistura com as carteiras de ações.
+- **Stack e métodos de ML/DL/RL:** clustering não supervisionado k-medoids sobre retorno trimestral e desvio-padrão; distância euclidiana, escolha de K por elbow/silhouette e inicialização aleatória/heurística. PAM é mencionado na revisão como método de estudos anteriores; o método próprio é denominado k-medoids e descrito pelo algoritmo A2, sem confirmação explícita de que a implementação específica utilize a variante PAM.
+- **Integração da stack:** clusters e medóides delimitam a seleção dos ativos; quatro regras escolhem representantes e candidatos adicionais. A estratégia 3 faz seleção dinâmica por retorno, risco, retorno/risco e distância ao medóide. PSO recebe o subconjunto e determina os pesos pelo objetivo de carteira; clustering é o componente ML e PSO é o otimizador metaheurístico, não um previsor de retornos.
+- **Principais resultados:** seção 4.5.3 e figuras 8, 12–13 indicam que a estratégia 3 produz os maiores Sharpes e Sharpes ajustados entre as quatro regras no experimento cripto; DPSO tem o melhor desempenho entre as variantes PSO avaliadas. A conclusão é uma comparação interna do desenho experimental, sem comprovação de superioridade universal ou significância estatística dos ganhos.
+- **Limitações:** resultados dependem de imputação, suavização, K, seleção e hiperparâmetros PSO; seleção por capitalização e universo disponível limitam a representatividade. A comparação com trabalhos de outras amostras não isola o efeito do método; não foi confirmado teste formal de diferença de Sharpe nem protocolo independente suficiente para extrapolar os ganhos. A associação da implementação específica ao nome PAM permanece não confirmada.
+#### Citações diretas verificadas
+
+- **Citação literal 1 — Metodologia:**
+
+> “K-medoids algorithm is adopted as the clustering technique.”
+
+- **Página:** PDF 11; página impressa 11 de 28.
+- **Contexto:** seção 3.4, escolha do método de clustering; a continuação, na página 12, descreve retorno trimestral e desvio-padrão como representação dos ativos, seguida pelas regras de seleção e alocação.
+- **O que o trecho comprova:** a etapa de seleção utiliza k-medoids; seu papel precede a otimização dos pesos por PSO, descrita na seção 3.3.
+- **Citação literal 2 — Resultados:**
+
+> “strategy 3 provides the best Sharpe and Adjusted Sharpe ratio values for cryptocurrency portfolios”
+
+- **Página:** PDF 19; página impressa 19 de 28.
+- **Contexto:** seção 4.5.3, comparação das regras de seleção na figura 8; a discussão prossegue na página 20 com os resultados DPSO das figuras 12–13.
+- **O que o trecho comprova:** a seleção dinâmica da estratégia 3 é a melhor entre as regras comparadas no experimento cripto, sem afirmar superioridade sobre qualquer estratégia ou amostra externa.
+- **Afirmações que pode sustentar no TCC:** aprendizado não supervisionado pode atuar na pré-seleção antes de uma alocação de máximo Sharpe; a escolha do universo e da regra de seleção influencia os resultados da otimização.
+- **Relação específica com o presente TCC:** compartilha a integração modular seleção→alocação, mas aprende grupos de ativos em vez de prever retornos; PSO substitui o solucionador convencional do problema de carteira.
+- **Por que é útil nesta subseção:** amplia a categoria B e separa com precisão o algoritmo de aprendizado, a seleção e o otimizador, preservando o alcance das comparações internas.
+
+---
+
+### Mba (2026) — A Regime-Adaptive Expert System for Cryptocurrency Portfolio Optimisation Using Dynamic Correlation Graph Neural Networks
+- **Classificação do papel do ML:** **A — fornece representações/estimativas para a alocação**; o cálculo de tangência permanece explícito, embora o treinamento também incorpore Sharpe.
+
+- **Autores:** Jules Clement Mba.
+- **Ano:** 2026 — *FinTech*, 5(4), artigo 91, publicado em 8/10/2026.
+- **Caminho do PDF:** não localizado no repositório; cópia temporária consultada em `/tmp/cripto_ml_review/regime.raw` (arquivo PDF); [PDF original da MDPI](https://mdpi-res.com/d_attachment/fintech/fintech-05-00091/article_deploy/fintech-05-00091.pdf).
+- **DOI:** `10.3390/fintech5040091`.
+- **BibTeX:** existe — `mba2026regime`.
+- **Mercado/dados:** 33 pares cripto/USDT de grande capitalização na Binance; preços e volumes diários de abril de 2021 a junho de 2026. Estimação até junho de 2022 e avaliação fora da amostra de julho de 2022 a junho de 2026, com 1.460 dias. Features combinam sinais de preço/volume com oito escores fundamentais/on-chain do CoinGecko obtidos como snapshot transversal.
+- **Stack de otimização/risco:** pesos de tangência proporcionais a `Σ⁻¹μ`, normalizados pelo orçamento; matriz de risco derivada das representações GNN, controle de alavancagem e mudança para long-only em estresse. Custos de 10 pontos-base; benchmarks incluem capitalização, mínima variância, MV de tangência, risk parity, HRP e pesos iguais. Sharpe, retorno, volatilidade, drawdown e turnover avaliam o experimento.
+- **Componente cripto:** universo fixo de 33 criptoativos; o fato de os pares serem cotados em USDT não constitui, por si só, alocação adicional em um ativo tradicional.
+- **Stack e métodos de ML/DL/RL:** GCN, GraphSAGE e GAT em grafos de correlação, com perda composta de Sharpe, modularidade e ranking; HMM gaussiano de dois estados identifica regimes. O grafo usa correlações de Pearson em janela de 40 dias e limiar de correlação absoluta; HMM é reestimado em amostra expansiva com informações disponíveis até a decisão.
+- **Integração da stack:** embeddings agregam informação de ativos correlacionados e participam da estimação de risco, incluindo a matriz de Gram `HHᵀ/d`; a equação 1 usa as estimativas no cálculo dos pesos de tangência. O HMM aumenta o limiar de correlação para reduzir a densidade do grafo e ativa pesos long-only em estresse. A classificação A destaca representações→estimativas→alocação, sem ignorar que Sharpe orienta o aprendizado.
+- **Principais resultados:** após custos, GCN estático tem Sharpe 0,31, inferior à mínima variância (0,45) e à capitalização (0,50), tabela 5. Seu drawdown máximo é −89,0%, contra −52,6% e −59,0% desses benchmarks. GraphSAGE dinâmico sem controle apresenta Sharpe −0,62 e drawdown −99,0%; a versão com HMM melhora para 0,18 e −82,6%, permanecendo desfavorável nas métricas principais frente aos dois benchmarks.
+- **Limitações:** universo retrospectivo e fixo, com filtro de sobrevivência; escores CoinGecko não são um painel histórico disponível em cada rebalanceamento. Séries diárias de pesos/retornos GNN não foram arquivadas, restringindo reprodução e reestimação. Drawdowns são economicamente severos; comparação do HMM com regra de volatilidade é descritiva, sem teste formal de significância. O teste Kupiec apresentado é uma checagem de cobertura dentro da amostra, não validação de previsões VaR fora da amostra.
+#### Citações diretas verificadas
+
+- **Citação literal 1 — Metodologia:**
+
+> “learn embeddings that pool information from correlated peers.”
+
+- **Página:** PDF 7; página impressa 7 de 19.
+- **Contexto:** seção 3.4, após a equação dos pesos de tangência; a mesma página relaciona embeddings, matriz de Gram e matriz de precisão, discutindo instabilidade quando o grafo fica denso.
+- **O que o trecho comprova:** representações aprendidas agregam informação entre ativos para a etapa de estimação/alocação; o vínculo com a matriz de risco e os pesos é explícito no contexto matemático.
+- **Citação literal 2 — Resultados:**
+
+> “cap-weight and minimum-variance rules rank above every GNN specification on headline Sharpe and drawdown”
+
+- **Página:** PDF 1; página impressa 1 de 19.
+- **Contexto:** resultados do resumo, após a apresentação dos Sharpes líquidos das configurações GNN; valores e comparadores estão detalhados nas tabelas 4–5, PDF 10, página impressa 10 de 19.
+- **O que o trecho comprova:** os próprios autores reconhecem que capitalização e mínima variância superam todas as configurações GNN nas métricas citadas; a melhoria relativa pelo HMM não elimina esse resultado negativo.
+- **Afirmações que pode sustentar no TCC:** representação de dependências por GNN pode alimentar alocação fundamentada em MV, mas custos, alavancagem e instabilidade de risco podem impedir ganhos e agravar perdas.
+- **Relação específica com o presente TCC:** acrescenta uma alternativa de aprendizado de representações para estimação de risco e pesos de tangência; oferece evidência negativa para discutir a necessidade de benchmarks simples, custos e validação de regimes no pipeline do TCC.
+- **Por que é útil nesta subseção:** documenta integração efetiva do tipo A com resultados desfavoráveis, evitando equiparar maior sofisticação do ML a maior eficiência de carteira.
+
 ## 3.5 Síntese crítica dos estudos relacionados
 
 ### Demosthenous e Georgiou (2026) — Portfolio Optimization Methods for the Digital Asset Market: A Comprehensive Survey

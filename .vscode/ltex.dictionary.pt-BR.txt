@@ -26,3 +26,4 @@ underfitting
 hiperparâmetros
 overfitting
 Markowitz
+Choquet

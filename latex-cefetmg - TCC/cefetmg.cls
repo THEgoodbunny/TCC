@@ -326,9 +326,13 @@
 % Sumário
 % -----------------------------------------------------------------------------
 
-% Travessão no sumário para apêndices e anexos
-% (redefinições da classe 'memoir')
-\renewcommand{\cftchapteraftersnum}{\hfill\textendash\hfill}
+% Sem travessão e com coluna de números mais estreita
+\renewcommand{\cftchapteraftersnum}{}
+\setlength{\cftlastnumwidth}{3em}
+\cftsetindents{chapter}{0em}{\cftlastnumwidth}
+\cftsetindents{section}{0em}{\cftlastnumwidth}
+\cftsetindents{subsection}{0em}{\cftlastnumwidth}
+\cftsetindents{subsubsection}{0em}{\cftlastnumwidth}
 
 % Fontes da seção \part no sumário
 % (redefinições da classe 'memoir')

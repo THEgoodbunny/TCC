@@ -6,30 +6,222 @@
 \chapter{Metodologia}
 \label{chap_metodologia}
 
-\section{Classificação da pesquisa}
-\label{sec_classificacao_da_pesquisa}
+O presente estudo foi estruturado de forma a analisar a aplicação do aprendizado de máquina ao processo de construção de um portfólio de criptomoedas. Para tal, serão utilizados dados históricos do mercado, para subsidiar de insumo um modelo baseado em \textit{machine learning} na tentativa de captar o movimento de mercado dos criptoativos ao longo do tempo. Em resumo, os dados em questão serão, posteriormente, utilizados no treinamento e avaliação de um modelo de classificação baseado no algoritmo de aprendizado supervisionado \textit{\acl{adaboost}} (\acs{adaboost}).
 
-A presente pesquisa classifica-se, quanto à sua natureza, como aplicada. Seu foco transcende a ampliação do conhecimento teórico, buscando utilizar tal embasamento para solucionar problemas concretos e satisfazer necessidades específicas, em consonância com a definição de \citeonline{gil2010projetos}, que destaca a geração de conhecimentos dirigidos à aplicação prática e interesses locais.
+De forma a caracterizar o trabalho, a classificação proposta por \citeonline{vergara2016projetos} o considera como uma pesquisa aplicada, pois ele busca desenvolver uma solução a um problema prático. Afinal, conforme já justificado anteriormente, é importante a utilização de ferramentas que apoiem as decisões envolvidas na estruturação de uma carteira de criptoativos. Assim, o trabalho não se limita a uma discussão teórica sobre o assunto, mas envolve a construção e avaliação de um procedimento, utilizando uma abordagem quantitativa, pois será baseado na manipulação constante de dados numéricos e no uso de métricas estatísticas e financeiras.
 
-Do ponto de vista da abordagem, o estudo é quantitativo, priorizando a objetividade e a tradução de informações em números. Conforme \citeonline{richardson1999pesquisa}, essa metodologia garante a precisão dos dados e valida as hipóteses por meio de técnicas estatísticas, abrangendo desde a coleta até o tratamento complexo das informações.
+Quanto aos fins, a pesquisa apresenta caráter descritivo. De acordo com \citeonline{gil2002projetos}, esse tipo de investigação tem como objetivo a descrição de características de um determinado fenômeno ou o estabelecimento de relações entre variáveis. De forma convergente, \citeonline{vergara2016projetos} a considera como aquela voltada à exposição das características de um fenômeno, mesmo sem o compromisso da explicação das causas. Nesse contexto, o estudo irá descrever e avaliar o comportamento de um modelo de classificação.
 
-Em relação aos objetivos, a investigação define-se como descritiva. Ao propor analisar e comparar o desempenho de carteiras --- contrapondo o uso de Machine Learning a modelos tradicionais ---, o estudo visa descrever características do fenômeno e estabelecer relações entre variáveis. Essa classificação fundamenta-se em \citeonline{gil2010projetos}, para quem a pesquisa descritiva tem como foco principal a correlação de variáveis sem necessariamente aprofundar-se nas causas primárias.
+Quanto aos meios de investigação, conforme a classificação proposta por \citeonline{vergara2016projetos}, o trabalho caracteriza-se como bibliográfico e documental. A dimensão bibliográfica decorre do uso de livros, artigos científicos e demais publicações acadêmicas voltadas à fundamentação teórica sobre criptomoedas, teoria moderna do portfólio e aprendizado de máquina. A dimensão documental, por sua vez, relaciona-se à utilização de dados secundários de mercado, como preços históricos, volumes negociados, retornos e demais informações financeiras dos criptoativos analisados. Assim, a pesquisa utiliza documentos e registros já existentes para a análise.
 
-Quanto aos procedimentos técnicos, o trabalho assume caráter experimental, pois envolve a manipulação direta dos modelos de investimento para analisar os efeitos produzidos (retorno e risco) sob condições controladas, satisfazendo os critérios de manipulação e controle de variáveis descritos por \citeonline{gil2010projetos}.
+Por fim, a investigação em questão é considerada \textit{ex-post-facto}, já que os dados analisados correspondem a eventos passados do mercado. Nesse tipo de pesquisa, conforme \citeonline{gil1989metodos}, o pesquisador não exerce controle direto sobre as variáveis independentes, pois os fenômenos observados já ocorreram. Assim, no presente estudo, não haverá intervenção sobre o comportamento dos criptoativos, como preços, volumes negociados, retornos ou volatilidade. A atuação da pesquisa ocorrerá no tratamento e na análise desses dados, bem como na construção das variáveis, no treinamento do modelo \acs{adaboost} e na avaliação das carteiras formadas a partir dos resultados obtidos.
 
-\section{Coleta de dados}
-\label{sec_coleta_de_dados}
+% -----------------------------------------------------------------------------
+\section{Desenho do experimento}
+\label{sec_desenho_do_experimento}
 
-A operacionalização da pesquisa dar-se-á pela coleta de dados oriundos de múltiplas fontes, incluindo dados primários extraídos via \acp{api} das corretoras Binance e Kraken, e dados secundários obtidos no banco de dados Kaggle.
+A \autoref{fig_desenho_experimento} apresenta as etapas do experimento da pesquisa a ser desenvolvida no presente trabalho. Assim, é possível delinear com clareza o fluxo metodológico a ser adotado.
 
-\section{Estratégias comparadas}
-\label{sec_estrategias_comparadas}
+\begin{figure}[htbp]
+    \caption{Desenho do experimento}
+    \label{fig_desenho_experimento}
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \resizebox{\linewidth}{!}{%
+        \begin{tikzpicture}[
+            font=\small,
+            titulo/.style={draw, thick, fill=gray!25, minimum width=54mm, minimum height=8mm, font=\small\bfseries, align=center, anchor=north},
+            corpo/.style={draw, thick, fill=white, text width=50mm, minimum height=37mm, align=flush left, inner sep=2mm, anchor=north,
+                execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+            seta/.style={-{Stealth[length=3mm]}, thick}
+        ]
+            % Posições: três colunas (x) e três linhas (y)
+            \def\colA{0mm}  \def\colB{66mm}  \def\colC{132mm}
+            \def\linA{0mm}  \def\linB{-55mm} \def\linC{-110mm}
 
-A análise comparará duas vertentes: a estratégia alvo (método AdaBoost+\acs{mv}) e uma Base Line, ou referência (estratégia 1/N, que pressupõe divisão igualitária entre ativos), para verificar se o modelo proposto supera a média de mercado.
+            % Linha 1
+            \node[titulo] (t1) at (\colA,\linA) {Coleta de dados};
+            \node[corpo] (c1) at (t1.south) {%
+                \textbullet~Dados históricos de criptomoedas em bases especializadas.\\[1mm]
+                \textbullet~Variáveis: abertura, fechamento, máxima, mínima e volume.};
+            \node[titulo] (t2) at (\colB,\linA) {Pré-processamento};
+            \node[corpo] (c2) at (t2.south) {%
+                \textbullet~Padronização e limpeza dos dados.\\[1mm]
+                \textbullet~Tratamento de dados ausentes.};
+            \node[titulo] (t3) at (\colC,\linA) {Construção de variáveis};
+            \node[corpo] (c3) at (t3.south) {%
+                \textbullet~Cálculo de retornos e indicadores técnicos.\\[1mm]
+                \textbullet~Organização das variáveis de entrada do modelo.};
 
-\section{Procedimentos de análise}
-\label{sec_procedimentos_de_analise}
+            % Linha 2
+            \node[titulo] (t4) at (\colC,\linB) {Definição do \textit{target}};
+            \node[corpo] (c4) at (t4.south) {%
+                \textbullet~Classificação binária.\\[1mm]
+                \textbullet~Retornos testados: 3\%, 4\% e 5\%.};
+            \node[titulo] (t5) at (\colB,\linB) {Atributos e \textit{feature selection}};
+            \node[corpo] (c5) at (t5.south) {%
+                \textbullet~Seleção dos atributos mais relevantes.\\[1mm]
+                \textbullet~\textit{Feature selection}.};
+            \node[titulo] (t6) at (\colA,\linB) {Treinamento do modelo};
+            \node[corpo] (c6) at (t6.south) {%
+                \textbullet~Janelas deslizantes.\\[1mm]
+                \textbullet~Normalização.\\[1mm]
+                \textbullet~\textit{Adaptive Boosting} (AdaBoost).};
 
-O treinamento do modelo de aprendizado de máquina ocorrerá com dados in-sample, ou seja, dados usados para treinar o modelo, em período \(t\) a t+1.
+            % Linha 3
+            \node[titulo] (t7) at (\colA,\linC) {Formação da carteira};
+            \node[corpo] (c7) at (t7.south) {%
+                \textbullet~Seleção de, no mínimo, 15 criptomoedas.\\[1mm]
+                \textbullet~Diversificação do portfólio.};
+            \node[titulo] (t8) at (\colB,\linC) {Avaliação de resultados};
+            \node[corpo] (c8) at (t8.south) {%
+                \textbullet~Métricas: acurácia, precisão, \textit{recall}, \textit{F1-score} e ROC-AUC.\\[1mm]
+                \textbullet~Comparação das \textit{baselines}.};
 
-Sendo a avaliação de desempenho realizada com dados out-sample, ou seja, dados não utilizados no treinamento do modelo \(t+2,\ldots,t+n\), garantindo a verificação do aprendizado fora da amostra de treino.
+            % Setas
+            \draw[seta] (c1.east) -- (c2.west);
+            \draw[seta] (c2.east) -- (c3.west);
+            \draw[seta] (c3.south) -- (t4.north);
+            \draw[seta] (c4.west) -- (c5.east);
+            \draw[seta] (c5.west) -- (c6.east);
+            \draw[seta] (c6.south) -- (t7.north);
+            \draw[seta] (c7.east) -- (c8.west);
+        \end{tikzpicture}%
+        }
+
+        \vspace{2mm}
+        {\raggedright\fontsize{10}{12}\selectfont Fonte: elaborado pelo autor (2026).\par}
+        {\raggedright\fontsize{10}{12}\selectfont Legenda: este é o desenho das diferentes etapas do experimento desenvolvido no trabalho.\par}
+    \end{minipage}
+\end{figure}
+
+A premissa na qual a abordagem proposta está baseada é de que comportamentos observados no passado tendem a se repetir no futuro. Nesse sentido, dados históricos serão coletados para alimentação do modelo a ser desenvolvido. A obtenção será feita por meio do repositório público de dados históricos da Binance, que disponibiliza os dados de mercado em arquivos para \textit{download}. Em seguida, será feito o pré-processamento dos dados, para a padronização, limpeza e tratamento das informações.
+
+A partir disso, serão construídas as variáveis de análise e a definição do \textit{target} da pesquisa, em que serão testados retornos de 3\%, 4\% e 5\%. Na sequência, é feita a seleção dos atributos mais relevantes para, então, utilizar os dados no treinamento do algoritmo. Com base nos resultados, serão aplicados os conceitos de otimização de portfólio, selecionando a carteira de mínima variância para a seleção dos criptoativos que irão compor a carteira de investimento.
+
+% -----------------------------------------------------------------------------
+\section{Dados da pesquisa}
+\label{sec_dados_da_pesquisa}
+
+Os dados de entrada da pesquisa serão compostos por séries históricas de criptoativos negociados no mercado à vista (\textit{spot}) da Binance. Dessa forma, serão utilizados os arquivos do repositório público de dados históricos da plataforma, hospedado em um \textit{bucket} da Amazon S3, que disponibiliza os dados de mercado agregados em arquivos diários ou mensais \cite{binancepublicdata}. No caso das velas de mercado, os arquivos são organizados por par negociado, intervalo de tempo e mês de referência.
+
+No contexto do mercado de criptoativos, assim como em outros, as velas de mercado, \textit{candlesticks} ou \textit{klines}, são compostas por dados temporais que sintetizam os valores de negociação dos ativos. Entretanto, considerando o funcionamento ininterrupto do mercado, os valores de ``abertura'' e ``fechamento'' carecem de uma separação rígida. Por padronização, plataformas de investimento assumem o tempo de abertura de uma sessão virtual diária às 00:00 UTC (ou 00:01) e o fechamento às 23:59 UTC.
+
+Assim, sob a limitação anterior, existe a seguinte formulação: tempo de abertura (\textit{open}) como o primeiro preço de negociação após a abertura da sessão; tempo de fechamento (\textit{close}) como o último preço de transação registrado no limite exato do encerramento do dia; valores de máximo e mínimo (\textit{high}/\textit{low}) como valores extremos de maior e menor preço negociado. Dessa forma, por meio dos arquivos utilizados, será possível obter essas informações, além do volume negociado.
+
+Seguindo essa linha de raciocínio, a coleta será realizada em duas etapas. Primeiro, os pares disponíveis e os respectivos arquivos serão listados por meio de consultas paginadas ao \textit{bucket}, em que cada resposta indica, por meio de um \textit{token} de continuação, se há novos registros a serem obtidos. Em seguida, os arquivos compactados de cada par serão baixados e extraídos. Ressalta-se que os registros temporais são expressos em milissegundos até 2024 e em microssegundos a partir de 1º de janeiro de 2025 \cite{binancepublicdata}, sendo necessária a sua harmonização antes da conversão para data e hora.
+
+A unidade de observação, portanto, será de acordo com a combinação de criptoativos e intervalo temporal. As informações serão coletadas para cada par de negociação em arquivos CSV (\textit{Comma-Separated Values}), posteriormente convertidos para o formato Parquet. Nesse fluxo, após a obtenção dos dados, eles serão organizados e tratados para o posterior processamento e uso.
+
+% -----------------------------------------------------------------------------
+\section{Construção das variáveis de decisão}
+\label{sec_construcao_das_variaveis}
+
+A construção das variáveis de decisão será realizada com base na adaptação metodológica proposta por \citeonline{silva2025tomada}, que estrutura o processo de previsão com base em variáveis auxiliares capazes de representar etapas de uma operação de investimento. No presente trabalho, essa lógica será aplicada aos dados do mercado de criptomoedas apresentados anteriormente. Dessa maneira, a partir dos preços de abertura, máxima, mínima e fechamento, serão criadas variáveis para simular operações de compra e venda dentro de uma janela temporal definida.
+
+A primeira variável construída será a compra, correspondente ao preço de abertura da vela posterior ao momento da análise. Ela representará o ponto teórico de entrada na operação, ou seja, o preço pelo qual o criptoativo seria adquirido em caso de potencial valorização. Em seguida, será criada a variável máximo atingido, que é o maior preço alcançado pelo criptoativo durante a janela de permanência do ativo. Dessa forma, seguindo a lógica adaptada de \citeonline{silva2025tomada}, será considerada uma janela temporal de quatro dias, que pode ser alterada com base na estratégia de investimento.
+
+Nesse mesmo raciocínio, haverá mais duas variáveis: a venda e o resultado real. A primeira será o preço de saída da operação. A segunda será responsável por mensurar o retorno efetivo da operação simulada. A variável venda será definida conforme o desempenho do criptoativo dentro da janela temporal estabelecida, considerando o preço correspondente ao atingimento do retorno-alvo ou, caso esse retorno não seja alcançado, o preço de fechamento ao final do período analisado. Já o resultado real será calculado a partir da relação entre o preço de venda e o preço de compra, permitindo identificar se a operação simulada gerou ganho ou perda.
+
+Neste trabalho, serão testados retornos-alvo de 3\%, 4\% e 5\%, para a verificação da capacidade do modelo em identificar criptoativos com potencial de valorização em diferentes níveis de exigência. Por conseguinte, as variáveis serão definidas através de algoritmos parametrizados, por meio de bibliotecas de manipulação de dados em Python, como Pandas e NumPy, além do DuckDB, utilizado para consultas em SQL sobre a base consolidada. Elas serão uma etapa intermediária entre os dados brutos e a formulação do problema.
+
+% -----------------------------------------------------------------------------
+\section{Targets e refinamento dos dados}
+\label{sec_targets_e_refinamento}
+
+Assim como as variáveis foram baseadas no trabalho de \citeonline{silva2025tomada}, a definição dos \textit{targets} também será. Dessa forma, eles têm como objetivo identificar se o retorno esperado será obtido dentro do período especificado. Desse modo, o \autoref{qua_atributos_calculados} apresenta os atributos calculados que serão utilizados como variáveis explicativas no treinamento do modelo e na classificação. Eles também foram fundamentados pelo trabalho de \citeonline{paiva2019decision}.
+
+\begin{quadro}[htbp]
+    \centering
+    \caption{Atributos calculados para os criptoativos}
+    \label{qua_atributos_calculados}
+    \begin{minipage}{\linewidth}
+    \small
+    \arrayrulecolor{black}
+    \renewcommand{\arraystretch}{1.35}
+    \begin{tabular}{|>{\centering\arraybackslash}m{1.4cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{1.4cm}|>{\centering\arraybackslash}m{5.0cm}|}
+        \hline
+        \textbf{Atributo} & \textbf{Descrição} & \textbf{Atributo} & \textbf{Descrição} \\
+        \hline
+        1  & $r_{1} = \ln(\textit{Fech}_{i} / \textit{Fech}_{i-1})$         & 12 & $r_{12} = \ln(\textit{Mín}_{i} / \textit{Abert}_{i})$ \\ \hline
+        2  & $r_{2} = \ln(\textit{Fech}_{i-1} / \textit{Fech}_{i-2})$       & 13 & $r_{13} = \ln(\textit{Mín}_{i-1} / \textit{Abert}_{i-1})$ \\ \hline
+        3  & $r_{3} = \ln(\textit{Fech}_{i-2} / \textit{Fech}_{i-3})$       & 14 & $r_{14} = \ln(\textit{Mín}_{i-2} / \textit{Abert}_{i-2})$ \\ \hline
+        4  & $r_{4} = \ln(\textit{Fech}_{i-3} / \textit{Fech}_{i-4})$       & 15 & $r_{15} = \ln(\textit{Mín}_{i-3} / \textit{Abert}_{i-3})$ \\ \hline
+        5  & $r_{5} = \ln(\textit{Máx}_{i} / \textit{Abert}_{i})$           & 16 & \textit{Momentum} (fechamento, período = 10) \\ \hline
+        6  & $r_{6} = \ln(\textit{Máx}_{i} / \textit{Abert}_{i-1})$         & 17 & \textit{Relative strength index} (fechamento, período = 14) \\ \hline
+        7  & $r_{7} = \ln(\textit{Máx}_{i} / \textit{Abert}_{i-2})$         & 18 & \textit{Parabolic SAR} (máximo e mínimo, aceleração = 0, máximo = 0) \\ \hline
+        8  & $r_{8} = \ln(\textit{Máx}_{i} / \textit{Abert}_{i-3})$         & 19 & \textit{Average true range} (máximo, mínimo e fechamento, período = 14) \\ \hline
+        9  & $r_{9} = \ln(\textit{Máx}_{i-1} / \textit{Abert}_{i-1})$       & 20 & \textit{True range} (máximo, mínimo e fechamento) \\ \hline
+        10 & $r_{10} = \ln(\textit{Máx}_{i-2} / \textit{Abert}_{i-2})$      & 21 & \textit{Chaikin A/D line} (máximo, mínimo, fechamento e volume) \\ \hline
+        11 & $r_{11} = \ln(\textit{Máx}_{i-3} / \textit{Abert}_{i-3})$      & 22 & \textit{On balance volume} (fechamento e volume) \\ \hline
+    \end{tabular}
+    \fontefigura{Adaptado de \citeonline{silva2025tomada}, com base em \citeonline{paiva2019decision}.}
+    {\raggedright\fontsize{10}{12}\selectfont Nota: \textit{Abert}, \textit{Fech}, \textit{Máx} e \textit{Mín} referem-se, respectivamente, aos preços de abertura, fechamento, máximo e mínimo das velas de mercado dos criptoativos analisados; o volume refere-se ao volume negociado.\par}
+    \end{minipage}
+\end{quadro}
+
+Em sua composição, são consideradas transformações logarítmicas entre preços de fechamento, abertura, máximas e mínimas, além de indicadores técnicos amplamente utilizados na análise de séries temporais financeiras, como \textit{Momentum}, \textit{Relative Strength Index}, \textit{Parabolic SAR}, \textit{Average True Range}, \textit{True Range}, \textit{Chaikin A/D Line} e \textit{On Balance Volume}. Com isso, a utilização dos atributos permite a representação de diferentes dimensões do comportamento dos criptoativos, como o retorno, a tendência, a volatilidade, a amplitude de preço e o volume negociado.
+
+Em sequência à determinação dos atributos anteriores, ocorrerá a seleção das \textit{features}. Essa etapa tem como finalidade a identificação, entre as variáveis calculadas, das que apresentam maior relevância para o processo de classificação quanto ao atingimento dos retornos-alvo especificados. Por meio dela, ocorre a eliminação de atributos redundantes, reduzindo a dimensionalidade da base e a presença de ruídos que possam comprometer o desempenho do modelo.
+
+Seguindo a mesma estrutura metodológica de \citeonline{silva2025tomada}, a escolha das \textit{features} será realizada antes do treinamento do algoritmo, para que o \acs{adaboost} receba um conjunto consistente de variáveis. Por conseguinte, espera-se uma melhora na capacidade de generalização do classificador, tornando o processo mais robusto para a formação do portfólio resultante. Isso evita o chamado \textit{overfitting}, que consiste no ajuste excessivo do modelo aos dados de treinamento, incluindo padrões não relevantes.
+
+Através da seleção das \textit{features}, será possível a organização das variáveis em diferentes grupos, representados pelas letras X e Y. O primeiro corresponde às entradas e o segundo, às saídas. Eles serão os insumos utilizados pelo algoritmo de aprendizado de máquina para a identificação dos padrões e aprendizado. Para tal, será adotada uma codificação binária em que 1 representa o sucesso no alcance do \textit{target} e 0, o fracasso, nos valores de saída (em Y).
+
+% -----------------------------------------------------------------------------
+\section{Treinamento e classificação}
+\label{sec_treinamento_e_classificacao}
+
+Por meio do resultado das fases anteriores, será possível o treinamento do modelo. Ele será realizado por meio de janelas deslizantes, para o ajuste do algoritmo em períodos históricos sucessivos. Em outras palavras, em vez de misturar os dados, o modelo utilizará dados mais distantes cronologicamente para o aprendizado e os mais recentes para os testes. Essa estratégia busca preservar a ordem temporal dos dados e simular uma situação próxima ao processo real de decisão, em que apenas informações passadas estão disponíveis no momento da classificação.
+
+Precedendo cada uma das etapas de treinamento, os atributos serão padronizados dentro de cada janela deslizante, utilizando apenas as estatísticas do respectivo conjunto de treinamento, o que impede que informações dos conjuntos de teste interfiram no processo. Ressalta-se que essa etapa não é um requisito do \acs{adaboost}: ao empregar árvores de decisão de um nível (\textit{decision stumps}) como classificadores fracos, configuração padrão de sua implementação no Scikit-learn, o algoritmo define suas divisões apenas pela ordenação dos valores de cada atributo, sendo, portanto, insensível à escala. A padronização é mantida para que os atributos fiquem em escalas comparáveis na etapa de seleção de \textit{features} e para preservar a consistência com o fluxo metodológico de referência. Essa lógica segue a essência do procedimento adotado por \citeonline{silva2025tomada}, que utiliza janelas deslizantes, padronização dos dados e separação entre variáveis de entrada e variável-alvo para treinar modelos de classificação voltados ao atingimento de \textit{targets}.
+
+O modelo \textit{\acl{adaboost}} (\acs{adaboost}) será usado na classificação dos criptoativos conforme sua capacidade de atingir os alvos de retorno especificados. As variáveis explicativas serão compostas pelos atributos calculados, enquanto a variável-alvo terá valor binário. Após esse processo, o sinal de potencial valorização tornará um ativo candidato ou não à composição da carteira. Portanto, a classificação será um filtro de quais criptomoedas devem ser escolhidas.
+
+As etapas de seleção de \textit{features}, normalização, treinamento do modelo \acs{adaboost}, ajuste de parâmetros e avaliação das métricas de classificação serão conduzidas com apoio da biblioteca Scikit-learn. Essa biblioteca será utilizada por reunir recursos consolidados para a construção de fluxos de aprendizado de máquina, permitindo a aplicação de métodos de pré-processamento, seleção de variáveis, treinamento de classificadores e mensuração do desempenho.
+
+% -----------------------------------------------------------------------------
+\section{Otimização da carteira}
+\label{sec_otimizacao_da_carteira}
+
+De acordo com os resultados da etapa de classificação, as criptomoedas indicadas pelo \acs{adaboost} como aptas a atingirem os \textit{targets} estabelecidos serão submetidas ao processo de formação de carteira. Seguindo a lógica metodológica de \citeonline{paiva2019decision}, também adotada por \citeonline{silva2025tomada}, o modelo de aprendizado de máquina será responsável pela pré-seleção dos ativos, enquanto a alocação dos pesos será realizada posteriormente por meio do modelo de média-variância de Markowitz.
+
+A partir do exposto, tornam-se claras as duas etapas envolvidas no processo decisório para a construção do portfólio: primeiro, a identificação dos criptoativos com maior potencial de valorização; em seguida, a definição da proporção de capital a ser alocada em cada um deles. A otimização será conduzida com base nos retornos históricos dos ativos selecionados e na matriz de covariância entre eles, de modo a considerar não apenas o desempenho individual de cada criptoativo. Essa etapa buscará determinar a combinação de pesos capaz de equilibrar retorno esperado e risco, conforme os fundamentos do modelo de média-variância.
+
+No contexto deste trabalho, a otimização será realizada dentro das janelas temporais definidas. Com isso, evita-se a incorporação de dados futuros no processo decisório, preservando a lógica do processo de decisão. A carteira resultante será a integração entre a capacidade classificatória do aprendizado de máquina e a lógica de diversificação do modelo de média-variância. Por conseguinte, torna-se relevante a avaliação e a comparação entre diferentes \textit{baselines}, ou seja, estratégias comparativas para avaliação do modelo.
+
+% -----------------------------------------------------------------------------
+\section{Avaliação e comparação entre baselines}
+\label{sec_avaliacao_e_baselines}
+
+A avaliação dos resultados será feita através da comparação entre diferentes estratégias de formação de carteira. Isso tem como intuito verificar se a combinação proposta entre o algoritmo de aprendizado de máquina e a otimização do portfólio tem a capacidade de produzir resultados superiores a outras mais simplistas. Da mesma forma que \citeonline{paiva2019decision} e \citeonline{silva2025tomada}, a análise não estará restrita ao desempenho isolado do classificador, mas também à formação das carteiras com base nos sinais gerados.
+
+Em \citeonline{paiva2019decision}, a proposta principal combina \acs{svm} e modelo de média-variância, sendo comparada com estratégias alternativas, como \acs{svm} + 1/N, seleção aleatória + \acs{mv} e o desempenho do índice de mercado. De forma semelhante, \citeonline{silva2025tomada} estrutura a comparação entre diferentes \textit{baselines}. Já no presente trabalho, a comparação será adaptada ao mercado de criptoativos e terá cinco estratégias: \textit{Buy-hold}, \acs{adaboost} + 1/N, \textit{Naive} + 1/N, \textit{Naive} + Markowitz e \acs{adaboost} + Markowitz.
+
+\subsection{Buy-hold}
+\label{subsec_buy_hold}
+
+A estratégia \textit{buy-hold} será utilizada como referência passiva de investimento. Nela, as criptomoedas definidas para análise serão compradas no início do período de avaliação e mantidas até o final, sem a realização de rebalanceamento ou otimização. Isso busca representar uma alternativa simples, baseada apenas na permanência dos ativos no horizonte analisado.
+
+\subsection{\acs{adaboost} + 1/N}
+\label{subsec_adaboost_1n}
+
+Essa estratégia busca combinar o algoritmo \acs{adaboost} com a distribuição igualitária do capital, sem a otimização por pesos. Portanto, a regra 1/N será seguida, em que N representa a quantidade de criptoativos selecionados para a carteira. Essa configuração permite avaliar especificamente a contribuição do modelo de aprendizado de máquina na etapa de escolha dos ativos, removendo o efeito da otimização de Markowitz. Portanto, caso essa estratégia apresente um bom desempenho, haverá indícios de que os sinais produzidos pelo \acs{adaboost} agregam informações relevantes.
+
+\subsection{Naive + 1/N}
+\label{subsec_naive_1n}
+
+A estratégia \textit{naive} + 1/N corresponderá a uma abordagem simples, sem aplicação de aprendizado de máquina e sem otimização de pesos. A estratégia \textit{naive} representa uma abordagem básica de comparação, na qual a formação da carteira não depende de um modelo preditivo. Ela permite avaliar se o uso do \acs{adaboost} realmente melhora a seleção dos criptoativos em relação a uma alternativa mais simples. Nessa configuração, os criptoativos elegíveis serão alocados de forma igualitária na carteira, sem que haja um processo prévio de classificação baseado no \acs{adaboost}. A função dessa \textit{baseline} é representar uma estratégia ingênua de diversificação, na qual o investidor distribui o capital de maneira uniforme entre os ativos disponíveis.
+
+\subsection{Naive + Markowitz}
+\label{subsec_naive_markowitz}
+
+A combinação \textit{Naive} + Markowitz manterá a lógica de seleção sem aprendizado de máquina, mas utilizará o modelo de média-variância para definir os pesos dos ativos na carteira. Nesse caso, a escolha dos criptoativos não será orientada pelos sinais do \acs{adaboost}, porém a distribuição do capital será otimizada com base nos retornos históricos e na matriz de covariância dos ativos. Dessa forma, torna-se possível a avaliação do efeito isolado da otimização de Markowitz.
+
+\subsection{\acs{adaboost} + Markowitz}
+\label{subsec_adaboost_markowitz}
+
+Sendo essa a estratégia principal do trabalho, o \acs{adaboost} será utilizado para classificar os criptoativos conforme sua probabilidade de atingir os retornos-alvo definidos, e os ativos selecionados serão posteriormente submetidos à otimização pelo modelo de média-variância de Markowitz. Essa configuração permitirá avaliar se a integração entre classificação supervisionada e alocação por média-variância é capaz de gerar uma carteira com desempenho superior às demais estratégias simplistas.
+
+Por fim, conforme sintetizado na etapa de desenho do experimento, a etapa final de avaliação usará diferentes métricas. Ela será realizada em duas dimensões complementares: a primeira voltada ao desempenho do classificador e a segunda voltada ao desempenho financeiro da carteira formada. Isso será feito por meio de métricas como acurácia, \textit{recall}, \textit{F1-score} e ROC-AUC, além de indicadores como retorno acumulado e retorno médio.

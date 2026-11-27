@@ -8,12 +8,12 @@
 -  [x] **1** - INTRODUÇÃO
     - [x] Abstrair a referencia de MITCHEL na intro
     - [x] Incluir na Intro decisões de investimento
-- [ ] **2** - REFERENCIAL TEÓRICO - ***P1***
-  - [ ] **2.2**
+- [x] **2** - REFERENCIAL TEÓRICO - ***P1***
+  - [x] **2.2**
       - [x] Contextualizar e melhorar Cripto
-      - [ ] Incluir gráficos de Cripto - ***P2***
-  - [ ] **2.3** - ***P1***
-     - [ ] tirar "criptoativos" na **2.3.3** (deixar 'finanças') - ***P1***
+      - [x] Incluir gráficos de Cripto - ***P2***
+  - [x] **2.3** - ***P1***
+     - [x] tirar "criptoativos" na **2.3.3** (deixar 'finanças') - ***P1***
   - [x] **2.4** MARKOWITZ
     - [x] Diminuir referencias de PAIVA 
     - [x] Explicar mitigação de risco.
@@ -33,12 +33,25 @@
       - [x] 3 - ML + C  - ***P0***
       - [x] 4 - ML + MV + C  - ***P0***
         - [x] Aumentar referencias  - ***P0***
-- [ ] Criar tabela de **Estudos Relacionados** (englobando s.2 e s. 3) - ***P1***
+- [x] Criar tabela de **Estudos Relacionados** (englobando s.2 e s. 3) - ***P1***
  
 ## CHECKLIST 202622
 
-
+- [x] SUMARIO
+  - [x] Melhorar formatação
+    - [x] diminuir distancia
+    - [x]  tirar travessões
 - [ ] **1** - INTRODUÇÃO
+  - [x] Tirar ODS
+  - [x] CItações com varios autores colocar ordem cronológica
+  - [x] substituir paiva por mandelbrot
+  - [x] corrigir o objetivo geral (o especifico ta mais geral que o geral)
 - [ ] 2 Referencias
-- [ ] **4** - METODOLOGIA
-    - [ ] colocar análise de correlação dos criptoativos total e por ano ultimos 5 anos
+  - [ ] Cripto
+    - [ ] Melhorar "caracteristicas dos criptoativos" tirar "estatisticazinha" e deixar mais macro
+- [ ] 3 Estudos relacionados
+  - [ ] Fragmentar a tabela de referencias segundo o momento que são aplicadas e contextualizar (ou guardar pro TCC II, o que cansar menos)
+- [x] **4** - METODOLOGIA
+  - [x] pegar o que a marcela escreveu e colocar "ADABOOST" no lugar
+
+

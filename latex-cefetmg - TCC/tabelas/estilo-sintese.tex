@@ -1,0 +1,69 @@
+% -----------------------------------------------------------------------------
+% Estilo comum das tabelas-síntese por seção (capítulos 2 e 3)
+% Carregado uma única vez no preâmbulo (meu-trabalho.tex).
+% Cada tabela fica no fim da seção em que seus estudos são discutidos:
+%   \SinteseInicio{<legenda>}{<rótulo>}
+%   \SinteseAutor{<chave>} & foco & método & contribuições & uso \\ \SinteseLinha
+%   \SinteseFim
+% -----------------------------------------------------------------------------
+
+\definecolor{sinteseForest}{rgb}{0.117647,0.286275,0.262745}
+\definecolor{sinteseSoft}{rgb}{0.909804,0.941176,0.933333}
+\definecolor{sinteseLine}{rgb}{0.784314,0.847059,0.831373}
+
+\newcolumntype{S}[1]{>{\RaggedRight\arraybackslash\hspace{0pt}}p{#1}}
+
+% Larguras das colunas: as proporções somam exatamente 1.
+\newcommand{\SinteseLargura}{\dimexpr\linewidth-8\tabcolsep\relax}
+
+\newcommand{\SinteseAutor}[1]{\textbf{\citeonline{#1}}}
+
+\newcommand{\SinteseLinha}{\arrayrulecolor{sinteseLine}\specialrule{0.4pt}{0pt}{0pt}}
+
+\newcommand{\SinteseCabecalho}{%
+   \color{sinteseForest}\bfseries Autor(es) &
+   \color{sinteseForest}\bfseries Foco do estudo &
+   \color{sinteseForest}\bfseries Método / \newline contexto &
+   \color{sinteseForest}\bfseries Principais \newline contribuições &
+   \color{sinteseForest}\bfseries Uso no presente estudo\\}
+
+\newcommand{\SinteseInicio}[2]{%
+   \begingroup
+   \SingleSpacing
+   \fontsize{9}{11}\selectfont
+   \setlength{\parindent}{0pt}%
+   \setlength{\parskip}{0pt}%
+   \setlength{\tabcolsep}{3.1pt}%
+   \renewcommand{\arraystretch}{1.3}%
+   \setlength{\LTpre}{\baselineskip}%
+   \setlength{\LTpost}{\baselineskip}%
+   \setlength{\LTleft}{0pt plus 1fill}%
+   \setlength{\LTright}{0pt plus 1fill}%
+   \setlength{\LTcapwidth}{\linewidth}%
+   \setlength{\emergencystretch}{3em}%
+   \begin{longtable}{
+       @{}
+       S{0.165\SinteseLargura}
+       S{0.13\SinteseLargura}
+       S{0.195\SinteseLargura}
+       S{0.255\SinteseLargura}
+       S{0.255\SinteseLargura}
+       @{}
+   }
+   \caption{#1}\label{#2}\\
+   \arrayrulecolor{sinteseForest}\toprule[1.6pt]
+   \SinteseCabecalho
+   \arrayrulecolor{sinteseLine}\midrule[0.5pt]
+   \endfirsthead
+   \multicolumn{5}{@{}l}{\itshape Tabela \thetable\ -- continuação}\\[1mm]
+   \arrayrulecolor{sinteseForest}\toprule[1.6pt]
+   \SinteseCabecalho
+   \arrayrulecolor{sinteseLine}\midrule[0.5pt]
+   \endhead
+   \endfoot
+   \arrayrulecolor{sinteseForest}\bottomrule[1pt]
+   \multicolumn{5}{@{}p{\linewidth}@{}}{\itshape Fonte: elaboração própria.}\\
+   \endlastfoot
+}
+
+\newcommand{\SinteseFim}{\end{longtable}\endgroup}

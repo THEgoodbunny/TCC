@@ -1,0 +1,73 @@
+% Tabela-síntese da seção 3.1 (machine learning aplicado à otimização de portfólios)
+\SinteseInicio{Estudos sobre \acl{ml} aplicado à otimização de portfólios}{tab:sintese_ml_portfolio}
+
+\SinteseAutor{wang2020portfolio} &
+Pré-seleção e formação de carteiras. &
+\acs{lstm} aplicada a séries financeiras de longo prazo, seguida de seleção de ativos e otimização \acs{mv}. &
+Relata melhorias em retorno cumulativo e ajustado ao risco na maior parte dos períodos analisados. &
+Exemplifica a sequência previsão, seleção e alocação que aproxima o \acs{ml} da estrutura de Markowitz. \\
+\SinteseLinha
+
+\SinteseAutor{chen2021mean} &
+Previsão de preços e alocação \acs{mv}. &
+\acs{xgboost} com algoritmo do vaga-lume aprimorado para prever preços na Bolsa de Xangai; seleção dos ativos de maior retorno previsto e alocação \acs{mv}. &
+Relata melhores resultados em retorno e risco do que métodos sem previsão e diferentes \textit{benchmarks}. &
+Antecedente direto do fluxo em duas etapas, previsão por \acs{ml} seguida de \acs{mv}, adotado no presente estudo. \\
+\SinteseLinha
+
+\SinteseAutor{ma2021portfolio} &
+Previsão de retornos e otimização. &
+Comparação de modelos estatísticos, \acs{ml} e aprendizado profundo; seleção e alocação por \acs{mv} e ômega. &
+\acs{arima} supera \acs{cnn} e SVR na previsão; os ganhos de \textit{Random Forest} dependem da alocação e dos custos, que favorecem SVR em ômega. &
+Distingue qualidade preditiva de utilidade na carteira; evita pressupor superioridade automática do \acs{ml}. \\
+\SinteseLinha
+
+\SinteseAutor{du2022mean} &
+Sensibilidade da alocação às estimativas. &
+Redes \acs{lstm} com atenção para previsão de portfólios de ações cointegradas, antes da otimização \acs{mv}. &
+Discute a sensibilidade da \acs{mv} a erros nas médias e covariâncias e propõe aprimorar suas entradas por previsão. &
+Explicita o problema de estimação que motiva combinar um preditor com a otimização clássica. \\
+\SinteseLinha
+
+\SinteseAutor{padhi2022intelligent} &
+Seleção de carteira e previsão de movimentos. &
+Abordagem média-variância para pré-selecionar ações, seguida de aprendizado \textit{online} (\textit{perceptron} e algoritmo passivo-agressivo) para prever movimentos de preço. &
+Relata que estratégias de conjunto com seleção de portfólio são eficazes em comparação a soluções convencionais. &
+Mostra uma ordem inversa à do presente estudo, com a seleção por \acs{mv} antes da previsão. \\
+\SinteseLinha
+
+\SinteseAutor{chaweewanchon2022markowitz} &
+Pré-seleção preditiva antes da \acs{mv}. &
+\acs{cnn} e \acs{bilstm} para selecionar ações antes da alocação média-variância. &
+Relata melhorias em Sharpe, retorno médio e risco nos testes; separa a seleção dos ativos da otimização dos pesos. &
+Oferece antecedente de integração por pré-seleção e sustenta a discussão dos limites práticos dos pesos produzidos pela \acs{mv}. \\
+\SinteseLinha
+
+\SinteseAutor{jang2023deep} &
+Alocação dinâmica conectada à Teoria Moderna de Portfólio. &
+Aprendizado por reforço profundo com decomposição tensorial para combinar entradas de diferentes dimensões; comparação com 1/N e métodos de aprendizado por reforço anteriores. &
+Maior índice de Sharpe e menor \textit{drawdown} que a carteira 1/N nas duas janelas de teste (2017--2019). &
+Representa a alternativa em que o agente aprende os pesos, em contraste com o fluxo \acs{adaboost} + \acs{mv}. \\
+\SinteseLinha
+
+\SinteseAutor{jiang2024deep} &
+Decisão dinâmica de portfólio. &
+Aprendizado por reforço profundo; recompensa com extensão da \acs{mv}, aversão ao risco e custos de transação. &
+Integra risco e custos à aprendizagem da alocação e distingue risco da carteira de aversão individual ao risco. &
+Oferece contraponto ao fluxo em duas etapas de \acs{adaboost} + \acs{mv}. \\
+\SinteseLinha
+
+\SinteseAutor{slusarczyk2025optimal} &
+Retornos históricos versus previstos. &
+\acs{arima}-\acs{garch} e \acs{xgboost}; carteiras de máximo índice de informação e mínima variância global. &
+Retornos previstos podem melhorar a alocação, mas o ganho depende do controle de parâmetros e hiperparâmetros. &
+Qualifica a expectativa de ganho ao substituir estimativas históricas por previsões; não assegura vantagem do \acs{adaboost} no mercado cripto. \\
+\SinteseLinha
+
+\SinteseAutor{lopez2025enhancing} &
+\acs{ml} no paradigma de Markowitz. &
+Discussão metodológica da integração de técnicas de \acs{ml} à seleção de portfólio de Markowitz. &
+Aponta contribuições para geração de alfa, gestão de risco e otimização de medidas como o \acs{cvar}, além de aplicações práticas e obstáculos. &
+Sustenta que a Teoria Moderna de Portfólio permanece como base de alocação à qual o \acs{ml} é incorporado. \\
+
+\SinteseFim

@@ -41,16 +41,16 @@
   - [x] Melhorar formatação
     - [x] diminuir distancia
     - [x]  tirar travessões
-- [ ] **1** - INTRODUÇÃO
+- [x] **1** - INTRODUÇÃO
   - [x] Tirar ODS
   - [x] CItações com varios autores colocar ordem cronológica
   - [x] substituir paiva por mandelbrot
   - [x] corrigir o objetivo geral (o especifico ta mais geral que o geral)
-- [ ] 2 Referencias
-  - [ ] Cripto
-    - [ ] Melhorar "caracteristicas dos criptoativos" tirar "estatisticazinha" e deixar mais macro
-- [ ] 3 Estudos relacionados
-  - [ ] Fragmentar a tabela de referencias segundo o momento que são aplicadas e contextualizar (ou guardar pro TCC II, o que cansar menos)
+- [x] 2 Referencias
+  - [x] Cripto
+    - [x] Melhorar "caracteristicas dos criptoativos" tirar "estatisticazinha" e deixar mais macro
+- [x] 3 Estudos relacionados
+  - [x] Fragmentar a tabela de referencias segundo o momento que são aplicadas e contextualizar (ou guardar pro TCC II, o que cansar menos)
 - [x] **4** - METODOLOGIA
   - [x] pegar o que a marcela escreveu e colocar "ADABOOST" no lugar
 

@@ -1,0 +1,45 @@
+% Tabela-síntese da seção 3.2 (machine learning aplicado ao mercado de criptoativos)
+\SinteseInicio{Estudos sobre a aplicação de \acl{ml} ao mercado de criptoativos}{tab:sintese_ml_cripto}
+
+\SinteseAutor{livieris2020ensemble} &
+Previsão por conjuntos de redes neurais. &
+\acs{cnn}, \acs{lstm} e \acs{bilstm} combinadas por média, \textit{bagging} e \textit{stacking}; preços horários de BTC, ETH e XRP. &
+Relata ganhos preditivos com maior custo de treinamento e previsão; não demonstra ganhos de rentabilidade. &
+Fundamenta a combinação de preditores e explicita o custo computacional; reforça a avaliação da carteira, além do erro de previsão. \\
+\SinteseLinha
+
+\SinteseAutor{lucarelli2020deepq} &
+Gestão de carteira por aprendizado por reforço. &
+Agentes \acs{dqn}, \textit{Double} \acs{dqn} e \textit{Dueling Double} \acs{dqn}; BTC, LTC, ETH e XRP; dados horários de julho de 2017 a dezembro de 2018; dez testes de 15 dias fora da amostra. &
+Os modelos foram lucrativos em média, mas nenhum foi positivo em todos os períodos testados, com alta variabilidade. &
+Exemplifica o caso em que o modelo decide comprar, manter ou vender e substitui a otimização; contraponto ao fluxo previsão e \acs{mv}. \\
+\SinteseLinha
+
+\SinteseAutor{chevallier2021forecast} &
+Previsão e negociação de \textit{Bitcoin}. &
+Comparação de modelos, incluindo \acs{adaboost}; informações de outras criptomoedas e classes de ativos. &
+Ganhos de previsão não asseguram ganhos de negociação; \textit{buy-and-hold} supera, em geral, as regras testadas. &
+Reforça a necessidade de avaliar o \acs{adaboost} pelo desempenho da estratégia resultante, sem presumir vantagem econômica por menor erro. \\
+\SinteseLinha
+
+\SinteseAutor{derbentsev2021comparative} &
+Previsão com conjuntos de árvores. &
+\textit{Random Forest} e \textit{boosting}; preços diários de BTC, ETH e XRP; teste de um passo à frente. &
+Apresenta erros preditivos reduzidos e ganhos com atributos adicionais, sem avaliar rentabilidade de carteiras. &
+Sustenta os conceitos de \textit{ensemble} e avaliação fora da amostra; delimita a diferença entre precisão de preços e qualidade da alocação. \\
+\SinteseLinha
+
+\SinteseAutor{sebastiao2021forecasting} &
+Previsão sob mudanças de mercado. &
+Modelos lineares, \textit{Random Forest} e \acs{svm}; BTC, ETH e LTC; janelas móveis. &
+Não identifica superioridade universal; custos de negociação tornam negativas algumas estratégias antes rentáveis. &
+Fundamenta a separação temporal de treino e teste e a avaliação econômica dos sinais, além da precisão preditiva. \\
+\SinteseLinha
+
+\SinteseAutor{park2023intelligent} &
+Previsão direcional e negociação. &
+\acs{adaboost}-\acs{lstm} com informação de regimes de turbulência; negociação de um único criptoativo. &
+Relata ganhos frente a indicadores técnicos em parte dos horizontes; discute a sensibilidade do \acs{adaboost} a ruído e valores atípicos. &
+Oferece antecedente do \acs{adaboost} em criptoativos e fundamenta suas limitações; a extensão para alocação entre ativos pertence à proposta do presente estudo. \\
+
+\SinteseFim

@@ -1,0 +1,87 @@
+% Tabela-síntese da seção 3.4 (estudos híbridos de machine learning e média-variância em criptoativos)
+\SinteseInicio{Estudos híbridos de \acl{ml} e média-variância aplicados ao mercado de criptoativos}{tab:sintese_hibridos}
+
+\SinteseAutor{cui2023portfolio} &
+Escolha da medida de risco. &
+Aprendizado por reforço profundo; seis criptoativos; comparação entre \acs{mv} e \textit{Mean}-\acs{cvar}. &
+\textit{Mean}-\acs{cvar} apresenta maiores retornos médios e menores desvios-padrão que \acs{mv} nas carteiras testadas. &
+Expõe a limitação de representar o risco apenas pela variância. \\
+\SinteseLinha
+
+\SinteseAutor{lorenzo2023online} &
+Seleção de subconjuntos de ativos. &
+Agrupamento por protótipos antes da \acs{mv}; universos de 175, 250 e 534 criptoativos elegíveis. &
+Reduz a dimensão da matriz de covariância e falhas de convergência, mas pode elevar perdas máximas e restringir a diversificação. &
+Diferencia o uso de \acs{ml} para seleção de ativos de seu uso preditivo. \\
+\SinteseLinha
+
+\SinteseAutor{zhou2023multisource} &
+Informação preditiva na alocação. &
+\acs{svm} com volume e sentimento; sete criptoativos; variância mínima modificada; testes de 1, 3 e 5 dias. &
+Relata melhor desempenho em Sharpe, Sortino e equivalente de certeza frente às referências avaliadas, incluindo 1/N. &
+Oferece antecedente direto da integração previsão e \acs{mv} em criptoativos e de sua comparação com pesos iguais. \\
+\SinteseLinha
+
+\SinteseAutor{han2024diversification} &
+Fatores cripto em carteiras tradicionais. &
+\textit{Elastic net} combinada prevê retornos de 28 fatores formados com mais de 2.000 criptomoedas (2014--2021); as previsões substituem as médias históricas em \acs{mv}, Bayes--Stein e Black--Litterman. &
+Fatores de tamanho e \textit{momentum} trazem benefícios de diversificação; com retornos previstos, o desempenho fora da amostra é, em média, cerca de 4\% maior. &
+Antecedente próximo da proposta: previsões de \acs{ml} como entrada da \acs{mv} em carteiras com criptoativos. \\
+\SinteseLinha
+
+\SinteseAutor{bulani2025improving} &
+Seleção por agrupamentos e alocação. &
+\textit{K-medoids} para agrupar criptoativos; seleção entre grupos e variantes de otimização por enxame de partículas. &
+A seleção dinâmica entre grupos melhora Sharpe e Sharpe ajustado nos testes; faltam testes formais de significância. &
+Distingue agrupamento e busca dos pesos da previsão de retornos; oferece alternativa metodológica para discutir diversificação e robustez. \\
+\SinteseLinha
+
+\SinteseAutor{chen2025multitask} &
+Aprendizagem dos pesos da carteira. &
+\acs{lstm} para previsão e rede neural multitarefa para produzir os pesos; comparação com \acs{mv} tradicional. &
+Relata ganhos em retorno e Sharpe, acompanhados de resultados desfavoráveis em algumas métricas de risco. &
+Distingue a produção de pesos por rede neural da proposta de usar \acs{adaboost} na previsão e \acs{mv} na alocação. \\
+\SinteseLinha
+
+\SinteseAutor{franco2025integrating} &
+Interpretabilidade de carteiras. &
+Markowitz, carteiras de Choquet, 1/N e \textit{Bitcoin} em 15 criptomoedas (2019--2025); \textit{Random Forest} com valores de Shapley e LIME para explicar os resultados. &
+A carteira de Choquet melhora o retorno acumulado e a proteção de cauda, sobretudo em horizontes curtos; a vantagem diminui em horizontes longos. &
+Mostra o \acs{ml} empregado após a alocação, para interpretação, e não como etapa preditiva. \\
+\SinteseLinha
+
+\SinteseAutor{sun2025enhancing} &
+Previsão de retornos e pontuação ponderada. &
+SVR, k-NN, \acs{xgboost}, \acs{lstm}, \textit{Transformer} e \textit{Informer} preveem retornos de dez criptomoedas (2023--2024); alocação com mínima variância penalizada, comparada a mínima variância, máximo Sharpe, paridade de risco, 1/N e BTC. &
+Preditores distintos geram carteiras com desempenhos distintos, inclusive perdas de eficiência e diferenças de \textit{drawdown}; custos de transação não foram considerados. &
+Reforça que a escolha do preditor afeta a carteira final, o que justifica avaliar o \acs{adaboost} pelo resultado da alocação. \\
+\SinteseLinha
+
+\SinteseAutor{xu2025cryptocurrency} &
+Previsão recorrente e Markowitz. &
+\acs{lstm}; BTC, ETH e LTC; janela de 128 observações e pesos mensais com possibilidade de venda a descoberto. &
+Relata retorno ligeiramente maior, risco semelhante e Sharpe superior em quatro dos seis meses avaliados. &
+Evidência de ganhos modestos em uma arquitetura próxima; impede tratar a combinação \acs{ml} + \acs{mv} como melhoria assegurada. \\
+\SinteseLinha
+
+\SinteseAutor{mba2026regime} &
+Limites da alocação com redes em grafos. &
+Redes neurais em grafos de correlação integradas à alocação; 33 pares cripto/USDT da Binance, de 2021 a 2026. &
+Na amostra, mínima variância e ponderação por capitalização superam as configurações em grafos nas principais métricas de risco e retorno. &
+Evidência desfavorável à integração \acs{ml} + \acs{mv}; reforça a comparação com regras simples, sem presumir ganhos pela complexidade. \\
+\SinteseLinha
+
+\SinteseAutor{peykani2026machine} &
+Previsão e diferentes medidas de risco. &
+\acs{xgboost} com ajuste bayesiano; três criptomoedas e duas ações; \acs{mv} e outras duas formulações de risco. &
+No teste de 30 dias, o retorno acumulado é 7,2\% para máximo Sharpe e 6,6\% para 1/N; os resultados variam com a medida de risco. &
+Antecedente da comparação entre previsão com otimização e 1/N; a carteira mista e o teste curto limitam a transposição dos achados. \\
+\SinteseLinha
+
+\SinteseAutor{toscano2026richer} &
+Valor de informações adicionais. &
+\acs{ml} com \acs{mv} e \acs{mv} modificada em \textit{tokens} do ecossistema NFT; comparação com 1/N e custos. &
+Ambas as estruturas superam 1/N nos testes descritos; a \acs{mv} com \acs{ml}, sem a modificação, geralmente apresenta melhor Sharpe e menor risco. &
+Comparação híbrida com 1/N; mostra que ampliar a informação utilizada não garante melhor alocação. \\
+
+\SinteseFim
